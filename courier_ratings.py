@@ -130,26 +130,45 @@ def _bbox(lat, lng, r0, r1, c0, c1):
     return lat is not None and lng is not None and r0 <= lat <= r1 and c0 <= lng <= c1
 
 def infer_region(name, addr, lat, lng):
-    txt = _norm(f"{name} {addr}")
-    for kw in _ISLAND_KW["ΚΡΗΤΗ"]:
-        if kw in txt: return "ΚΡΗΤΗ"
-    for kw in _ISLAND_KW["ΝΗΣΙΑ_ΔΥΤΙΚΑ"]:
-        if kw in txt: return "Δυτική Ελλάδα (με Κέρκυρα)"
-    for kw in _ISLAND_KW["ΝΗΣΙΑ_ΑΛΛΑ"]:
-        if kw in txt: return "Υπόλοιπα νησιά"
-    if _bbox(lat, lng, 34.7, 35.9, 23.3, 26.7): return "ΚΡΗΤΗ"
-    if _bbox(lat, lng, 37.6, 38.4, 23.0, 24.2): return "ΑΤΤΙΚΗ"
-    if _bbox(lat, lng, 40.4, 40.9, 22.7, 23.2): return "Θεσσαλονίκη"
-    if _bbox(lat, lng, 36.2, 38.5, 21.0, 23.8): return "Πελοπόννησος"
-    if lat is not None and lng is not None and (lng < 22.0 or (39.3 <= lat <= 39.9 and 19.5 <= lng <= 20.8)):
-        return "Δυτική Ελλάδα (με Κέρκυρα)"
-    if lat is not None and lat >= 40.0: return "Βόρεια Ελλάδα"
+    if lat is None or lng is None:
+        return "Κεντρική Ελλάδα"
+    # Κρήτη
+    if 34.7 <= lat <= 35.9 and 23.3 <= lng <= 26.7: return "ΚΡΗΤΗ"
+    # Δωδεκάνησα
+    if 35.8 <= lat <= 37.0 and 26.8 <= lng <= 29.7: return "Υπόλοιπα νησιά"
+    # Κυκλάδες
+    if 36.3 <= lat <= 37.9 and 24.3 <= lng <= 26.5: return "Υπόλοιπα νησιά"
+    # Χίος/Σάμος/Ικαρία
+    if 37.4 <= lat <= 38.7 and 25.8 <= lng <= 27.2: return "Υπόλοιπα νησιά"
+    # Λέσβος/Λήμνος/Θάσος/Σαμοθράκη
+    if 38.8 <= lat <= 40.8 and 25.0 <= lng <= 26.5: return "Υπόλοιπα νησιά"
+    # Σαρωνικά νησιά
+    if 37.1 <= lat <= 37.9 and 23.0 <= lng <= 23.6: return "Υπόλοιπα νησιά"
+    # Ιόνια νησιά εκτός Κέρκυρας
+    if 37.5 <= lat <= 38.9 and 20.3 <= lng <= 21.1: return "Υπόλοιπα νησιά"
+    # Κέρκυρα
+    if 39.3 <= lat <= 39.9 and 19.5 <= lng <= 20.3: return "Δυτική Ελλάδα (με Κέρκυρα)"
+    # Αττική
+    if 37.7 <= lat <= 38.25 and 23.2 <= lng <= 24.2: return "ΑΤΤΙΚΗ"
+    # Θεσσαλονίκη
+    if 40.4 <= lat <= 40.85 and 22.6 <= lng <= 23.3: return "Θεσσαλονίκη"
+    # Βόρεια Ελλάδα
+    if lat >= 40.0: return "Βόρεια Ελλάδα"
+    # Πάτρα/Αχαΐα/Αίγιο (πριν Ναύπακτο)
+    if 37.9 <= lat <= 38.35 and 21.6 <= lng <= 22.3: return "Πελοπόννησος"
+    # Ναύπακτος/Μεσολόγγι/Αγρίνιο (Δυτική)
+    if 38.2 <= lat <= 38.65 and 21.0 <= lng <= 21.9: return "Δυτική Ελλάδα (με Κέρκυρα)"
+    # Κεντρική Ελλάδα: Τρίκαλα, Καρδίτσα, Λάρισα, Βόλος, Λαμία, Χαλκίδα
+    if 38.3 <= lat <= 39.9 and 21.5 <= lng <= 24.5: return "Κεντρική Ελλάδα"
+    # Πελοπόννησος (νότια)
+    if lat <= 38.1 and 21.5 <= lng <= 23.2: return "Πελοπόννησος"
+    # Δυτική Ελλάδα (Ήπειρος κλπ)
+    if lng <= 22.5 and lat <= 40.0: return "Δυτική Ελλάδα (με Κέρκυρα)"
     return "Κεντρική Ελλάδα"
 
 REGION_ORDER = ["ΑΤΤΙΚΗ","Κεντρική Ελλάδα","Θεσσαλονίκη","Βόρεια Ελλάδα",
                 "Δυτική Ελλάδα (με Κέρκυρα)","Πελοπόννησος","ΚΡΗΤΗ","Υπόλοιπα νησιά"]
 
-# ─────────────────────────── API CALLS ────────────────────────────────────
 def _headers():
     return {"Content-Type":"application/json",
             "X-Goog-Api-Key": API_KEY,
