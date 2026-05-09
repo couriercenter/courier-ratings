@@ -371,32 +371,39 @@ fRegion.addEventListener('change', renderStores);
 fSearch.addEventListener('input', renderStores);
 
 // ── Smart search helper ───────────────────────────────────────────────
-function normalizeText(s) {
+function norm(s) {
   if(!s) return '';
-  return s.toLowerCase()
-    .normalize('NFD').replace(/̀-ͯ/gu, '')
-    .normalize('NFC');
+  // lowercase + remove ALL diacritics (τόνοι, διαλυτικά κλπ)
+  return s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').normalize('NFC');
+}
+
+const GL = [
+  ['th','θ'],['ps','ψ'],['ch','χ'],['ou','ου'],
+  ['tz','τζ'],['ts','τσ'],['mp','μπ'],['nt','ντ'],
+  ['gk','γκ'],['ai','αι'],['ei','ει'],['oi','οι'],
+  ['au','αυ'],['eu','ευ'],
+  ['a','α'],['b','β'],['g','γ'],['d','δ'],['e','ε'],
+  ['z','ζ'],['i','ι'],['k','κ'],['l','λ'],['m','μ'],
+  ['n','ν'],['x','ξ'],['o','ο'],['p','π'],['r','ρ'],
+  ['s','σ'],['t','τ'],['y','υ'],['f','φ'],['h','η'],
+  ['v','β'],['w','ω'],['c','κ'],['u','υ'],['q','κ']
+];
+
+function toGreek(s) {
+  let r = s;
+  for(const [lat,gr] of GL) r = r.replaceAll(lat, gr);
+  return r;
 }
 
 function smartMatch(query, text) {
-  if(!query || !text) return !query;
-  const normQuery = normalizeText(query);
-  const normText  = normalizeText(text);
-  if(normText.includes(normQuery)) return true;
-  let greek = normQuery;
-  greek = greek.replace(/th/g,'θ').replace(/ps/g,'ψ').replace(/ch/g,'χ')
-               .replace(/ou/g,'ου').replace(/tz/g,'τζ').replace(/ts/g,'τσ')
-               .replace(/mp/g,'μπ').replace(/nt/g,'ντ').replace(/gk/g,'γκ')
-               .replace(/ai/g,'αι').replace(/ei/g,'ει').replace(/oi/g,'οι')
-               .replace(/a/g,'α').replace(/e/g,'ε').replace(/i/g,'ι')
-               .replace(/o/g,'ο').replace(/u/g,'υ').replace(/b/g,'β')
-               .replace(/g/g,'γ').replace(/d/g,'δ').replace(/z/g,'ζ')
-               .replace(/k/g,'κ').replace(/l/g,'λ').replace(/m/g,'μ')
-               .replace(/n/g,'ν').replace(/x/g,'ξ').replace(/p/g,'π')
-               .replace(/r/g,'ρ').replace(/s/g,'σ').replace(/t/g,'τ')
-               .replace(/f/g,'φ').replace(/h/g,'η').replace(/v/g,'β')
-               .replace(/y/g,'υ').replace(/w/g,'ω').replace(/c/g,'κ');
-  if(normText.includes(greek)) return true;
+  if(!query) return true;
+  if(!text) return false;
+  const q = norm(query);
+  const t = norm(text);
+  if(t.includes(q)) return true;
+  // try greeklish conversion
+  const gq = toGreek(q);
+  if(gq !== q && t.includes(gq)) return true;
   return false;
 }
 
