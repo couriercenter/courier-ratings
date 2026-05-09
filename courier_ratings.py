@@ -470,7 +470,7 @@ def build_html(history):
       <th>Διεύθυνση</th>
       <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="reviews" style="cursor:pointer">Κριτικές <span class="sort-icon">↕</span></th>
-      <th>Δ vs προηγ.</th><th></th>
+      <th>Δ vs {(prev or {}).get('label','προηγ.')}</th><th></th>
     </tr></thead>
     <tbody id="stores-tbody"></tbody>
   </table></div>
@@ -579,8 +579,20 @@ const trendChart = new Chart(document.getElementById('trend-chart'),{{
                 }},
                 itemSort: (a,b) => (b.raw||0) - (a.raw||0),
               }}}},
-    scales:{{y:{{min:2.0, max:5.0, ticks:{{stepSize:0.25, font:{{size:11}}}}}},
-              x:{{ticks:{{font:{{size:11}}}}}}}}
+    scales:{{
+      y:{{
+        min: (ctx) => {{
+          const vals = ctx.chart.data.datasets.flatMap(d=>d.data).filter(v=>v!==null&&v!==undefined);
+          return vals.length ? Math.floor((Math.min(...vals)-0.2)*10)/10 : 2.0;
+        }},
+        max: (ctx) => {{
+          const vals = ctx.chart.data.datasets.flatMap(d=>d.data).filter(v=>v!==null&&v!==undefined);
+          return vals.length ? Math.ceil((Math.max(...vals)+0.2)*10)/10 : 5.0;
+        }},
+        ticks:{{stepSize:0.1, font:{{size:11}}}},
+      }},
+      x:{{ticks:{{font:{{size:11}}}}}}
+    }}
   }}
 }});
 
@@ -650,7 +662,7 @@ regionEntries.forEach(item=>{{
   const prvVal = prev && prev.regions && prev.regions[`${{item.region}}||${{item.brand}}`];
   const prvAvg = prvVal ? prvVal.weighted_avg : null;
   if(item.region !== lastRegion){{
-    tbody.innerHTML += `<tr><td colspan="5" class="region-hdr">📍 ${{item.region}}</td></tr>`;
+    tbody.innerHTML += `<tr><td colspan="7" class="region-hdr">📍 ${{item.region}}</td></tr>`;
     lastRegion = item.region;
   }}
   const bcc = item.brand==='Courier Center'?' brand-cc':'';
