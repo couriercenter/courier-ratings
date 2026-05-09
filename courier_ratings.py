@@ -441,8 +441,11 @@ def build_html(history):
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
-      <th>Brand</th><th>Κατάστημα</th><th>Διεύθυνση</th>
-      <th>Rating</th><th>Κριτικές</th><th>Δ vs προηγ.</th><th></th>
+      <th class="sortable" data-col="brand" style="cursor:pointer">Brand <span class="sort-icon">↕</span></th>
+      <th>Κατάστημα</th><th>Διεύθυνση</th>
+      <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="reviews" style="cursor:pointer">Κριτικές <span class="sort-icon">↕</span></th>
+      <th>Δ vs προηγ.</th><th></th>
     </tr></thead>
     <tbody id="stores-tbody"></tbody>
   </table></div>
@@ -662,7 +665,14 @@ function inferRegion(name, address, lat, lng){{
 // ── Stores setup ─────────────────────────────────────────────────────
 const latestPlaces = latest.places || [];
 const prevPlaces   = (prev && prev.places) || [];
-function keyOf(p){{ return p.maps_url || `${{p.brand}}|${{p.place_name}}|${{p.address}}`; }}
+function keyOf(p){{
+  // Use stable CID from maps URL if available
+  const url = p.maps_url || '';
+  const cid = url.match(/cid=([0-9]+)/);
+  if(cid) return 'CID:' + cid[1];
+  if(url) return 'URL:' + url;
+  return `PNAD:${{p.brand}}|${{(p.place_name||'').toLowerCase().trim()}}|${{(p.address||'').toLowerCase().trim()}}`;
+}}
 const prevMap = {{}};
 prevPlaces.forEach(p=>{{ prevMap[keyOf(p)] = p; }});
 latestPlaces.forEach(p=>{{ p._region = inferRegion(p.place_name, p.address, p.lat, p.lng); }});
@@ -687,7 +697,13 @@ function renderStores(){{
     if(sFilter && !p.place_name.toLowerCase().includes(sFilter) && !p.address.toLowerCase().includes(sFilter)) return false;
     return true;
   }});
-  rows.sort((a,b)=>b.reviews-a.reviews);
+  rows.sort((a,b) => {{
+    let va, vb;
+    if(sortCol === 'brand')      {{ va = a.brand||''; vb = b.brand||''; return va.localeCompare(vb) * sortDir; }}
+    if(sortCol === 'rating')     {{ va = a.rating||0; vb = b.rating||0; }}
+    else                         {{ va = a.reviews||0; vb = b.reviews||0; }}
+    return (va - vb) * sortDir;
+  }});
   storesTbody.innerHTML = rows.slice(0,200).map(p=>{{
     const prv = prevMap[keyOf(p)];
     const dHtml = prv && prv.rating ? deltaHtml(p.rating, prv.rating) : '<span class="pill nc">—</span>';
@@ -708,6 +724,25 @@ fBrand.addEventListener('change', renderStores);
 fRegion.addEventListener('change', renderStores);
 fSearch.addEventListener('input', renderStores);
 
+// ── Sorting ───────────────────────────────────────────────────────────
+let sortCol = 'reviews';
+let sortDir = -1; // -1=desc, 1=asc
+
+document.querySelectorAll('th.sortable').forEach(th => {{
+  th.addEventListener('click', () => {{
+    const col = th.dataset.col;
+    if(sortCol === col) {{
+      sortDir *= -1;
+    }} else {{
+      sortCol = col;
+      sortDir = col === 'brand' ? 1 : -1;
+    }}
+    document.querySelectorAll('th.sortable .sort-icon').forEach(el => el.textContent = '↕');
+    th.querySelector('.sort-icon').textContent = sortDir === 1 ? '↑' : '↓';
+    renderStores();
+  }});
+}});
+
 // Fix: ensure empty value = "Όλα" works correctly
 fBrand.addEventListener('change', () => {{ if(fBrand.value === '') fBrand.selectedIndex = 0; }});
 fRegion.addEventListener('change', () => {{ if(fRegion.value === '') fRegion.selectedIndex = 0; }});
@@ -716,6 +751,17 @@ renderStores();
 
 document.getElementById('run-ts').textContent = 'Generated: ' + new Date().toLocaleString('el-GR');
 </script>
+
+<div style="text-align:center;padding:2rem 1rem 1.5rem;font-size:12px;color:#94a3b8;border-top:0.5px solid #e8ecf0;margin-top:2rem">
+  Τα δεδομένα αντλούνται αυτόματα από το Google Places API και δεν υφίστανται επεξεργασία.
+  Ο κώδικας συλλογής δεδομένων είναι δημόσια διαθέσιμος:<br>
+  <a href="https://github.com/couriercenter/courier-ratings/blob/main/courier_ratings.py"
+     target="_blank"
+     style="color:#3b82f6;text-decoration:none;font-weight:500">
+    github.com/couriercenter/courier-ratings/courier_ratings.py
+  </a>
+</div>
+
 </body>
 </html>"""
     return html
