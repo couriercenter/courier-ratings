@@ -70,7 +70,7 @@
   <h2>Αποτελέσματα ανά Περιοχή</h2>
   <div class="tbl-wrap"><table id="region-table">
     <thead><tr>
-      <th>Περιοχή</th><th>Brand</th>
+      <th>Περιοχή</th><th>Εταιρία</th>
       <th>Weighted Avg</th><th>Κριτικές</th>
       <th>vs 12/04/2026</th>
     </tr></thead>
@@ -82,14 +82,14 @@
   <!-- All stores -->
   <h2>Όλα τα Καταστήματα</h2>
   <div class="filter-bar">
-    <select id="f-brand"><option value="">Όλα τα brands</option></select>
+    <select id="f-brand"><option value="">Όλες οι εταιρίες</option></select>
     <select id="f-region"><option value="">Όλες οι περιοχές</option></select>
     <input id="f-search" placeholder="Αναζήτηση ονόματος / διεύθυνσης…">
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
-      <th class="sortable" data-col="brand" style="cursor:pointer">Brand <span class="sort-icon">↕</span></th>
-      <th>Κατάστημα</th><th>Διεύθυνση</th>
+      <th class="sortable" data-col="brand" style="cursor:pointer">Εταιρία <span class="sort-icon">↕</span></th>
+      <th>Διεύθυνση</th>
       <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="reviews" style="cursor:pointer">Κριτικές <span class="sort-icon">↕</span></th>
       <th>Δ vs προηγ.</th><th></th>
@@ -358,8 +358,7 @@ function renderStores(){
     const bcc = p.brand==='Courier Center'?' brand-cc':'';
     return `<tr>
       <td class="${bcc}">${p.brand}</td>
-      <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.place_name}</td>
-      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${p.address}</td>
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${p.address}</td>
       <td>${p.rating !== null && p.rating !== undefined ? `<span class="pill ${ratingClass(p.rating)}">${p.rating.toFixed(1)}</span>` : '—'}</td>
       <td>${p.reviews.toLocaleString('el-GR')}</td>
       <td>${dHtml}</td>
