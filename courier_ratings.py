@@ -365,14 +365,7 @@ def build_html(history):
   .pill{{display:inline-block;padding:2px 7px;border-radius:20px;font-size:11px;font-weight:600}}
   .g4{{background:#dcfce7;color:#166534}} .g35{{background:#d1fae5;color:#065f46}}
   .y3{{background:#fef9c3;color:#854d0e}} .r2{{background:#fee2e2;color:#991b1b}}
-  /* Movers */
-  .movers{{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:8px}}
-  .mover-box{{background:#fff;border-radius:10px;padding:14px 16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}}
-  .mover-box h3{{font-size:13px;font-weight:600;margin-bottom:10px}}
-  .mover-row{{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:.5px solid #f0f0f0}}
-  .mover-row:last-child{{border-bottom:none}}
-  .mover-name{{font-size:12px;color:#334155;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:8px}}
-  .mover-brand{{font-size:10px;color:#94a3b8;display:block}}
+
   /* Stores table */
   .filter-bar{{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}}
   .filter-bar select,.filter-bar input{{padding:6px 10px;border:.5px solid #d1d5db;border-radius:6px;font-size:13px;background:#fff}}
@@ -397,7 +390,10 @@ def build_html(history):
 
   <!-- Trend chart -->
   <h2>Τάση Weighted Average (Πανελλαδικά)</h2>
-  <div class="chart-wrap"><canvas id="trend-chart"></canvas></div>
+  <div class="chart-wrap">
+    <div id="brand-filter" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px"></div>
+    <canvas id="trend-chart"></canvas>
+  </div>
 
   <!-- Regions table -->
   <h2>Αποτελέσματα ανά Περιοχή</h2>
@@ -410,18 +406,7 @@ def build_html(history):
     <tbody id="region-tbody"></tbody>
   </table></div>
 
-  <!-- Top movers -->
-  <h2>Καταστήματα — Μεγαλύτερες Κινήσεις</h2>
-  <div class="movers">
-    <div class="mover-box">
-      <h3>⬆ Top Ανοδικά (vs {(prev or {}).get('label','προηγ.')})</h3>
-      <div id="movers-up"></div>
-    </div>
-    <div class="mover-box">
-      <h3>⬇ Top Καθοδικά (vs {(prev or {}).get('label','προηγ.')})</h3>
-      <div id="movers-dn"></div>
-    </div>
-  </div>
+
 
   <!-- All stores -->
   <h2>Όλα τα Καταστήματα</h2>
@@ -463,7 +448,11 @@ const BRAND_LOGOS = {{
 const snaps   = HISTORY.snapshots;
 const latest  = snaps[snaps.length-1];
 const prev    = snaps.length >= 2 ? snaps[snaps.length-2] : null;
-const allBrands = Object.keys(BRAND_COLORS);
+const allBrands = Object.keys(BRAND_COLORS).sort((a,b) => {{
+  const va = (latest && latest.summary[a]) ? (latest.summary[a].weighted_avg || 0) : 0;
+  const vb = (latest && latest.summary[b]) ? (latest.summary[b].weighted_avg || 0) : 0;
+  return vb - va;
+}});
 
 // ── Utility ────────────────────────────────────────────────────────────
 function ratingClass(r){{
@@ -496,37 +485,94 @@ allBrands.forEach(b=>{{
     <div class="card${{cc}}">
       ${{logoHtml}}
       <div class="score" style="color:${{BRAND_COLORS[b]}}">${{cur.weighted_avg !== null ? cur.weighted_avg.toFixed(2) : '—'}}</div>
-      <div class="meta">${{cur.total_reviews ? cur.total_reviews.toLocaleString('el-GR') : '—'}} κριτικές · ${{cur.store_count||'—'}} καταστήματα</div>
+      <div class="meta">${{cur.total_reviews ? cur.total_reviews.toLocaleString('el-GR') : '—'}} κριτικές</div>
       <span class="delta ${{dCls}}">${{dTxt}}</span>
     </div>`;
 }});
 
 // ── Trend chart ────────────────────────────────────────────────────────
 const labels = snaps.map(s=>s.label);
-const datasets = allBrands.map(b=>{{
-  return {{
-    label: b,
-    data: snaps.map(s => s.summary[b] ? s.summary[b].weighted_avg : null),
-    borderColor: BRAND_COLORS[b],
-    backgroundColor: BRAND_COLORS[b]+'33',
-    tension: 0.3,
-    pointRadius: 4,
-    borderWidth: b==='Courier Center' ? 3 : 1.5,
-    spanGaps: true,
-  }};
-}});
-new Chart(document.getElementById('trend-chart'),{{
+
+function makeDatasets(activeBrands){{
+  return activeBrands.map(b=>{{
+    return {{
+      label: b,
+      data: snaps.map(s => s.summary[b] ? s.summary[b].weighted_avg : null),
+      borderColor: BRAND_COLORS[b],
+      backgroundColor: BRAND_COLORS[b]+'33',
+      tension: 0.3,
+      pointRadius: 4,
+      borderWidth: b==='Courier Center' ? 3 : 1.5,
+      spanGaps: true,
+    }};
+  }});
+}}
+
+let activeBrands = [...allBrands];
+const trendChart = new Chart(document.getElementById('trend-chart'),{{
   type:'line',
-  data:{{labels, datasets}},
+  data:{{labels, datasets: makeDatasets(activeBrands)}},
   options:{{
     responsive:true, maintainAspectRatio:true,
     interaction:{{mode:'index', intersect:false}},
-    plugins:{{legend:{{position:'bottom', labels:{{boxWidth:12,font:{{size:11}}}}}},
+    plugins:{{legend:{{display:false}},
               tooltip:{{callbacks:{{label:ctx=>`${{ctx.dataset.label}}: ${{ctx.raw !== null ? ctx.raw.toFixed(2) : '—'}}`}}}}}},
     scales:{{y:{{min:2.0, max:5.0, ticks:{{stepSize:0.25, font:{{size:11}}}}}},
               x:{{ticks:{{font:{{size:11}}}}}}}}
   }}
 }});
+
+// Build toggle buttons
+const filterEl = document.getElementById('brand-filter');
+
+// "Όλα" button
+const allBtn = document.createElement('button');
+allBtn.textContent = 'Όλα';
+allBtn.style.cssText = 'padding:4px 12px;border-radius:20px;border:1.5px solid #ccc;background:#1a1a2e;color:#fff;font-size:12px;cursor:pointer;font-weight:600';
+allBtn.onclick = () => {{
+  activeBrands = [...allBrands];
+  updateChart();
+  updateButtons();
+}};
+filterEl.appendChild(allBtn);
+
+// Per-brand buttons
+const brandBtns = {{}};
+allBrands.forEach(b => {{
+  const btn = document.createElement('button');
+  btn.textContent = b;
+  btn.style.cssText = `padding:4px 12px;border-radius:20px;border:1.5px solid ${{BRAND_COLORS[b]}};background:${{BRAND_COLORS[b]}};color:#fff;font-size:12px;cursor:pointer;font-weight:500`;
+  btn.dataset.brand = b;
+  btn.onclick = () => {{
+    if(activeBrands.includes(b) && activeBrands.length === 1) return; // keep at least 1
+    if(activeBrands.includes(b)) {{
+      activeBrands = activeBrands.filter(x=>x!==b);
+    }} else {{
+      activeBrands.push(b);
+    }}
+    updateChart();
+    updateButtons();
+  }};
+  brandBtns[b] = btn;
+  filterEl.appendChild(btn);
+}});
+
+function updateButtons(){{
+  const allActive = activeBrands.length === allBrands.length;
+  allBtn.style.background = allActive ? '#1a1a2e' : '#fff';
+  allBtn.style.color = allActive ? '#fff' : '#1a1a2e';
+  allBrands.forEach(b => {{
+    const btn = brandBtns[b];
+    const active = activeBrands.includes(b);
+    btn.style.background = active ? BRAND_COLORS[b] : '#fff';
+    btn.style.color = active ? '#fff' : BRAND_COLORS[b];
+  }});
+}}
+
+function updateChart(){{
+  trendChart.data.datasets = makeDatasets(activeBrands);
+  trendChart.update();
+}}
 
 // ── Regions table ──────────────────────────────────────────────────────
 const tbody = document.getElementById('region-tbody');
@@ -555,34 +601,7 @@ regionEntries.forEach(item=>{{
   </tr>`;
 }});
 
-// ── Movers ────────────────────────────────────────────────────────────
-const latestPlaces = latest.places || [];
-const prevPlaces   = (prev && prev.places) || [];
 
-function keyOf(p){{ return p.maps_url || `${{p.brand}}|${{p.place_name}}|${{p.address}}`; }}
-const prevMap = {{}};
-prevPlaces.forEach(p=>{{ prevMap[keyOf(p)] = p; }});
-
-const movers = latestPlaces
-  .filter(p => p.rating !== null && prevMap[keyOf(p)] && prevMap[keyOf(p)].rating !== null)
-  .map(p => ({{ ...p, delta: p.rating - prevMap[keyOf(p)].rating }}))
-  .filter(p => Math.abs(p.delta) >= 0.05);
-movers.sort((a,b)=>b.delta-a.delta);
-
-function moverRow(p){{
-  const sign = p.delta > 0 ? '+' : '';
-  const cls  = p.delta > 0 ? 'up' : 'dn';
-  return `<div class="mover-row">
-    <div class="mover-name">${{p.place_name}}<span class="mover-brand">${{p.brand}} · ${{p.reviews.toLocaleString('el-GR')}} κριτ.</span></div>
-    <span class="pill ${{cls}}">${{sign}}${{p.delta.toFixed(2)}}</span>
-  </div>`;
-}}
-const upEl = document.getElementById('movers-up');
-const dnEl = document.getElementById('movers-dn');
-const top5up = movers.filter(p=>p.delta>0).slice(0,8);
-const top5dn = movers.filter(p=>p.delta<0).slice(-8).reverse();
-upEl.innerHTML = top5up.length ? top5up.map(moverRow).join('') : '<div style="color:#94a3b8;font-size:12px">Δεν υπάρχουν δεδομένα</div>';
-dnEl.innerHTML = top5dn.length ? top5dn.map(moverRow).join('') : '<div style="color:#94a3b8;font-size:12px">Δεν υπάρχουν δεδομένα</div>';
 
 // ── Stores table ──────────────────────────────────────────────────────
 const fBrand  = document.getElementById('f-brand');
@@ -606,12 +625,37 @@ function regionOf(p){{
   return '';
 }}
 
+// ── Region inference (client-side, mirrors Python logic) ─────────────
+function inferRegion(name, address, lat, lng){{
+  const txt = (name + ' ' + address).toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const crete = ['κρητη','heraklion','irakleio','chania','rethymno','agios nikolaos','ierapetra','moires'];
+  if(crete.some(k=>txt.includes(k))) return 'ΚΡΗΤΗ';
+  if(lat && lng && lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
+  const westKw = ['κερκυρα','corfu','kerkira','kerkyra'];
+  if(westKw.some(k=>txt.includes(k))) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  const islandKw = ['ροδο','rhodes','παρος','paros','σαντορινη','thira','θηρα','τηνος','tinos',
+    'χιος','chios','κως','kos','μυτιληνη','lesvos','λεσβος','μυκονος','mykonos',
+    'ναξος','naxos','σαμος','samos','ικαρια','ikaria'];
+  if(islandKw.some(k=>txt.includes(k))) return 'Υπόλοιπα νησιά';
+  if(lat&&lng&&lat>=37.6&&lat<=38.4&&lng>=23.0&&lng<=24.2) return 'ΑΤΤΙΚΗ';
+  if(lat&&lng&&lat>=40.4&&lat<=40.9&&lng>=22.7&&lng<=23.2) return 'Θεσσαλονίκη';
+  if(lat&&lng&&lat>=36.2&&lat<=38.5&&lng>=21.0&&lng<=23.8) return 'Πελοπόννησος';
+  if(lat&&lng&&(lng<22.0||(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.8))) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  if(lat&&lat>=40.0) return 'Βόρεια Ελλάδα';
+  return 'Κεντρική Ελλάδα';
+}}
+
+// Pre-compute region for each place
+latestPlaces.forEach(p=>{{ p._region = inferRegion(p.place_name, p.address, p.lat, p.lng); }});
+
 function renderStores(){{
   const bFilter = fBrand.value;
   const rFilter = fRegion.value;
   const sFilter = fSearch.value.toLowerCase();
   let rows = latestPlaces.filter(p=>{{
     if(bFilter && p.brand !== bFilter) return false;
+    if(rFilter && p._region !== rFilter) return false;
     if(sFilter && !p.place_name.toLowerCase().includes(sFilter) && !p.address.toLowerCase().includes(sFilter)) return false;
     return true;
   }});
