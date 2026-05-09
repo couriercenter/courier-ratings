@@ -662,21 +662,42 @@ regionEntries.forEach(item=>{{
 
 // ── Region inference (client-side) — bbox-first, then latin keywords ──
 function inferRegion(name, address, lat, lng){{
-  // Primary: lat/lng bboxes (most reliable)
-  if(lat&&lng){{
-    if(lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
-    if(lat>=37.5&&lat<=38.5&&lng>=23.0&&lng<=24.5) return 'ΑΤΤΙΚΗ';
-    if(lat>=40.4&&lat<=40.9&&lng>=22.7&&lng<=23.2) return 'Θεσσαλονίκη';
-    if(lat>=36.2&&lat<=38.2&&lng>=21.0&&lng<=23.5) return 'Πελοπόννησος';
-    if(lng<22.0||(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.8)) return 'Δυτική Ελλάδα (με Κέρκυρα)';
-    // Islands by bbox
-    if(lat>=35.8&&lat<=36.6&&lng>=27.5&&lng<=28.5) return 'Υπόλοιπα νησιά'; // Ρόδος/Κως
-    if(lat>=36.3&&lat<=37.2&&lng>=25.0&&lng<=26.5) return 'Υπόλοιπα νησιά'; // Κυκλάδες
-    if(lat>=37.5&&lat<=38.6&&lng>=25.8&&lng<=27.2) return 'Υπόλοιπα νησιά'; // Χίος/Σάμος
-    if(lat>=38.9&&lat<=39.4&&lng>=25.8&&lng<=27.0) return 'Υπόλοιπα νησιά'; // Λέσβος
-    if(lat>=40.0) return 'Βόρεια Ελλάδα';
-    if(lat>=39.0&&lat<=40.0&&lng>=20.5&&lng<=23.5) return 'Κεντρική Ελλάδα';
-  }}
+  if(!lat || !lng) return 'Κεντρική Ελλάδα';
+  // Κρήτη
+  if(lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
+  // Δωδεκάνησα (Ρόδος/Κως)
+  if(lat>=35.8&&lat<=37.0&&lng>=26.8&&lng<=29.7) return 'Υπόλοιπα νησιά';
+  // Κυκλάδες
+  if(lat>=36.3&&lat<=37.9&&lng>=24.3&&lng<=26.5) return 'Υπόλοιπα νησιά';
+  // Χίος/Σάμος/Ικαρία
+  if(lat>=37.4&&lat<=38.7&&lng>=25.8&&lng<=27.2) return 'Υπόλοιπα νησιά';
+  // Λέσβος/Λήμνος/Θάσος/Σαμοθράκη
+  if(lat>=38.8&&lat<=40.8&&lng>=25.0&&lng<=26.5) return 'Υπόλοιπα νησιά';
+  // Σαρωνικά νησιά
+  if(lat>=37.1&&lat<=37.9&&lng>=23.0&&lng<=23.6) return 'Υπόλοιπα νησιά';
+  // Ιόνια νησιά εκτός Κέρκυρας
+  if(lat>=37.5&&lat<=38.9&&lng>=20.3&&lng<=21.1) return 'Υπόλοιπα νησιά';
+  // Κέρκυρα
+  if(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.3) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  // Αττική
+  if(lat>=37.7&&lat<=38.25&&lng>=23.2&&lng<=24.2) return 'ΑΤΤΙΚΗ';
+  // Θεσσαλονίκη
+  if(lat>=40.4&&lat<=40.85&&lng>=22.6&&lng<=23.3) return 'Θεσσαλονίκη';
+  // Βόρεια Ελλάδα
+  if(lat>=40.0) return 'Βόρεια Ελλάδα';
+  // Πάτρα/Αχαΐα/Αίγιο
+  if(lat>=37.9&&lat<=38.35&&lng>=21.6&&lng<=22.3) return 'Πελοπόννησος';
+  // Ναύπακτος/Μεσολόγγι/Αγρίνιο
+  if(lat>=38.2&&lat<=38.65&&lng>=21.0&&lng<=21.9) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  // Κεντρική Ελλάδα: Τρίκαλα, Καρδίτσα, Λάρισα, Βόλος, Λαμία, Χαλκίδα
+  if(lat>=38.3&&lat<=39.9&&lng>=21.5&&lng<=24.5) return 'Κεντρική Ελλάδα';
+  // Πελοπόννησος
+  if(lat<=38.1&&lng>=21.5&&lng<=23.2) return 'Πελοπόννησος';
+  // Δυτική Ελλάδα
+  if(lng<=22.5&&lat<=40.0) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  return 'Κεντρική Ελλάδα';
+}}
+
   // Fallback: latin keywords in address
   const addr = (address||'').toLowerCase();
   if(/crete|heraklion|iraklio|chania|rethymno|ierapetra/.test(addr)) return 'ΚΡΗΤΗ';
