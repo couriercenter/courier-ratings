@@ -449,7 +449,7 @@ def build_html(history):
   <div class="tbl-wrap"><table id="region-table">
     <thead><tr>
       <th>Περιοχή</th><th>Εταιρία</th>
-      <th>Weighted Avg</th><th>Κριτικές</th>
+      <th>Weighted Avg</th><th>Κριτικές</th><th>Καταστήματα</th>
       <th>vs {(prev or {}).get('label','προηγ.')}</th>
     </tr></thead>
     <tbody id="region-tbody"></tbody>
@@ -523,6 +523,10 @@ function deltaHtml(cur, prv){{
 }}
 
 // ── Summary cards ──────────────────────────────────────────────────────
+// Count stores per brand from latest places
+const storeCounts = {{}};
+allBrands.forEach(b=>{{ storeCounts[b] = (latest.places||[]).filter(p=>p.brand===b).length; }});
+
 const cardsEl = document.getElementById('summary-cards');
 allBrands.forEach(b=>{{
   const cur = latest.summary[b];
@@ -532,12 +536,13 @@ allBrands.forEach(b=>{{
   const dCls = d===null?'nc':d>0.005?'up':d<-0.005?'dn':'nc';
   const dTxt = d===null?'—':(d>0.005?'+':'')+d.toFixed(2);
   const cc = b==='Courier Center' ? ' cc' : '';
+  if(cur) cur.store_count = storeCounts[b] || null;
   const logoHtml = BRAND_LOGOS[b] ? `<img src="${{BRAND_LOGOS[b]}}" style="height:32px;object-fit:contain;margin-bottom:6px;display:block">` : `<div class="brand">${{b}}</div>`;
   cardsEl.innerHTML += `
     <div class="card${{cc}}">
       ${{logoHtml}}
       <div class="score" style="color:${{BRAND_COLORS[b]}}">${{cur.weighted_avg !== null ? cur.weighted_avg.toFixed(2) : '—'}}</div>
-      <div class="meta">${{cur.total_reviews ? cur.total_reviews.toLocaleString('el-GR') : '—'}} κριτικές</div>
+      <div class="meta">${{cur.total_reviews ? cur.total_reviews.toLocaleString('el-GR') : '—'}} κριτικές · ${{cur.store_count ? cur.store_count + ' καταστήματα' : '—'}}</div>
       <span class="delta ${{dCls}}">${{dTxt}}</span>
     </div>`;
 }});
@@ -654,6 +659,7 @@ regionEntries.forEach(item=>{{
     <td class="${{bcc}}">${{item.brand}}</td>
     <td><span class="pill ${{ratingClass(item.weighted_avg)}}">${{item.weighted_avg !== null ? item.weighted_avg.toFixed(2) : '—'}}</span></td>
     <td>${{item.total_reviews ? item.total_reviews.toLocaleString('el-GR') : '—'}}</td>
+    <td>${{item.store_count || '—'}}</td>
     <td>${{deltaHtml(item.weighted_avg, prvAvg)}}</td>
   </tr>`;
 }});
@@ -698,15 +704,6 @@ function inferRegion(name, address, lat, lng){{
   return 'Κεντρική Ελλάδα';
 }}
 
-  // Fallback: latin keywords in address
-  const addr = (address||'').toLowerCase();
-  if(/crete|heraklion|iraklio|chania|rethymno|ierapetra/.test(addr)) return 'ΚΡΗΤΗ';
-  if(/corfu|kerkira|kerkyra/.test(addr)) return 'Δυτική Ελλάδα (με Κέρκυρα)';
-  if(/rhodes|mykonos|santorini|thira|paros|naxos|samos|chios|lesvos|kos/.test(addr)) return 'Υπόλοιπα νησιά';
-  if(/thessaloniki|thessalonica/.test(addr)) return 'Θεσσαλονίκη';
-  if(/athens|attica|attiki/.test(addr)) return 'ΑΤΤΙΚΗ';
-  return 'Κεντρική Ελλάδα';
-}}
 
 // ── Stores setup ─────────────────────────────────────────────────────
 const latestPlaces = latest.places || [];
