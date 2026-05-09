@@ -453,7 +453,8 @@ def build_html(history):
     <thead><tr>
       <th id="th-region">Περιοχή</th><th id="th-company">Εταιρία</th>
       <th>Weighted Avg</th><th id="th-reviews">Κριτικές</th><th id="th-stores-col">Καταστήματα</th>
-      <th>vs {(prev or {}).get('label','προηγ.')}</th>
+      <th id="th-vs-prev">vs {(prev or {}).get('label','προηγ.')}</th>
+      <th id="th-vs-first">vs {snaps[0]['label'] if snaps else '01/01/2026'}</th>
     </tr></thead>
     <tbody id="region-tbody"></tbody>
   </table></div>
@@ -480,7 +481,8 @@ def build_html(history):
       <th id="th-address">Διεύθυνση</th>
       <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="reviews" style="cursor:pointer" id="th-s-reviews">Κριτικές <span class="sort-icon">↕</span></th>
-      <th>Δ vs {(prev or {}).get('label','προηγ.')}</th><th></th>
+      <th id="th-s-vs-prev">Δ vs {(prev or {}).get('label','προηγ.')}</th>
+      <th id="th-s-vs-first">Δ vs {snaps[0]['label'] if snaps else '01/01/2026'}</th><th></th>
     </tr></thead>
     <tbody id="stores-tbody"></tbody>
   </table></div>
@@ -510,6 +512,7 @@ const BRAND_LOGOS = {{
 const snaps   = HISTORY.snapshots;
 const latest  = snaps[snaps.length-1];
 const prev    = snaps.length >= 2 ? snaps[snaps.length-2] : null;
+const first   = snaps[0];
 const allBrands = Object.keys(BRAND_COLORS).sort((a,b) => {{
   const va = (latest && latest.summary[a]) ? (latest.summary[a].weighted_avg || 0) : 0;
   const vb = (latest && latest.summary[b]) ? (latest.summary[b].weighted_avg || 0) : 0;
@@ -671,8 +674,10 @@ function renderRegions() {{
     return (b.weighted_avg||0)-(a.weighted_avg||0);
   }});
   regionEntries.forEach(item=>{{
-    const prvVal = prev && prev.regions && prev.regions[`${{item.region}}||${{item.brand}}`];
-    const prvAvg = prvVal ? prvVal.weighted_avg : null;
+    const prvVal   = prev  && prev.regions  && prev.regions[`${{item.region}}||${{item.brand}}`];
+    const prvAvg   = prvVal  ? prvVal.weighted_avg  : null;
+    const firstVal = first && first.regions && first.regions[`${{item.region}}||${{item.brand}}`];
+    const firstAvg = firstVal ? firstVal.weighted_avg : null;
     if(item.region !== lastRegion){{
       const regionLabel = translateRegion(item.region);
       tbody.innerHTML += `<tr><td colspan="7" class="region-hdr">📍 ${{regionLabel}}</td></tr>`;
@@ -686,6 +691,7 @@ function renderRegions() {{
       <td>${{item.total_reviews ? item.total_reviews.toLocaleString('el-GR') : '—'}}</td>
       <td>${{item.store_count || '—'}}</td>
       <td>${{deltaHtml(item.weighted_avg, prvAvg)}}</td>
+      <td>${{deltaHtml(item.weighted_avg, firstAvg)}}</td>
     </tr>`;
   }});
 }}
@@ -865,6 +871,9 @@ function keyOf(p){{
 }}
 const prevMap = {{}};
 prevPlaces.forEach(p=>{{ prevMap[keyOf(p)] = p; }});
+const firstPlaces = first ? (first.places || []) : [];
+const firstMap = {{}};
+firstPlaces.forEach(p=>{{ firstMap[keyOf(p)] = p; }});
 latestPlaces.forEach(p=>{{ p._region = inferRegion(p.place_name, p.address, p.lat, p.lng); }});
 
 const fBrand      = document.getElementById('f-brand');
@@ -934,6 +943,7 @@ function renderStores(){{
       <td>${{p.rating !== null && p.rating !== undefined ? `<span class="pill ${{ratingClass(p.rating)}}">${{p.rating.toFixed(1)}}</span>` : '—'}}</td>
       <td>${{p.reviews.toLocaleString('el-GR')}}</td>
       <td>${{dHtml}}</td>
+      <td>${{firstMap[keyOf(p)] && firstMap[keyOf(p)].rating ? deltaHtml(p.rating, firstMap[keyOf(p)].rating) : '<span class="pill nc">—</span>'}}</td>
       <td>${{mapLink}}</td>
     </tr>`;
   }}).join('');
