@@ -516,7 +516,12 @@ const trendChart = new Chart(document.getElementById('trend-chart'),{{
     responsive:true, maintainAspectRatio:true,
     interaction:{{mode:'index', intersect:false}},
     plugins:{{legend:{{display:false}},
-              tooltip:{{callbacks:{{label:ctx=>`${{ctx.dataset.label}}: ${{ctx.raw !== null ? ctx.raw.toFixed(2) : '—'}}`}}}}}},
+              tooltip:{{
+                callbacks:{{
+                  label:ctx=>`${{ctx.dataset.label}}: ${{ctx.raw !== null ? ctx.raw.toFixed(2) : '—'}}`,
+                }},
+                itemSort: (a,b) => (b.raw||0) - (a.raw||0),
+              }}}},
     scales:{{y:{{min:2.0, max:5.0, ticks:{{stepSize:0.25, font:{{size:11}}}}}},
               x:{{ticks:{{font:{{size:11}}}}}}}}
   }}
