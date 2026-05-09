@@ -16,7 +16,7 @@ import requests
 import pandas as pd
 
 # ─────────────────────────── CONFIG ───────────────────────────────────────
-API_KEY     = os.environ.get("PLACES_API_KEY", "AIzaSyClyJnmfpRi7GJ8_6HXBBcvo2i4S-pycT4")
+API_KEY     = os.environ.get("PLACES_API_KEY", "")  # Βάλε το key στο GitHub Secret: PLACES_API_KEY
 REPO_DIR    = os.path.dirname(os.path.abspath(__file__))   # same dir as this script
 HISTORY_FILE = os.path.join(REPO_DIR, "history.json")
 REPORT_FILE  = os.path.join(REPO_DIR, "index.html")
