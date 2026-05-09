@@ -309,12 +309,36 @@ def save_history(h):
         json.dump(h, f, ensure_ascii=False, indent=2)
 
 def append_snapshot(history, date_str, label, summary, regions, places):
-    # Remove existing snapshot for same date
-    history["snapshots"] = [s for s in history["snapshots"] if s["date"] != date_str]
-    history["snapshots"].append({
+    from datetime import date as _date
+    MIN_DAYS = 6
+
+    new_snap = {
         "date": date_str, "label": label,
         "summary": summary, "regions": regions, "places": places,
-    })
+    }
+
+    if not history["snapshots"]:
+        history["snapshots"].append(new_snap)
+        return history
+
+    latest_date = max(s["date"] for s in history["snapshots"])
+    d1 = _date.fromisoformat(latest_date)
+    d2 = _date.fromisoformat(date_str)
+    diff = (d2 - d1).days
+
+    # Never replace a Sunday snapshot (scheduled run)
+    latest_is_sunday = d1.weekday() == 6  # 6 = Sunday
+
+    if diff < MIN_DAYS and not latest_is_sunday:
+        # Replace the latest snapshot with the newer one
+        history["snapshots"] = [s for s in history["snapshots"] if s["date"] != latest_date]
+        history["snapshots"].append(new_snap)
+        print(f"[HISTORY] Replaced {latest_date} → {date_str} ({diff} days, under {MIN_DAYS})")
+    else:
+        # Enough time passed OR latest was a Sunday — add as new snapshot
+        history["snapshots"].append(new_snap)
+        print(f"[HISTORY] Added {date_str} ({diff} days since {latest_date}, sunday={latest_is_sunday})")
+
     history["snapshots"].sort(key=lambda s: s["date"])
     return history
 
