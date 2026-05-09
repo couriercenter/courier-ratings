@@ -426,30 +426,33 @@ def build_html(history):
 <div class="topbar">
   <div>
     <div class="ts">Courier Ratings Dashboard</div>
-    <div class="ts" style="font-size:13px;font-weight:600;margin-top:2px">Τελευταία ενημέρωση: {now_label}</div>
+    <div class="ts" style="font-size:13px;font-weight:600;margin-top:2px" id="topbar-updated">Τελευταία ενημέρωση: {now_label}</div>
   </div>
-  <div class="ts" id="run-ts"></div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="ts" id="run-ts"></div>
+    <button id="lang-btn" onclick="toggleLang()" style="padding:5px 16px;border-radius:20px;border:1.5px solid rgba(255,255,255,0.4);background:transparent;color:#fff;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:.5px">EN</button>
+  </div>
 </div>
 
 <div class="container">
 
   <!-- Summary cards -->
-  <h2>Συνολική Αξιολόγηση (Weighted Average)</h2>
+  <h2 id="h-summary">Συνολική Αξιολόγηση (Weighted Average)</h2>
   <div class="cards" id="summary-cards"></div>
 
   <!-- Trend chart -->
-  <h2>Τάση Weighted Average (Πανελλαδικά)</h2>
+  <h2 id="h-trend">Τάση Weighted Average (Πανελλαδικά)</h2>
   <div class="chart-wrap">
     <div id="brand-filter" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px"></div>
     <canvas id="trend-chart"></canvas>
   </div>
 
   <!-- Regions table -->
-  <h2>Αποτελέσματα ανά Περιοχή</h2>
+  <h2 id="h-regions">Αποτελέσματα ανά Περιοχή</h2>
   <div class="tbl-wrap"><table id="region-table">
     <thead><tr>
-      <th>Περιοχή</th><th>Εταιρία</th>
-      <th>Weighted Avg</th><th>Κριτικές</th><th>Καταστήματα</th>
+      <th id="th-region">Περιοχή</th><th id="th-company">Εταιρία</th>
+      <th>Weighted Avg</th><th id="th-reviews">Κριτικές</th><th id="th-stores-col">Καταστήματα</th>
       <th>vs {(prev or {}).get('label','προηγ.')}</th>
     </tr></thead>
     <tbody id="region-tbody"></tbody>
@@ -458,18 +461,25 @@ def build_html(history):
 
 
   <!-- All stores -->
-  <h2>Όλα τα Καταστήματα</h2>
+  <h2 id="h-stores">Όλα τα Καταστήματα</h2>
   <div class="filter-bar">
-    <select id="f-brand"><option value="">Όλες οι εταιρίες</option></select>
-    <select id="f-region"><option value="">Όλες οι περιοχές</option></select>
-    <input id="f-search" placeholder="Αναζήτηση ονόματος / διεύθυνσης…">
+    <select id="f-brand"><option value="" id="opt-all-brands">Όλες οι εταιρίες</option></select>
+    <select id="f-region"><option value="" id="opt-all-regions">Όλες οι περιοχές</option></select>
+    <input id="f-search" placeholder="Αναζήτηση ονόματος / διεύθυνσης…" data-placeholder-el="Αναζήτηση ονόματος / διεύθυνσης…" data-placeholder-en="Search by name / address…">
+    <select id="f-pagesize" style="min-width:80px">
+      <option value="50" selected>50</option>
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="999999">Όλα</option>
+    </select>
   </div>
+  <div id="pagination" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:13px;color:var(--color-text-secondary,#64748b)"></div>
   <div class="tbl-wrap"><table>
     <thead><tr>
-      <th class="sortable" data-col="brand" style="cursor:pointer">Εταιρία <span class="sort-icon">↕</span></th>
-      <th>Διεύθυνση</th>
+      <th class="sortable" data-col="brand" style="cursor:pointer" id="th-s-company">Εταιρία <span class="sort-icon">↕</span></th>
+      <th id="th-address">Διεύθυνση</th>
       <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
-      <th class="sortable" data-col="reviews" style="cursor:pointer">Κριτικές <span class="sort-icon">↕</span></th>
+      <th class="sortable" data-col="reviews" style="cursor:pointer" id="th-s-reviews">Κριτικές <span class="sort-icon">↕</span></th>
       <th>Δ vs {(prev or {}).get('label','προηγ.')}</th><th></th>
     </tr></thead>
     <tbody id="stores-tbody"></tbody>
@@ -649,32 +659,157 @@ function updateChart(){{
 }}
 
 // ── Regions table ──────────────────────────────────────────────────────
-const tbody = document.getElementById('region-tbody');
-let lastRegion = null;
-const regionEntries = Object.values(latest.regions);
-regionEntries.sort((a,b)=>{{
-  const ra = REGION_ORDER.indexOf(a.region), rb = REGION_ORDER.indexOf(b.region);
-  const ord = (ra===-1?99:ra) - (rb===-1?99:rb);
-  if(ord!==0) return ord;
-  return (b.weighted_avg||0)-(a.weighted_avg||0);
-}});
-regionEntries.forEach(item=>{{
-  const prvVal = prev && prev.regions && prev.regions[`${{item.region}}||${{item.brand}}`];
-  const prvAvg = prvVal ? prvVal.weighted_avg : null;
-  if(item.region !== lastRegion){{
-    tbody.innerHTML += `<tr><td colspan="7" class="region-hdr">📍 ${{item.region}}</td></tr>`;
-    lastRegion = item.region;
-  }}
-  const bcc = item.brand==='Courier Center'?' brand-cc':'';
-  tbody.innerHTML += `<tr>
-    <td></td>
-    <td class="${{bcc}}">${{item.brand}}</td>
-    <td><span class="pill ${{ratingClass(item.weighted_avg)}}">${{item.weighted_avg !== null ? item.weighted_avg.toFixed(2) : '—'}}</span></td>
-    <td>${{item.total_reviews ? item.total_reviews.toLocaleString('el-GR') : '—'}}</td>
-    <td>${{item.store_count || '—'}}</td>
-    <td>${{deltaHtml(item.weighted_avg, prvAvg)}}</td>
-  </tr>`;
-}});
+function renderRegions() {{
+  const tbody = document.getElementById('region-tbody');
+  tbody.innerHTML = '';
+  let lastRegion = null;
+  const regionEntries = Object.values(latest.regions);
+  regionEntries.sort((a,b)=>{{
+    const ra = REGION_ORDER.indexOf(a.region), rb = REGION_ORDER.indexOf(b.region);
+    const ord = (ra===-1?99:ra) - (rb===-1?99:rb);
+    if(ord!==0) return ord;
+    return (b.weighted_avg||0)-(a.weighted_avg||0);
+  }});
+  regionEntries.forEach(item=>{{
+    const prvVal = prev && prev.regions && prev.regions[`${{item.region}}||${{item.brand}}`];
+    const prvAvg = prvVal ? prvVal.weighted_avg : null;
+    if(item.region !== lastRegion){{
+      const regionLabel = translateRegion(item.region);
+      tbody.innerHTML += `<tr><td colspan="7" class="region-hdr">📍 ${{regionLabel}}</td></tr>`;
+      lastRegion = item.region;
+    }}
+    const bcc = item.brand==='Courier Center'?' brand-cc':'';
+    tbody.innerHTML += `<tr>
+      <td></td>
+      <td class="${{bcc}}">${{item.brand}}</td>
+      <td><span class="pill ${{ratingClass(item.weighted_avg)}}">${{item.weighted_avg !== null ? item.weighted_avg.toFixed(2) : '—'}}</span></td>
+      <td>${{item.total_reviews ? item.total_reviews.toLocaleString('el-GR') : '—'}}</td>
+      <td>${{item.store_count || '—'}}</td>
+      <td>${{deltaHtml(item.weighted_avg, prvAvg)}}</td>
+    </tr>`;
+  }});
+}}
+const TRANSLATIONS = {{
+  el: {{
+    langBtn: 'EN',
+    updated: 'Τελευταία ενημέρωση:',
+    hSummary: 'Συνολική Αξιολόγηση (Weighted Average)',
+    hTrend: 'Τάση Weighted Average (Πανελλαδικά)',
+    hRegions: 'Αποτελέσματα ανά Περιοχή',
+    hStores: 'Όλα τα Καταστήματα',
+    thRegion: 'Περιοχή', thCompany: 'Εταιρία',
+    thReviews: 'Κριτικές', thStoresCol: 'Καταστήματα',
+    thAddress: 'Διεύθυνση', thSCompany: 'Εταιρία', thSReviews: 'Κριτικές',
+    allBrands: 'Όλες οι εταιρίες', allRegions: 'Όλες οι περιοχές',
+    searchPlaceholder: 'Αναζήτηση ονόματος / διεύθυνσης…',
+    reviews: 'κριτικές', stores: 'καταστήματα',
+    cardReviews: (n) => `${{n}} κριτικές`,
+    cardStores: (n) => `${{n}} καταστήματα`,
+    mapsLink: 'Maps ↗',
+    footerText: 'Τα δεδομένα αντλούνται αυτόματα από το Google Places API και δεν υφίστανται επεξεργασία. Ο κώδικας συλλογής δεδομένων είναι δημόσια διαθέσιμος:',
+    regions: {{
+      'ΑΤΤΙΚΗ': 'ΑΤΤΙΚΗ',
+      'Κεντρική Ελλάδα': 'Κεντρική Ελλάδα',
+      'Θεσσαλονίκη': 'Θεσσαλονίκη',
+      'Βόρεια Ελλάδα': 'Βόρεια Ελλάδα',
+      'Δυτική Ελλάδα (με Κέρκυρα)': 'Δυτική Ελλάδα (με Κέρκυρα)',
+      'Πελοπόννησος': 'Πελοπόννησος',
+      'ΚΡΗΤΗ': 'ΚΡΗΤΗ',
+      'Υπόλοιπα νησιά': 'Υπόλοιπα νησιά',
+    }},
+  }},
+  en: {{
+    langBtn: 'ΕΛ',
+    updated: 'Last updated:',
+    hSummary: 'Overall Rating (Weighted Average)',
+    hTrend: 'Weighted Average Trend (Nationwide)',
+    hRegions: 'Results by Region',
+    hStores: 'All Branches',
+    thRegion: 'Region', thCompany: 'Company',
+    thReviews: 'Reviews', thStoresCol: 'Branches',
+    thAddress: 'Address', thSCompany: 'Company', thSReviews: 'Reviews',
+    allBrands: 'All companies', allRegions: 'All regions',
+    searchPlaceholder: 'Search by name / address…',
+    reviews: 'reviews', stores: 'branches',
+    cardReviews: (n) => `${{n}} reviews`,
+    cardStores: (n) => `${{n}} branches`,
+    mapsLink: 'Maps ↗',
+    footerText: 'Data is sourced automatically from the Google Places API and is not processed or filtered. The data collection script is publicly available:',
+    regions: {{
+      'ΑΤΤΙΚΗ': 'Attica',
+      'Κεντρική Ελλάδα': 'Central Greece',
+      'Θεσσαλονίκη': 'Thessaloniki',
+      'Βόρεια Ελλάδα': 'Northern Greece',
+      'Δυτική Ελλάδα (με Κέρκυρα)': 'Western Greece (incl. Corfu)',
+      'Πελοπόννησος': 'Peloponnese',
+      'ΚΡΗΤΗ': 'CRETE',
+      'Υπόλοιπα νησιά': 'Other Islands',
+    }},
+  }},
+}};
+
+let currentLang = 'el';
+
+function translateRegion(r) {{
+  return TRANSLATIONS[currentLang].regions[r] || r;
+}}
+
+function applyLang(lang) {{
+  const t = TRANSLATIONS[lang];
+  currentLang = lang;
+  // Topbar
+  document.getElementById('lang-btn').textContent = t.langBtn;
+  const upd = document.getElementById('topbar-updated');
+  if(upd) upd.textContent = t.updated + upd.textContent.split(':').slice(1).join(':');
+  // Headings
+  document.getElementById('h-summary').textContent = t.hSummary;
+  document.getElementById('h-trend').textContent = t.hTrend;
+  document.getElementById('h-regions').textContent = t.hRegions;
+  document.getElementById('h-stores').textContent = t.hStores;
+  // Region table headers
+  document.getElementById('th-region').textContent = t.thRegion;
+  document.getElementById('th-company').textContent = t.thCompany;
+  document.getElementById('th-reviews').textContent = t.thReviews;
+  document.getElementById('th-stores-col').textContent = t.thStoresCol;
+  // Stores table headers
+  document.getElementById('th-address').textContent = t.thAddress;
+  const thSC = document.getElementById('th-s-company');
+  if(thSC) thSC.innerHTML = t.thSCompany + ' <span class="sort-icon">↕</span>';
+  const thSR = document.getElementById('th-s-reviews');
+  if(thSR) thSR.innerHTML = t.thReviews + ' <span class="sort-icon">↕</span>';
+  // Filters
+  document.getElementById('opt-all-brands').textContent = t.allBrands;
+  document.getElementById('opt-all-regions').textContent = t.allRegions;
+  document.getElementById('f-search').placeholder = t.searchPlaceholder;
+  // Summary cards - update meta text
+  document.querySelectorAll('.card .meta').forEach(el => {{
+    const text = el.textContent;
+    const nums = text.match(/[\d.,]+/g) || [];
+    if(nums.length >= 2) {{
+      el.textContent = t.cardReviews(nums[0]) + ' · ' + t.cardStores(nums[1]);
+    }}
+  }});
+  // Redraw region table with translated region names
+  renderRegions();
+  // Redraw stores
+  renderStores();
+  // Footer
+  const footer = document.querySelector('.footer-text');
+  if(footer) footer.textContent = t.footerText;
+  // Region filter options
+  const fRegion = document.getElementById('f-region');
+  Array.from(fRegion.options).forEach(opt => {{
+    if(opt.value && TRANSLATIONS[lang].regions[opt.value]) {{
+      opt.textContent = TRANSLATIONS[lang].regions[opt.value];
+    }}
+  }});
+}}
+
+function toggleLang() {{
+  applyLang(currentLang === 'el' ? 'en' : 'el');
+}}
+
+renderRegions();
 
 
 
@@ -735,7 +870,10 @@ latestPlaces.forEach(p=>{{ p._region = inferRegion(p.place_name, p.address, p.la
 const fBrand      = document.getElementById('f-brand');
 const fRegion     = document.getElementById('f-region');
 const fSearch     = document.getElementById('f-search');
+const fPageSize   = document.getElementById('f-pagesize');
 const storesTbody = document.getElementById('stores-tbody');
+const pagination  = document.getElementById('pagination');
+let currentPage   = 1;
 // Ensure first "Όλα" options have empty value
 fBrand.options[0].value = '';
 fRegion.options[0].value = '';
@@ -746,6 +884,7 @@ function renderStores(){{
   const bFilter = fBrand.value;
   const rFilter = fRegion.value;
   const sFilter = fSearch.value.toLowerCase();
+  const pageSize = parseInt(fPageSize.value);
   let rows = latestPlaces.filter(p=>{{
     if(bFilter && bFilter !== '' && p.brand !== bFilter) return false;
     if(rFilter && rFilter !== '' && p._region !== rFilter) return false;
@@ -754,12 +893,37 @@ function renderStores(){{
   }});
   rows.sort((a,b) => {{
     let va, vb;
-    if(sortCol === 'brand')      {{ va = a.brand||''; vb = b.brand||''; return va.localeCompare(vb) * sortDir; }}
-    if(sortCol === 'rating')     {{ va = a.rating||0; vb = b.rating||0; }}
-    else                         {{ va = a.reviews||0; vb = b.reviews||0; }}
+    if(sortCol === 'brand')  {{ va = a.brand||''; vb = b.brand||''; return va.localeCompare(vb) * sortDir; }}
+    if(sortCol === 'rating') {{ va = a.rating||0; vb = b.rating||0; }}
+    else                     {{ va = a.reviews||0; vb = b.reviews||0; }}
     return (va - vb) * sortDir;
   }});
-  storesTbody.innerHTML = rows.slice(0,200).map(p=>{{
+
+  const totalRows  = rows.length;
+  const totalPages = pageSize >= 999999 ? 1 : Math.ceil(totalRows / pageSize);
+  if(currentPage > totalPages) currentPage = 1;
+  const start = (currentPage - 1) * pageSize;
+  const pageRows = rows.slice(start, pageSize >= 999999 ? undefined : start + pageSize);
+
+  // Pagination controls
+  if(totalPages <= 1) {{
+    pagination.innerHTML = `<span style="color:#94a3b8">${{totalRows.toLocaleString()}} αποτελέσματα</span>`;
+  }} else {{
+    let btns = `<span style="color:#94a3b8;margin-right:4px">${{totalRows.toLocaleString()}} αποτελέσματα</span>`;
+    btns += `<button onclick="goPage(${{currentPage-1}})" ${{currentPage===1?'disabled':''}} style="padding:3px 10px;border-radius:6px;border:.5px solid #d1d5db;background:#fff;cursor:pointer;font-size:12px">‹</button>`;
+    // Show page numbers with ellipsis
+    for(let p=1; p<=totalPages; p++) {{
+      if(p===1||p===totalPages||Math.abs(p-currentPage)<=1) {{
+        btns += `<button onclick="goPage(${{p}})" style="padding:3px 10px;border-radius:6px;border:.5px solid #d1d5db;background:${{p===currentPage?'#1a1a2e':'#fff'}};color:${{p===currentPage?'#fff':'inherit'}};cursor:pointer;font-size:12px">${{p}}</button>`;
+      }} else if(Math.abs(p-currentPage)===2) {{
+        btns += `<span style="font-size:12px;color:#94a3b8">…</span>`;
+      }}
+    }}
+    btns += `<button onclick="goPage(${{currentPage+1}})" ${{currentPage===totalPages?'disabled':''}} style="padding:3px 10px;border-radius:6px;border:.5px solid #d1d5db;background:#fff;cursor:pointer;font-size:12px">›</button>`;
+    pagination.innerHTML = btns;
+  }}
+
+  storesTbody.innerHTML = pageRows.map(p=>{{
     const prv = prevMap[keyOf(p)];
     const dHtml = prv && prv.rating ? deltaHtml(p.rating, prv.rating) : '<span class="pill nc">—</span>';
     const mapLink = p.maps_url ? `<a href="${{p.maps_url}}" target="_blank" style="color:#3b82f6;font-size:11px">Maps ↗</a>` : '';
@@ -774,9 +938,16 @@ function renderStores(){{
     </tr>`;
   }}).join('');
 }}
-fBrand.addEventListener('change', renderStores);
-fRegion.addEventListener('change', renderStores);
-fSearch.addEventListener('input', renderStores);
+
+function goPage(p) {{
+  currentPage = p;
+  renderStores();
+  document.getElementById('h-stores').scrollIntoView({{behavior:'smooth', block:'start'}});
+}}
+fBrand.addEventListener('change', () => {{ currentPage=1; renderStores(); }});
+fRegion.addEventListener('change', () => {{ currentPage=1; renderStores(); }});
+fSearch.addEventListener('input', () => {{ currentPage=1; renderStores(); }});
+fPageSize.addEventListener('change', () => {{ currentPage=1; renderStores(); }});
 
 // ── Smart search helper ───────────────────────────────────────────────
 function norm(s) {{
@@ -841,11 +1012,13 @@ fRegion.addEventListener('change', () => {{ if(fRegion.value === '') fRegion.sel
 renderStores();
 
 document.getElementById('run-ts').textContent = 'Generated: ' + new Date().toLocaleString('el-GR');
+
+// ── i18n ──────────────────────────────────────────────────────────────
 </script>
 
 <div style="text-align:center;padding:2rem 1rem 1.5rem;font-size:12px;color:#94a3b8;border-top:0.5px solid #e8ecf0;margin-top:2rem">
-  Τα δεδομένα αντλούνται αυτόματα από το Google Places API και δεν υφίστανται επεξεργασία.
-  Ο κώδικας συλλογής δεδομένων είναι δημόσια διαθέσιμος:<br>
+  <span class="footer-text">Τα δεδομένα αντλούνται αυτόματα από το Google Places API και δεν υφίστανται επεξεργασία.
+  Ο κώδικας συλλογής δεδομένων είναι δημόσια διαθέσιμος:</span><br>
   <a href="https://github.com/couriercenter/courier-ratings/blob/main/courier_ratings.py"
      target="_blank"
      style="color:#3b82f6;text-decoration:none;font-weight:500">
