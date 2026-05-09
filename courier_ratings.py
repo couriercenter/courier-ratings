@@ -700,7 +700,7 @@ function renderStores(){{
   let rows = latestPlaces.filter(p=>{{
     if(bFilter && bFilter !== '' && p.brand !== bFilter) return false;
     if(rFilter && rFilter !== '' && p._region !== rFilter) return false;
-    if(sFilter && !p.place_name.toLowerCase().includes(sFilter) && !p.address.toLowerCase().includes(sFilter)) return false;
+    if(sFilter && !smartMatch(sFilter, p.place_name) && !smartMatch(sFilter, p.address)) return false;
     return true;
   }});
   rows.sort((a,b) => {{
@@ -728,6 +728,56 @@ function renderStores(){{
 fBrand.addEventListener('change', renderStores);
 fRegion.addEventListener('change', renderStores);
 fSearch.addEventListener('input', renderStores);
+
+// ── Smart search helper ───────────────────────────────────────────────
+const GREEKLISH = {{
+  a:'α',e:'ε',i:'ι|η|υ',o:'ο|ω',u:'ου|υ',b:'β|μπ',g:'γ',d:'δ|ντ',
+  z:'ζ',th:'θ',k:'κ',l:'λ',m:'μ',n:'ν',x:'ξ',p:'π',r:'ρ',
+  s:'σ|ς',t:'τ',f:'φ',h:'χ|η',ps:'ψ',ch:'χ',v:'β|υ',
+  ai:'αι',ei:'ει',oi:'οι',ou:'ου',au:'αυ',eu:'ευ',
+  nt:'ντ',mp:'μπ',gk:'γκ',ts:'τσ',tz:'τζ'
+}};
+
+function normalizeText(s) {{
+  if(!s) return '';
+  // Remove accents/tonos
+  return s.toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .normalize('NFC');
+}}
+
+function toSearchRegex(query) {{
+  query = query.toLowerCase().trim();
+  // Build pattern that matches both greek and greeklish
+  // First normalize the query (remove accents)
+  const norm = normalizeText(query);
+  // Escape special regex chars
+  const escaped = norm.replace(/[.*+?^${{}}()|[\]\\]/g, '\\$&');
+  return new RegExp(escaped, 'i');
+}}
+
+function smartMatch(query, text) {{
+  if(!query || !text) return !query;
+  const normQuery = normalizeText(query);
+  const normText  = normalizeText(text);
+  if(normText.includes(normQuery)) return true;
+  // Greeklish: convert query to possible greek
+  let greek = normQuery;
+  greek = greek.replace(/th/g,'θ').replace(/ps/g,'ψ').replace(/ch/g,'χ')
+               .replace(/ou/g,'ου').replace(/tz/g,'τζ').replace(/ts/g,'τσ')
+               .replace(/mp/g,'μπ').replace(/nt/g,'ντ').replace(/gk/g,'γκ')
+               .replace(/ai/g,'αι').replace(/ei/g,'ει').replace(/oi/g,'οι')
+               .replace(/a/g,'α').replace(/e/g,'ε').replace(/i/g,'ι')
+               .replace(/o/g,'ο').replace(/u/g,'υ').replace(/b/g,'μπ')
+               .replace(/g/g,'γ').replace(/d/g,'δ').replace(/z/g,'ζ')
+               .replace(/k/g,'κ').replace(/l/g,'λ').replace(/m/g,'μ')
+               .replace(/n/g,'ν').replace(/x/g,'ξ').replace(/p/g,'π')
+               .replace(/r/g,'ρ').replace(/s/g,'σ').replace(/t/g,'τ')
+               .replace(/f/g,'φ').replace(/h/g,'η').replace(/v/g,'β')
+               .replace(/y/g,'υ').replace(/w/g,'ω').replace(/c/g,'κ');
+  if(normText.includes(greek)) return true;
+  return false;
+}}
 
 // ── Sorting ───────────────────────────────────────────────────────────
 let sortCol = 'reviews';
