@@ -53028,38 +53028,38 @@
         "ACS": {
           "weighted_avg": 3.41,
           "simple_avg": 3.88,
-          "total_reviews": 192255,
-          "store_count": 266
+          "total_reviews": 192651,
+          "store_count": 267
         },
         "Courier Center": {
           "weighted_avg": 4.01,
           "simple_avg": 4.37,
-          "total_reviews": 48318,
+          "total_reviews": 48320,
           "store_count": 89
         },
         "EASYMAIL": {
           "weighted_avg": 3.75,
           "simple_avg": 3.62,
-          "total_reviews": 21056,
+          "total_reviews": 21057,
           "store_count": 57
         },
         "SPEEDEX": {
           "weighted_avg": 2.78,
-          "simple_avg": 3.4,
-          "total_reviews": 44169,
-          "store_count": 136
+          "simple_avg": 3.39,
+          "total_reviews": 44119,
+          "store_count": 134
         },
         "Γενική Ταχυδρομική": {
           "weighted_avg": 2.55,
           "simple_avg": 3.22,
-          "total_reviews": 69318,
-          "store_count": 227
+          "total_reviews": 69315,
+          "store_count": 226
         },
         "ΕΛΤΑ Courier": {
           "weighted_avg": 2.74,
-          "simple_avg": 3.23,
-          "total_reviews": 58903,
-          "store_count": 339
+          "simple_avg": 3.21,
+          "total_reviews": 58791,
+          "store_count": 338
         }
       },
       "regions": {
@@ -53067,7 +53067,7 @@
           "region": "ΑΤΤΙΚΗ",
           "brand": "ACS",
           "weighted_avg": 3.08,
-          "total_reviews": 78121,
+          "total_reviews": 78124,
           "store_count": 40
         },
         "ΑΤΤΙΚΗ||Courier Center": {
@@ -53081,7 +53081,7 @@
           "region": "ΑΤΤΙΚΗ",
           "brand": "EASYMAIL",
           "weighted_avg": 3.8,
-          "total_reviews": 15654,
+          "total_reviews": 15655,
           "store_count": 5
         },
         "ΑΤΤΙΚΗ||SPEEDEX": {
@@ -53095,15 +53095,15 @@
           "region": "ΑΤΤΙΚΗ",
           "brand": "Γενική Ταχυδρομική",
           "weighted_avg": 2.2,
-          "total_reviews": 27874,
+          "total_reviews": 27887,
           "store_count": 32
         },
         "ΑΤΤΙΚΗ||ΕΛΤΑ Courier": {
           "region": "ΑΤΤΙΚΗ",
           "brand": "ΕΛΤΑ Courier",
-          "weighted_avg": 2.42,
-          "total_reviews": 21401,
-          "store_count": 35
+          "weighted_avg": 2.43,
+          "total_reviews": 21259,
+          "store_count": 34
         },
         "Βόρεια Ελλάδα||ACS": {
           "region": "Βόρεια Ελλάδα",
@@ -53144,8 +53144,8 @@
           "region": "Βόρεια Ελλάδα",
           "brand": "ΕΛΤΑ Courier",
           "weighted_avg": 3.28,
-          "total_reviews": 6171,
-          "store_count": 78
+          "total_reviews": 6170,
+          "store_count": 77
         },
         "Δυτική Ελλάδα (με Κέρκυρα)||ACS": {
           "region": "Δυτική Ελλάδα (με Κέρκυρα)",
@@ -53186,21 +53186,21 @@
           "region": "Δυτική Ελλάδα (με Κέρκυρα)",
           "brand": "ΕΛΤΑ Courier",
           "weighted_avg": 2.49,
-          "total_reviews": 4346,
-          "store_count": 43
+          "total_reviews": 4377,
+          "store_count": 45
         },
         "Θεσσαλονίκη||ACS": {
           "region": "Θεσσαλονίκη",
           "brand": "ACS",
           "weighted_avg": 3.33,
-          "total_reviews": 23237,
+          "total_reviews": 23340,
           "store_count": 19
         },
         "Θεσσαλονίκη||Courier Center": {
           "region": "Θεσσαλονίκη",
           "brand": "Courier Center",
           "weighted_avg": 3.88,
-          "total_reviews": 3623,
+          "total_reviews": 3625,
           "store_count": 8
         },
         "Θεσσαλονίκη||EASYMAIL": {
@@ -53220,9 +53220,9 @@
         "Θεσσαλονίκη||Γενική Ταχυδρομική": {
           "region": "Θεσσαλονίκη",
           "brand": "Γενική Ταχυδρομική",
-          "weighted_avg": 3.08,
-          "total_reviews": 7328,
-          "store_count": 29
+          "weighted_avg": 3.07,
+          "total_reviews": 7312,
+          "store_count": 28
         },
         "Θεσσαλονίκη||ΕΛΤΑ Courier": {
           "region": "Θεσσαλονίκη",
@@ -53235,7 +53235,7 @@
           "region": "ΚΡΗΤΗ",
           "brand": "ACS",
           "weighted_avg": 3.72,
-          "total_reviews": 13652,
+          "total_reviews": 13653,
           "store_count": 21
         },
         "ΚΡΗΤΗ||Courier Center": {
@@ -53270,8 +53270,8 @@
           "region": "ΚΡΗΤΗ",
           "brand": "ΕΛΤΑ Courier",
           "weighted_avg": 2.59,
-          "total_reviews": 4128,
-          "store_count": 27
+          "total_reviews": 4116,
+          "store_count": 26
         },
         "Κεντρική Ελλάδα||ACS": {
           "region": "Κεντρική Ελλάδα",
@@ -53311,9 +53311,9 @@
         "Κεντρική Ελλάδα||ΕΛΤΑ Courier": {
           "region": "Κεντρική Ελλάδα",
           "brand": "ΕΛΤΑ Courier",
-          "weighted_avg": 3.09,
-          "total_reviews": 4868,
-          "store_count": 48
+          "weighted_avg": 3.08,
+          "total_reviews": 4853,
+          "store_count": 46
         },
         "Πελοπόννησος||ACS": {
           "region": "Πελοπόννησος",
@@ -53340,8 +53340,8 @@
           "region": "Πελοπόννησος",
           "brand": "SPEEDEX",
           "weighted_avg": 3.31,
-          "total_reviews": 1781,
-          "store_count": 13
+          "total_reviews": 1778,
+          "store_count": 12
         },
         "Πελοπόννησος||Γενική Ταχυδρομική": {
           "region": "Πελοπόννησος",
@@ -53353,16 +53353,16 @@
         "Πελοπόννησος||ΕΛΤΑ Courier": {
           "region": "Πελοπόννησος",
           "brand": "ΕΛΤΑ Courier",
-          "weighted_avg": 2.39,
-          "total_reviews": 5350,
-          "store_count": 36
+          "weighted_avg": 2.4,
+          "total_reviews": 5383,
+          "store_count": 39
         },
         "Υπόλοιπα νησιά||ACS": {
           "region": "Υπόλοιπα νησιά",
           "brand": "ACS",
-          "weighted_avg": 3.21,
-          "total_reviews": 16284,
-          "store_count": 38
+          "weighted_avg": 3.23,
+          "total_reviews": 16573,
+          "store_count": 39
         },
         "Υπόλοιπα νησιά||Courier Center": {
           "region": "Υπόλοιπα νησιά",
@@ -53381,9 +53381,9 @@
         "Υπόλοιπα νησιά||SPEEDEX": {
           "region": "Υπόλοιπα νησιά",
           "brand": "SPEEDEX",
-          "weighted_avg": 3.23,
-          "total_reviews": 3024,
-          "store_count": 23
+          "weighted_avg": 3.2,
+          "total_reviews": 2977,
+          "store_count": 22
         },
         "Υπόλοιπα νησιά||Γενική Ταχυδρομική": {
           "region": "Υπόλοιπα νησιά",
@@ -53396,8 +53396,8 @@
           "region": "Υπόλοιπα νησιά",
           "brand": "ΕΛΤΑ Courier",
           "weighted_avg": 2.86,
-          "total_reviews": 3866,
-          "store_count": 43
+          "total_reviews": 3860,
+          "store_count": 42
         }
       },
       "places": [
@@ -53540,16 +53540,6 @@
           "maps_url": "https://maps.google.com/?cid=4991871359959618525&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.9936325,
           "lng": 23.881734299999998
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Χρυσοστόμου Σμύρνης 117Α, Μοσχάτο 183 45",
-          "rating": 2.8,
-          "reviews": 1443,
-          "maps_url": "https://maps.google.com/?cid=6457439912506458405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.952982,
-          "lng": 23.6809943
         },
         {
           "brand": "ACS",
@@ -54064,22 +54054,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "2, Ηρ. Πολυτεχνείου 60, 2, Λάρισα 413 35",
-          "rating": 3.1,
-          "reviews": 1558,
-          "maps_url": "https://maps.google.com/?cid=8758598455579487633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.630928399999995,
-          "lng": 22.4177029
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "1, Ανθίμου Γαζή 53, Λάρισα 412 22",
           "rating": 3.1,
           "reviews": 1397,
           "maps_url": "https://maps.google.com/?cid=15317289372232254095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 39.632278,
           "lng": 22.413361000000002
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "2, Ηρ. Πολυτεχνείου 60, 2, Λάρισα 413 35",
+          "rating": 3.1,
+          "reviews": 1558,
+          "maps_url": "https://maps.google.com/?cid=8758598455579487633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.630928399999995,
+          "lng": 22.4177029
         },
         {
           "brand": "ACS",
@@ -54092,16 +54082,6 @@
           "lng": 23.486898099999998
         },
         {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "ΟΛΥΜΠΟΥ 9, Agia 400 03",
-          "rating": 4.6,
-          "reviews": 39,
-          "maps_url": "https://maps.google.com/?cid=2391507090493249912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.7176317,
-          "lng": 22.7538278
-        },
-        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
           "address": "Χρήστου Λούλη 52, Νέα Ιωνία 384 46",
@@ -54110,6 +54090,16 @@
           "maps_url": "https://maps.google.com/?cid=6862443118185433885&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 39.373827899999995,
           "lng": 22.9332107
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "ΟΛΥΜΠΟΥ 9, Agia 400 03",
+          "rating": 4.6,
+          "reviews": 39,
+          "maps_url": "https://maps.google.com/?cid=2391507090493249912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.7176317,
+          "lng": 22.7538278
         },
         {
           "brand": "ACS",
@@ -54224,26 +54214,6 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Καλλάρη 47, Ιωάννινα 454 44",
-          "rating": 3.7,
-          "reviews": 707,
-          "maps_url": "https://maps.google.com/?cid=12375587111886585799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.6696488,
-          "lng": 20.8570597
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS SMART LOCKER",
-          "address": "25ης Μαρτίου 25, Εύοσμος 562 24",
-          "rating": 3.0,
-          "reviews": 4,
-          "maps_url": "https://maps.google.com/?cid=5243131691674430451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.673825199999996,
-          "lng": 22.906619199999998
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "Θερμαϊκού 17, Ευκαρπία 570 13",
           "rating": 3.7,
           "reviews": 1966,
@@ -54274,32 +54244,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "ΡΑΦΑΗΛΙΔΗ ΠΑΠΑΔΑΚΗ, Rafailidoy-Papadaki Kyriaki 3, Thermi 570 01",
-          "rating": 2.5,
-          "reviews": 2102,
-          "maps_url": "https://maps.google.com/?cid=5674141580045120549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5518916,
-          "lng": 23.017437599999997
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Διογένους 27, Θεσσαλονίκη 544 53",
-          "rating": 3.8,
-          "reviews": 2529,
-          "maps_url": "https://maps.google.com/?cid=18257076586897535940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6157373,
-          "lng": 22.9697227
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "Ἁγ. Δημητρίου 28-30, Θεσσαλονίκη 546 30",
           "rating": 2.7,
           "reviews": 3302,
           "maps_url": "https://maps.google.com/?cid=7573648015707592666&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.641979299999996,
           "lng": 22.940289099999998
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "ΡΑΦΑΗΛΙΔΗ ΠΑΠΑΔΑΚΗ, Rafailidoy-Papadaki Kyriaki 3, Thermi 570 01",
+          "rating": 2.5,
+          "reviews": 2205,
+          "maps_url": "https://maps.google.com/?cid=5674141580045120549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5518916,
+          "lng": 23.017437599999997
         },
         {
           "brand": "ACS",
@@ -54314,12 +54274,32 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
+          "address": "Διογένους 27, Θεσσαλονίκη 544 53",
+          "rating": 3.8,
+          "reviews": 2529,
+          "maps_url": "https://maps.google.com/?cid=18257076586897535940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6157373,
+          "lng": 22.9697227
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
           "address": "ΛΕΥΚΟΣ ΠΥΡΓΟΣ, Αγγελάκη 10, Thessaloniki 546 21",
           "rating": 3.8,
           "reviews": 746,
           "maps_url": "https://maps.google.com/?cid=5753981769995274450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.6287945,
           "lng": 22.953546499999998
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Αντωνίου Κελεση 50, Νέα Καλλικράτεια 630 80",
+          "rating": 4.2,
+          "reviews": 273,
+          "maps_url": "https://maps.google.com/?cid=5484298176586645528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.314614399999996,
+          "lng": 23.0646067
         },
         {
           "brand": "ACS",
@@ -54334,12 +54314,12 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Leof. Papanikolaou 143, Γ, Asvestochori 570 10",
-          "rating": 4.3,
-          "reviews": 529,
-          "maps_url": "https://maps.google.com/?cid=10561336770098680012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6524432,
-          "lng": 22.9978637
+          "address": "Ionos Dragoumi 17, Ι, ΔΡΑΓΟΥΜΗ 546 25",
+          "rating": 3.4,
+          "reviews": 368,
+          "maps_url": "https://maps.google.com/?cid=5895816381482424069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6355915,
+          "lng": 22.9389574
         },
         {
           "brand": "ACS",
@@ -54364,12 +54344,12 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Ionos Dragoumi 17, Ι, ΔΡΑΓΟΥΜΗ 546 25",
-          "rating": 3.4,
-          "reviews": 368,
-          "maps_url": "https://maps.google.com/?cid=5895816381482424069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6355915,
-          "lng": 22.9389574
+          "address": "Leof. Papanikolaou 143, Γ, Asvestochori 570 10",
+          "rating": 4.3,
+          "reviews": 529,
+          "maps_url": "https://maps.google.com/?cid=10561336770098680012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6524432,
+          "lng": 22.9978637
         },
         {
           "brand": "ACS",
@@ -54384,12 +54364,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Αντωνίου Κελεση 50, Νέα Καλλικράτεια 630 80",
-          "rating": 4.2,
-          "reviews": 273,
-          "maps_url": "https://maps.google.com/?cid=5484298176586645528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.314614399999996,
-          "lng": 23.0646067
+          "address": "28ης Οκτωβρίου 97, Καλοχώρι 570 09",
+          "rating": 4.5,
+          "reviews": 305,
+          "maps_url": "https://maps.google.com/?cid=15479489902175924012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.641597999999995,
+          "lng": 22.852673199999998
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS SMART LOCKER",
+          "address": "25ης Μαρτίου 25, Εύοσμος 562 24",
+          "rating": 3.0,
+          "reviews": 4,
+          "maps_url": "https://maps.google.com/?cid=5243131691674430451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.673825199999996,
+          "lng": 22.906619199999998
         },
         {
           "brand": "ACS",
@@ -54402,16 +54392,6 @@
           "lng": 22.9495911
         },
         {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Εγνατία 31, Πυλαία 555 35",
-          "rating": 4.4,
-          "reviews": 62,
-          "maps_url": "https://maps.google.com/?cid=1937129565139014840&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6020258,
-          "lng": 22.9845577
-        },
-        {
           "brand": "SPEEDEX",
           "place_name": "SPEEDEX Courier Αγίου Δημητρίου",
           "address": "Απολλωνιάδος 1 &, Αγ. Νέστορος, Θεσσαλονίκη 546 32",
@@ -54420,6 +54400,16 @@
           "maps_url": "https://maps.google.com/?cid=17785272355525244796&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.644735999999995,
           "lng": 22.9364842
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Εγνατία 31, Πυλαία 555 35",
+          "rating": 4.4,
+          "reviews": 62,
+          "maps_url": "https://maps.google.com/?cid=1937129565139014840&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6020258,
+          "lng": 22.9845577
         },
         {
           "brand": "ACS",
@@ -54434,22 +54424,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "2 ΧΛΜ ΛΑΓΚΑΔΑ - ΘΕΣ/ΚΗΣ, Λαγκάδας 572 00",
-          "rating": 4.4,
-          "reviews": 771,
-          "maps_url": "https://maps.google.com/?cid=16965782428217667262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7407207,
-          "lng": 23.0498813
+          "address": "Εθ. Αντιστάσεως 23, Κουφάλια 571 00",
+          "rating": 4.7,
+          "reviews": 432,
+          "maps_url": "https://maps.google.com/?cid=13537530404343851798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7762333,
+          "lng": 22.5771412
         },
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "28ης Οκτωβρίου 97, Καλοχώρι 570 09",
-          "rating": 4.5,
-          "reviews": 305,
-          "maps_url": "https://maps.google.com/?cid=15479489902175924012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.641597999999995,
-          "lng": 22.852673199999998
+          "address": "Αριστοτέλους 89, Αρναία 630 74",
+          "rating": 4.9,
+          "reviews": 222,
+          "maps_url": "https://maps.google.com/?cid=6217848778688648108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.4877588,
+          "lng": 23.596944999999998
         },
         {
           "brand": "ACS",
@@ -54462,14 +54452,34 @@
           "lng": 22.4105967
         },
         {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Εθ. Αντιστάσεως 23, Κουφάλια 571 00",
-          "rating": 4.7,
-          "reviews": 432,
-          "maps_url": "https://maps.google.com/?cid=13537530404343851798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7762333,
-          "lng": 22.5771412
+          "brand": "Courier Center",
+          "place_name": "COURIER CENTER",
+          "address": "Αγίου Γεωργίου 21, Ευκαρπία 564 29",
+          "rating": 3.6,
+          "reviews": 826,
+          "maps_url": "https://maps.google.com/?cid=13853884397304755757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6881067,
+          "lng": 22.9532356
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "Courier Center Εύοσμος",
+          "address": "Νικομήδειας 47, Εύοσμος 563 34",
+          "rating": 3.6,
+          "reviews": 468,
+          "maps_url": "https://maps.google.com/?cid=6066822054829423228&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6754842,
+          "lng": 22.899431699999997
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Μαιάνδρου 78, Εύοσμος 562 24",
+          "rating": 4.0,
+          "reviews": 823,
+          "maps_url": "https://maps.google.com/?cid=10994640922263426059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6745271,
+          "lng": 22.906219099999998
         },
         {
           "brand": "ACS",
@@ -54480,6 +54490,16 @@
           "maps_url": "https://maps.google.com/?cid=14478175549073652303&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.978550999999996,
           "lng": 22.059513
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "2 ΧΛΜ ΛΑΓΚΑΔΑ - ΘΕΣ/ΚΗΣ, Λαγκάδας 572 00",
+          "rating": 4.4,
+          "reviews": 771,
+          "maps_url": "https://maps.google.com/?cid=16965782428217667262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7407207,
+          "lng": 23.0498813
         },
         {
           "brand": "ACS",
@@ -54500,16 +54520,6 @@
           "maps_url": "https://maps.google.com/?cid=12672390269813233007&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.183403999999996,
           "lng": 23.2819789
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Αριστοτέλους 89, Αρναία 630 74",
-          "rating": 4.9,
-          "reviews": 222,
-          "maps_url": "https://maps.google.com/?cid=6217848778688648108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.4877588,
-          "lng": 23.596944999999998
         },
         {
           "brand": "ACS",
@@ -54744,6 +54754,16 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
+          "address": "Καλλάρη 47, Ιωάννινα 454 44",
+          "rating": 3.7,
+          "reviews": 707,
+          "maps_url": "https://maps.google.com/?cid=12375587111886585799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.6696488,
+          "lng": 20.8570597
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
           "address": "Λεωφ. Δωδώνης 161, Ιωάννινα 452 21",
           "rating": 4.4,
           "reviews": 1091,
@@ -54952,14 +54972,24 @@
           "lng": 26.4942642
         },
         {
-          "brand": "SPEEDEX",
-          "place_name": "Speedex - Κορίνθου 288 (Πάτρα)",
-          "address": "Κορίνθου 288, Πάτρα 262 22",
-          "rating": 3.7,
-          "reviews": 430,
-          "maps_url": "https://maps.google.com/?cid=294968891653434194&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.243673,
-          "lng": 21.7323412
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier ΠΟΡΤΑ - ΠΟΡΤΑ",
+          "address": "25ης Μαΐου 36, Διδυμότειχο 683 00",
+          "rating": 4.7,
+          "reviews": 55,
+          "maps_url": "https://maps.google.com/?cid=11475828442325649137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.350794,
+          "lng": 26.497992
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Αθηνάς 15, Κάτω Αχαΐα 252 00",
+          "rating": 3.9,
+          "reviews": 196,
+          "maps_url": "https://maps.google.com/?cid=10727715252269698691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.143257,
+          "lng": 21.551551099999998
         },
         {
           "brand": "ACS",
@@ -54984,22 +55014,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Αθηνάς 15, Κάτω Αχαΐα 252 00",
-          "rating": 3.9,
-          "reviews": 196,
-          "maps_url": "https://maps.google.com/?cid=10727715252269698691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.143257,
-          "lng": 21.551551099999998
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "Σταυροπουλου 11, Μεσολόγγι 302 00",
           "rating": 3.6,
           "reviews": 296,
           "maps_url": "https://maps.google.com/?cid=3825297382755449208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.3672055,
           "lng": 21.4314765
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "Speedex - Κορίνθου 288 (Πάτρα)",
+          "address": "Κορίνθου 288, Πάτρα 262 22",
+          "rating": 3.7,
+          "reviews": 430,
+          "maps_url": "https://maps.google.com/?cid=294968891653434194&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.243673,
+          "lng": 21.7323412
         },
         {
           "brand": "ACS",
@@ -55012,16 +55042,6 @@
           "lng": 21.255323699999998
         },
         {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
-          "address": "Ανθείας 233, Πάτρα 260 03",
-          "rating": 1.6,
-          "reviews": 83,
-          "maps_url": "https://maps.google.com/?cid=10382413111343989869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.2208204,
-          "lng": 21.7374775
-        },
-        {
           "brand": "ACS",
           "place_name": "ACS Courier",
           "address": "Υψηλάντου 22, Πύργος 271 31",
@@ -55030,6 +55050,16 @@
           "maps_url": "https://maps.google.com/?cid=16982656298324279479&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.676164799999995,
           "lng": 21.436393499999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
+          "address": "Ανθείας 233, Πάτρα 260 03",
+          "rating": 1.6,
+          "reviews": 83,
+          "maps_url": "https://maps.google.com/?cid=10382413111343989869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.2208204,
+          "lng": 21.7374775
         },
         {
           "brand": "Courier Center",
@@ -55192,16 +55222,6 @@
           "lng": 23.5343117
         },
         {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Αγίου Χαραλάμπους 2, Κρανίδι 213 00",
-          "rating": 4.4,
-          "reviews": 290,
-          "maps_url": "https://maps.google.com/?cid=13103623322268641648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.377122,
-          "lng": 23.1617602
-        },
-        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
           "address": "Αγίου Αδριανού 1, Ναύπλιο 211 00",
@@ -55210,6 +55230,16 @@
           "maps_url": "https://maps.google.com/?cid=18414149302852136121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.5679319,
           "lng": 22.809258
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Αγίου Χαραλάμπους 2, Κρανίδι 213 00",
+          "rating": 4.4,
+          "reviews": 290,
+          "maps_url": "https://maps.google.com/?cid=13103623322268641648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.377122,
+          "lng": 23.1617602
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -55322,16 +55352,6 @@
           "lng": 23.0391575
         },
         {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Ν.Σκιαδά 12A, Gargaliani 244 00",
-          "rating": 4.5,
-          "reviews": 172,
-          "maps_url": "https://maps.google.com/?cid=14409693482594907290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.0671451,
-          "lng": 21.6363421
-        },
-        {
           "brand": "Courier Center",
           "place_name": "Courier Center Καλαμάτας",
           "address": "Ομήρου 6, Καλαμάτα 241 00",
@@ -55340,6 +55360,16 @@
           "maps_url": "https://maps.google.com/?cid=4098524469795040785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.029556,
           "lng": 22.1115976
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Ν.Σκιαδά 12A, Gargaliani 244 00",
+          "rating": 4.5,
+          "reviews": 172,
+          "maps_url": "https://maps.google.com/?cid=14409693482594907290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.0671451,
+          "lng": 21.6363421
         },
         {
           "brand": "ACS",
@@ -55664,22 +55694,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Αναγνώστου Γογονή 129, ΚΕΝΤΡΙΚΟ 733 00",
-          "rating": 4.1,
-          "reviews": 2484,
-          "maps_url": "https://maps.google.com/?cid=12044511270649186500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.503884299999996,
-          "lng": 24.014911899999998
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "Φρυ 858 00, Ελλάδα",
           "rating": 2.5,
           "reviews": 2,
           "maps_url": "https://maps.google.com/?cid=918673493602932946&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.4165,
           "lng": 26.92194
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Αναγνώστου Γογονή 129, ΚΕΝΤΡΙΚΟ 733 00",
+          "rating": 4.1,
+          "reviews": 2485,
+          "maps_url": "https://maps.google.com/?cid=12044511270649186500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.503884299999996,
+          "lng": 24.014911899999998
         },
         {
           "brand": "ACS",
@@ -55924,22 +55954,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Ναυάρχου Ιωαννίδη 4, Λακκί 854 00",
-          "rating": 4.7,
-          "reviews": 116,
-          "maps_url": "https://maps.google.com/?cid=11784246941670213435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.132525199999996,
-          "lng": 26.854419
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
           "address": "ΕΝΟΡΙΑ ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ ΚΑΛΥΜΝΟΣ, Kalimnos 852 00",
           "rating": 4.5,
           "reviews": 217,
           "maps_url": "https://maps.google.com/?cid=4910064203372175267&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 36.946397999999995,
           "lng": 26.984457
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Ναυάρχου Ιωαννίδη 4, Λακκί 854 00",
+          "rating": 4.7,
+          "reviews": 116,
+          "maps_url": "https://maps.google.com/?cid=11784246941670213435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.132525199999996,
+          "lng": 26.854419
         },
         {
           "brand": "ACS",
@@ -56244,12 +56274,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Λεωφ. Δημοκρατίας 140, Κερατσίνι 187 56",
-          "rating": 4.0,
-          "reviews": 3730,
-          "maps_url": "https://maps.google.com/?cid=12657656921110943262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.959617800000004,
-          "lng": 23.6147966
+          "address": "Γαρουφαλλίδου &, Ierou Lochou 21, Limnos 814 00",
+          "rating": 4.6,
+          "reviews": 289,
+          "maps_url": "https://maps.google.com/?cid=13493144442361491252&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.875088,
+          "lng": 25.063417
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Χρυσοστόμου Σμύρνης 117Α, Μοσχάτο 183 45",
+          "rating": 2.8,
+          "reviews": 1443,
+          "maps_url": "https://maps.google.com/?cid=6457439912506458405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.952982,
+          "lng": 23.6809943
         },
         {
           "brand": "ACS",
@@ -56264,19 +56304,19 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Λεωφ. Μαραθώνος 2, Πικέρμι 190 09",
-          "rating": 2.3,
-          "reviews": 1441,
-          "maps_url": "https://maps.google.com/?cid=6751711302682557947&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.9995189,
-          "lng": 23.9351992
+          "address": "Εθνικής Αντιστάσεως και, Υγείας 27, Pallini 153 51",
+          "rating": 4.1,
+          "reviews": 1643,
+          "maps_url": "https://maps.google.com/?cid=16906167549586743621&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.9936161,
+          "lng": 23.881723899999997
         },
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
           "address": "Εργατών Τύπου 4, Ηλιούπολη 163 46",
           "rating": 2.8,
-          "reviews": 3945,
+          "reviews": 3947,
           "maps_url": "https://maps.google.com/?cid=12422943995982513618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.9334804,
           "lng": 23.7450369
@@ -56294,22 +56334,22 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
+          "address": "Δημ. Γούναρη 229, Γλυφάδα 166 74",
+          "rating": 2.4,
+          "reviews": 2493,
+          "maps_url": "https://maps.google.com/?cid=17821186674829789569&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.866577299999996,
+          "lng": 23.7679758
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
           "address": "ΛΕΩΦ.ΜΑΡΑΘΩΝΟΣ 61-63, ΑΝΟΙΞΗ, Αγ. Στέφανος 145 69",
           "rating": 2.7,
           "reviews": 984,
           "maps_url": "https://maps.google.com/?cid=381906570813673359&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.1330137,
           "lng": 23.85946
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Εθνικής Αντιστάσεως και, Υγείας 27, Pallini 153 51",
-          "rating": 4.1,
-          "reviews": 1642,
-          "maps_url": "https://maps.google.com/?cid=16906167549586743621&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.9936161,
-          "lng": 23.881723899999997
         },
         {
           "brand": "ACS",
@@ -56373,16 +56413,6 @@
         },
         {
           "brand": "Courier Center",
-          "place_name": "COURIER CENTER",
-          "address": "Λαμίας 45, Στυλίδα 353 00",
-          "rating": 4.8,
-          "reviews": 53,
-          "maps_url": "https://maps.google.com/?cid=14392442501956059597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.913980699999996,
-          "lng": 22.611926699999998
-        },
-        {
-          "brand": "Courier Center",
           "place_name": "COURIER CENTER ΤΡΙΚΑΛΑ",
           "address": "Βασίλη Τσιτσάνη 41, Τρίκαλα 421 00",
           "rating": 4.7,
@@ -56404,12 +56434,12 @@
         {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
-          "address": "Εθ. Αντίστασης 86, Κιάτο 202 00",
-          "rating": 4.6,
-          "reviews": 197,
-          "maps_url": "https://maps.google.com/?cid=16059525188058916967&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0090843,
-          "lng": 22.7536862
+          "address": "Βεργίνας 173, Δράμα 661 00",
+          "rating": 4.5,
+          "reviews": 259,
+          "maps_url": "https://maps.google.com/?cid=577502796567348294&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.146090900000004,
+          "lng": 24.150419199999998
         },
         {
           "brand": "Courier Center",
@@ -56514,22 +56544,12 @@
         {
           "brand": "ACS",
           "place_name": "ACS Courier",
-          "address": "Δημ. Γούναρη 229, Γλυφάδα 166 74",
-          "rating": 2.4,
-          "reviews": 2493,
-          "maps_url": "https://maps.google.com/?cid=17821186674829789569&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.866577299999996,
-          "lng": 23.7679758
-        },
-        {
-          "brand": "ACS",
-          "place_name": "ACS Courier",
-          "address": "Β' ΜΕΡΑΡΧΙΑΣ &, Πραξιτέλους 192, Πειραιάς 185 35",
-          "rating": 3.2,
-          "reviews": 3597,
-          "maps_url": "https://maps.google.com/?cid=6028933909671387890&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.939250099999995,
-          "lng": 23.6460091
+          "address": "Λεωφ. Δημοκρατίας 140, Κερατσίνι 187 56",
+          "rating": 4.0,
+          "reviews": 3730,
+          "maps_url": "https://maps.google.com/?cid=12657656921110943262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.959617800000004,
+          "lng": 23.6147966
         },
         {
           "brand": "ACS",
@@ -56540,6 +56560,16 @@
           "maps_url": "https://maps.google.com/?cid=117383903721523608&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.8766222,
           "lng": 23.932386899999997
+        },
+        {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Λεωφ. Μαραθώνος 2, Πικέρμι 190 09",
+          "rating": 2.3,
+          "reviews": 1441,
+          "maps_url": "https://maps.google.com/?cid=6751711302682557947&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.9995189,
+          "lng": 23.9351992
         },
         {
           "brand": "ACS",
@@ -56744,12 +56774,12 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Λεωφ. Λαυρίου 2, Γλυκά Νερά 153 54",
-          "rating": 1.5,
-          "reviews": 693,
-          "maps_url": "https://maps.google.com/?cid=2855996118906163225&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.010099,
-          "lng": 23.843666000000002
+          "address": "Ελ. Βενιζέλου 3, Μεταμόρφωση 144 52",
+          "rating": 2.2,
+          "reviews": 1253,
+          "maps_url": "https://maps.google.com/?cid=1919810337688664917&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.06481,
+          "lng": 23.76094
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -56760,16 +56790,6 @@
           "maps_url": "https://maps.google.com/?cid=18362161278025207222&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.3320946,
           "lng": 23.3287293
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Κοιμήσεως Θεοτόκου 13, Αγ. Στέφανος 145 65",
-          "rating": 3.5,
-          "reviews": 493,
-          "maps_url": "https://maps.google.com/?cid=11966397518519550084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.1411589,
-          "lng": 23.8566525
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -56784,16 +56804,6 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Ελ. Βενιζέλου 3, Μεταμόρφωση 144 52",
-          "rating": 2.2,
-          "reviews": 1253,
-          "maps_url": "https://maps.google.com/?cid=1919810337688664917&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.06481,
-          "lng": 23.76094
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
           "address": "WXGR+C4, δημοτική ενότητα Λουτρακίου-Περαχώρας 201 00",
           "rating": 1.7,
           "reviews": 6,
@@ -56803,23 +56813,23 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική ΧΑΛΑΝΔΡΙ",
-          "address": "Λεωφ. Πεντέλης 77-79, Χαλάνδρι 152 33",
-          "rating": 2.3,
-          "reviews": 1011,
-          "maps_url": "https://maps.google.com/?cid=12561889971049440457&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0264701,
-          "lng": 23.810767
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Λεωφ. Λαυρίου 2, Γλυκά Νερά 153 54",
+          "rating": 1.5,
+          "reviews": 693,
+          "maps_url": "https://maps.google.com/?cid=2855996118906163225&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.010099,
+          "lng": 23.843666000000002
         },
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Μενεξέδων 9, Κηφισιά 145 64",
-          "rating": 1.9,
-          "reviews": 3513,
-          "maps_url": "https://maps.google.com/?cid=18149531783020202049&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0789221,
-          "lng": 23.791008299999998
+          "address": "Κοιμήσεως Θεοτόκου 13, Αγ. Στέφανος 145 65",
+          "rating": 3.5,
+          "reviews": 493,
+          "maps_url": "https://maps.google.com/?cid=11966397518519550084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.1411589,
+          "lng": 23.8566525
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -56830,6 +56840,16 @@
           "maps_url": "https://maps.google.com/?cid=7925731393347512207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.470374799999995,
           "lng": 23.6285036
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Μενεξέδων 9, Κηφισιά 145 64",
+          "rating": 1.9,
+          "reviews": 3513,
+          "maps_url": "https://maps.google.com/?cid=18149531783020202049&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0789221,
+          "lng": 23.791008299999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57123,16 +57143,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "1ο χλμ Ε.Ο, Epar.Od. Lefkas - Vasilikis, Lefkada 311 00",
-          "rating": 2.0,
-          "reviews": 177,
-          "maps_url": "https://maps.google.com/?cid=12985789467238874349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.82075,
-          "lng": 20.7025
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική - Πάτρα",
           "address": "Φιλοποίμενος 2 &, Othonos kai Amalias, Patra 262 21",
           "rating": 2.7,
@@ -57144,22 +57154,12 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Περιφερειακή οδός Άρτας, Βενιζέλου &, Arta 471 32",
-          "rating": 5.0,
-          "reviews": 3,
-          "maps_url": "https://maps.google.com/?cid=12306968426300958693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.161663,
-          "lng": 20.980707
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Xiropotamou 53, Ag. Stefanos 265 00",
-          "rating": 2.5,
-          "reviews": 2,
-          "maps_url": "https://maps.google.com/?cid=9373901313465177154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.1953372,
-          "lng": 21.7585881
+          "address": "1ο χλμ Ε.Ο, Epar.Od. Lefkas - Vasilikis, Lefkada 311 00",
+          "rating": 2.0,
+          "reviews": 177,
+          "maps_url": "https://maps.google.com/?cid=12985789467238874349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.82075,
+          "lng": 20.7025
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57303,16 +57303,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ ΛΕΥΚΟΥ ΠΥΡΓΟΥ",
-          "address": "Εθ. Αμύνης 22, Θεσσαλονίκη 546 21",
-          "rating": 3.8,
-          "reviews": 218,
-          "maps_url": "https://maps.google.com/?cid=6685341883298982570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.628763299999996,
-          "lng": 22.951379499999998
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική Κάτω Τούμπας",
           "address": "Άνω Τζουμαγιάς 17 &, I. Pasalidi 14, Thessaloniki 544 53",
           "rating": 2.7,
@@ -57320,6 +57310,16 @@
           "maps_url": "https://maps.google.com/?cid=3360852942040789045&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.6151419,
           "lng": 22.9656314
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ ΛΕΥΚΟΥ ΠΥΡΓΟΥ",
+          "address": "Εθ. Αμύνης 22, Θεσσαλονίκη 546 21",
+          "rating": 3.8,
+          "reviews": 218,
+          "maps_url": "https://maps.google.com/?cid=6685341883298982570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.628763299999996,
+          "lng": 22.951379499999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57343,6 +57343,16 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
+          "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ ΚΑΛΑΜΑΡΙΑΣ",
+          "address": "Πόντου 39, Καλαμαριά 551 33",
+          "rating": 2.8,
+          "reviews": 270,
+          "maps_url": "https://maps.google.com/?cid=3459563493148674738&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5842276,
+          "lng": 22.953269199999998
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
           "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ ΑΝΘΕΩΝ-ΝΤΕΠΩ",
           "address": "Γεώργιου Παπανδρέου 8, Θεσσαλονίκη 546 46",
           "rating": 3.0,
@@ -57350,16 +57360,6 @@
           "maps_url": "https://maps.google.com/?cid=8053818487365774684&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.600796599999995,
           "lng": 22.950888
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Λεωφ. Ανδρέα Παπανδρέου 238, Νεάπολη 566 26",
-          "rating": 3.6,
-          "reviews": 224,
-          "maps_url": "https://maps.google.com/?cid=2007412188575086918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.654637799999996,
-          "lng": 22.9564181
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57374,22 +57374,22 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
+          "address": "Λεωφ. Ανδρέα Παπανδρέου 238, Νεάπολη 566 26",
+          "rating": 3.6,
+          "reviews": 224,
+          "maps_url": "https://maps.google.com/?cid=2007412188575086918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.654637799999996,
+          "lng": 22.9564181
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
           "address": "Λεωφ. Θεσσαλονίκης - Μηχανιώνας 31, Περαία 570 19",
           "rating": 3.2,
           "reviews": 615,
           "maps_url": "https://maps.google.com/?cid=16889173187978646012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.5010346,
           "lng": 22.9229853
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ ΚΑΛΑΜΑΡΙΑΣ",
-          "address": "Πόντου 39, Καλαμαριά 551 33",
-          "rating": 2.8,
-          "reviews": 270,
-          "maps_url": "https://maps.google.com/?cid=3459563493148674738&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5842276,
-          "lng": 22.953269199999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57453,16 +57453,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Δωδεκανήσου, Pl. Dimokratias 2, Thessaloniki 546 26",
-          "rating": 3.8,
-          "reviews": 58,
-          "maps_url": "https://maps.google.com/?cid=9790050031000627823&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6398133,
-          "lng": 22.935802
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική ταχυδρομική",
           "address": "Καπετάν Χάψα 54, Θεσσαλονίκη 570 01",
           "rating": 2.7,
@@ -57474,12 +57464,32 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
+          "address": "Λεωφ. Κωνσταντίνου Καραμανλή 158, Θεσσαλονίκη 542 48",
+          "rating": 4.3,
+          "reviews": 12,
+          "maps_url": "https://maps.google.com/?cid=61045247976361408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.600741,
+          "lng": 22.9641719
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
           "address": "Ίωνος Δραγoύμη 19, Θεσσαλονίκη 546 25",
           "rating": 3.8,
           "reviews": 155,
           "maps_url": "https://maps.google.com/?cid=10084382501394182&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.635436999999996,
           "lng": 22.938997
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Δωδεκανήσου, Pl. Dimokratias 2, Thessaloniki 546 26",
+          "rating": 3.8,
+          "reviews": 58,
+          "maps_url": "https://maps.google.com/?cid=9790050031000627823&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6398133,
+          "lng": 22.935802
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57503,6 +57513,36 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική ταχυδρομική",
+          "address": "Σεραφειμ Τσακμάνη 38, Λαγκαδάς 572 00",
+          "rating": 3.6,
+          "reviews": 231,
+          "maps_url": "https://maps.google.com/?cid=9661569224561538680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7489001,
+          "lng": 23.063590800000004
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Λεωφ. Παπανικολάου 146, Θεσσαλονίκη 570 10",
+          "rating": 3.1,
+          "reviews": 34,
+          "maps_url": "https://maps.google.com/?cid=3463784158301812290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.65331,
+          "lng": 22.99454
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Καρατάσου 6Α, Σίνδος 574 00",
+          "rating": 4.2,
+          "reviews": 72,
+          "maps_url": "https://maps.google.com/?cid=4006846102186204236&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.672413399999996,
+          "lng": 22.799995
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
           "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ Ν.Μουδανιά",
           "address": "Περιφερειακή οδός, Νέα Μουδανιά 632 00",
           "rating": 1.4,
@@ -57523,46 +57563,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Καρατάσου 6Α, Σίνδος 574 00",
-          "rating": 4.2,
-          "reviews": 72,
-          "maps_url": "https://maps.google.com/?cid=4006846102186204236&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.672413399999996,
-          "lng": 22.799995
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική ταχυδρομική",
-          "address": "Σεραφειμ Τσακμάνη 38, Λαγκαδάς 572 00",
-          "rating": 3.6,
-          "reviews": 231,
-          "maps_url": "https://maps.google.com/?cid=9661569224561538680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7489001,
-          "lng": 23.063590800000004
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Λεωφ. Κωνσταντίνου Καραμανλή 158, Θεσσαλονίκη 542 48",
-          "rating": 4.3,
-          "reviews": 12,
-          "maps_url": "https://maps.google.com/?cid=61045247976361408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.600741,
-          "lng": 22.9641719
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Λεωφ. Παπανικολάου 146, Θεσσαλονίκη 570 10",
-          "rating": 3.1,
-          "reviews": 34,
-          "maps_url": "https://maps.google.com/?cid=3463784158301812290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.65331,
-          "lng": 22.99454
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενικη ταχυδρομικη",
           "address": "Κολοκοτρώνη 29 &, Nimfeou, Evosmos 562 24",
           "rating": 2.6,
@@ -57580,16 +57580,6 @@
           "maps_url": "https://maps.google.com/?cid=9532234489021449117&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.727822499999995,
           "lng": 22.9236139
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ",
-          "address": "Προέκταση Μαιάνδρου 0, Εύοσμος 570 13",
-          "rating": 4.5,
-          "reviews": 16,
-          "maps_url": "https://maps.google.com/?cid=7478165668475043758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6946097,
-          "lng": 22.906966099999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57672,6 +57662,16 @@
           "lng": 24.245634
         },
         {
+          "brand": "Courier Center",
+          "place_name": "Courier Center",
+          "address": "Επαρ. Οδός, Νικήτη 630 88",
+          "rating": 4.8,
+          "reviews": 50,
+          "maps_url": "https://maps.google.com/?cid=6790629498810868441&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.222091,
+          "lng": 23.670664499999997
+        },
+        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική Ελευθερούπολη",
           "address": "Παπαχρηστίδη 150, Ελευθερούπολη 641 00",
@@ -57713,16 +57713,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Ελ. Βενιζέλου 83, Αλεξάνδρεια 593 00",
-          "rating": 3.0,
-          "reviews": 184,
-          "maps_url": "https://maps.google.com/?cid=17785114263240827396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.631056,
-          "lng": 22.440863
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική Αριδαία",
           "address": "4ης Νοεμβρίου 14, Αριδαία 584 00",
           "rating": 3.2,
@@ -57730,6 +57720,16 @@
           "maps_url": "https://maps.google.com/?cid=18423100428530690054&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.9740026,
           "lng": 22.0641076
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Ελ. Βενιζέλου 83, Αλεξάνδρεια 593 00",
+          "rating": 3.0,
+          "reviews": 184,
+          "maps_url": "https://maps.google.com/?cid=17785114263240827396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.631056,
+          "lng": 22.440863
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57832,6 +57832,16 @@
           "lng": 21.6806332
         },
         {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Σκύδρα 585 00",
+          "rating": 2.8,
+          "reviews": 5,
+          "maps_url": "https://maps.google.com/?cid=3894740632028902545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7677249,
+          "lng": 22.153371900000003
+        },
+        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
           "address": "Ραιδεστού 36, Σέρρες 621 25",
@@ -57840,16 +57850,6 @@
           "maps_url": "https://maps.google.com/?cid=14739360445081572005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.0853274,
           "lng": 23.546392599999997
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "главен път Е79 2804, 2800 Sandanski, Βουλγαρία",
-          "rating": 4.3,
-          "reviews": 27,
-          "maps_url": "https://maps.google.com/?cid=6483142783269924455&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.543183,
-          "lng": 23.271836399999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57870,6 +57870,16 @@
           "maps_url": "https://maps.google.com/?cid=5342607405959282926&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.23379,
           "lng": 23.389941999999998
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "главен път Е79 2804, 2800 Sandanski, Βουλγαρία",
+          "rating": 4.3,
+          "reviews": 27,
+          "maps_url": "https://maps.google.com/?cid=6483142783269924455&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.543183,
+          "lng": 23.271836399999998
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -57952,16 +57962,6 @@
           "lng": 26.5294356
         },
         {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΠΟΡΤΑ - ΠΟΡΤΑ",
-          "address": "25ης Μαΐου 36, Διδυμότειχο 683 00",
-          "rating": 4.7,
-          "reviews": 55,
-          "maps_url": "https://maps.google.com/?cid=11475828442325649137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.350794,
-          "lng": 26.497992
-        },
-        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
           "address": "g.k. Druzhba I, ul. \"Dunav\" 24 B, 6300 Haskovo, Βουλγαρία",
@@ -57970,6 +57970,16 @@
           "maps_url": "https://maps.google.com/?cid=3711669566829154517&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.9396315,
           "lng": 25.555889699999998
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Xiropotamou 53, Ag. Stefanos 265 00",
+          "rating": 2.5,
+          "reviews": 2,
+          "maps_url": "https://maps.google.com/?cid=9373901313465177154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.1953372,
+          "lng": 21.7585881
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58053,13 +58063,13 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Ξενοφώντος 46, Κρέστενα 270 55",
-          "rating": 4.3,
-          "reviews": 6,
-          "maps_url": "https://maps.google.com/?cid=6397381591249846033&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.592335,
-          "lng": 21.620503
+          "place_name": "Γενική Ταχυδρομική Άργους | Θ. & Ι-Α Σκανδάλη",
+          "address": "Ναυπλίου 32, Άργος 212 00",
+          "rating": 3.5,
+          "reviews": 273,
+          "maps_url": "https://maps.google.com/?cid=14162442539284001310&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.6282996,
+          "lng": 22.7201415
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58084,6 +58094,16 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
+          "address": "Ξενοφώντος 46, Κρέστενα 270 55",
+          "rating": 4.3,
+          "reviews": 6,
+          "maps_url": "https://maps.google.com/?cid=6397381591249846033&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.592335,
+          "lng": 21.620503
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
           "address": "Ηρ. Πολυτεχνείου, Καλαμάτα 241 00",
           "rating": 2.7,
           "reviews": 640,
@@ -58103,16 +58123,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική ταχυδρομική",
-          "address": "Παναγιώτη Κεφαλά 18, Μεγαλόπολη 222 00",
-          "rating": 4.1,
-          "reviews": 29,
-          "maps_url": "https://maps.google.com/?cid=4215029590022240332&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.40220480000001,
-          "lng": 22.135890300000003
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
           "address": "Παναγιώτη Κεφαλά 18, Μεγαλόπολη 222 00",
           "rating": 1.0,
@@ -58120,6 +58130,16 @@
           "maps_url": "https://maps.google.com/?cid=5381390826410635186&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.400523,
           "lng": 22.135581
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική ταχυδρομική",
+          "address": "Παναγιώτη Κεφαλά 18, Μεγαλόπολη 222 00",
+          "rating": 4.1,
+          "reviews": 29,
+          "maps_url": "https://maps.google.com/?cid=4215029590022240332&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.40220480000001,
+          "lng": 22.135890300000003
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58140,16 +58160,6 @@
           "maps_url": "https://maps.google.com/?cid=3464647432304118547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.0413178,
           "lng": 22.1133041
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική Άργους | Θ. & Ι-Α Σκανδάλη",
-          "address": "Ναυπλίου 32, Άργος 212 00",
-          "rating": 3.5,
-          "reviews": 273,
-          "maps_url": "https://maps.google.com/?cid=14162442539284001310&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.6282996,
-          "lng": 22.7201415
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58272,6 +58282,16 @@
           "lng": 22.4336068
         },
         {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "ΓΝΩΣΗ - ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ",
+          "address": "Βιβλιοπωλείο \"ΓΝΩΣΗ, Αλ. Παπαναστασίου 14, Neapoli Vion 230 53",
+          "rating": 4.7,
+          "reviews": 35,
+          "maps_url": "https://maps.google.com/?cid=13731362843351648315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.5118951,
+          "lng": 23.0608951
+        },
+        {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ κούριερ Μεσολογγίου",
           "address": "Άγγελου Δαραμούσκα 28, Μεσολόγγι 302 00",
@@ -58300,6 +58320,16 @@
           "maps_url": "https://maps.google.com/?cid=6821452455627598778&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.9903543,
           "lng": 20.740726
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Περιφερειακή οδός Άρτας, Βενιζέλου &, Arta 471 32",
+          "rating": 5.0,
+          "reviews": 3,
+          "maps_url": "https://maps.google.com/?cid=12306968426300958693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.161663,
+          "lng": 20.980707
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58340,16 +58370,6 @@
           "maps_url": "https://maps.google.com/?cid=5512458987119263143&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 39.6349066,
           "lng": 19.876026799999998
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Ευαγγέλου Μπασιά 10, Ληξούρι 282 00",
-          "rating": 4.2,
-          "reviews": 39,
-          "maps_url": "https://maps.google.com/?cid=9401260402945278708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.199894,
-          "lng": 20.437395
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58424,22 +58444,22 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
+          "address": "Αν, Stamathioudaki 90, Rethymno 741 50",
+          "rating": 1.0,
+          "reviews": 2,
+          "maps_url": "https://maps.google.com/?cid=12255856219527727051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.364,
+          "lng": 24.45551
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
           "address": "Αναπαύσεως 28, Χανιά 731 35",
           "rating": 2.2,
           "reviews": 2373,
           "maps_url": "https://maps.google.com/?cid=17626489774061853280&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.5084686,
           "lng": 24.019796
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) - Πρακτορείο Χερσονήσου",
-          "address": "Ελευθερίας 11, Λιμένας Χερσονήσου 700 14",
-          "rating": 1.9,
-          "reviews": 38,
-          "maps_url": "https://maps.google.com/?cid=12755192200175378150&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.316327799999996,
-          "lng": 25.3906666
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58452,16 +58472,6 @@
           "lng": 26.1071846
         },
         {
-          "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Αν, Stamathioudaki 90, Rethymno 741 50",
-          "rating": 1.0,
-          "reviews": 2,
-          "maps_url": "https://maps.google.com/?cid=12255856219527727051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.364,
-          "lng": 24.45551
-        },
-        {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "Ἑλληνικά Ταχυδρομεῖα (ΕΛΤΑ)Αρκαλοχωρι Ηρακλείου",
           "address": "Αρκαλοχώρι 703 00",
@@ -58470,6 +58480,16 @@
           "maps_url": "https://maps.google.com/?cid=13047344497383390668&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.148255,
           "lng": 25.265556
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) - Πρακτορείο Χερσονήσου",
+          "address": "Ελευθερίας 11, Λιμένας Χερσονήσου 700 14",
+          "rating": 1.9,
+          "reviews": 38,
+          "maps_url": "https://maps.google.com/?cid=12755192200175378150&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.316327799999996,
+          "lng": 25.3906666
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -58484,12 +58504,12 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Πέρα Τριοβασαλος 848 00",
-          "rating": 4.8,
-          "reviews": 34,
-          "maps_url": "https://maps.google.com/?cid=6017506406881792475&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.7395529,
-          "lng": 24.4346355
+          "address": "Σοφίας Βέμπο 2, Γλυφάδα 165 61",
+          "rating": 2.4,
+          "reviews": 1908,
+          "maps_url": "https://maps.google.com/?cid=11259488694785149744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.8836422,
+          "lng": 23.7530896
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58643,6 +58663,16 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "Πέρα Τριοβασαλος 848 00",
+          "rating": 4.8,
+          "reviews": 34,
+          "maps_url": "https://maps.google.com/?cid=6017506406881792475&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.7395529,
+          "lng": 24.4346355
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική ΑΜΟΡΓΟΣ",
           "address": "Επαρ.Οδ. Καταπόλων-Θολαρίων, Όρμος Αιγιάλης 840 08",
           "rating": 4.9,
@@ -58744,12 +58774,12 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "Σοφίας Βέμπο 2, Γλυφάδα 165 61",
-          "rating": 2.4,
-          "reviews": 1908,
-          "maps_url": "https://maps.google.com/?cid=11259488694785149744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.8836422,
-          "lng": 23.7530896
+          "address": "Ενορία Χριστού, Kalimnos 852 00",
+          "rating": 4.3,
+          "reviews": 57,
+          "maps_url": "https://maps.google.com/?cid=2716622968091963937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.9510083,
+          "lng": 26.982400799999997
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58763,16 +58793,6 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική Ταχυδρομική",
-          "address": "Ενορία Χριστού, Kalimnos 852 00",
-          "rating": 4.3,
-          "reviews": 57,
-          "maps_url": "https://maps.google.com/?cid=2716622968091963937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.9510083,
-          "lng": 26.982400799999997
-        },
-        {
-          "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική - Πέραμα",
           "address": "Λεωφ. Ειρήνης 165, Πέραμα 188 63",
           "rating": 2.9,
@@ -58780,6 +58800,16 @@
           "maps_url": "https://maps.google.com/?cid=2853451568663447105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.9637132,
           "lng": 23.5723327
+        },
+        {
+          "brand": "Γενική Ταχυδρομική",
+          "place_name": "Γενική Ταχυδρομική ΧΑΛΑΝΔΡΙ",
+          "address": "Λεωφ. Πεντέλης 77-79, Χαλάνδρι 152 33",
+          "rating": 2.3,
+          "reviews": 1011,
+          "maps_url": "https://maps.google.com/?cid=12561889971049440457&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0264701,
+          "lng": 23.810767
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58852,16 +58882,6 @@
           "lng": 24.1519463
         },
         {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ COURIER A.E.",
-          "address": "Βελισσαρίου 3, Ξάνθη 671 00",
-          "rating": 2.7,
-          "reviews": 312,
-          "maps_url": "https://maps.google.com/?cid=11844244139633283322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.1369362,
-          "lng": 24.8906507
-        },
-        {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Διαχειριστική Κόρινθος",
           "address": "Κολιάτσου 36, Κόρινθος 201 00",
@@ -58873,13 +58893,13 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "ΓΝΩΣΗ - ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ",
-          "address": "Βιβλιοπωλείο \"ΓΝΩΣΗ, Αλ. Παπαναστασίου 14, Neapoli Vion 230 53",
-          "rating": 4.7,
-          "reviews": 35,
-          "maps_url": "https://maps.google.com/?cid=13731362843351648315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.5118951,
-          "lng": 23.0608951
+          "place_name": "Γενική Ταχυδρομική",
+          "address": "ΒΙΟΜΗΧΑΝΙΚΗ ΠΕΡΙΟΧΗ ΝΑΔΑΡΟΥ ΖΑΠΑΝΤΗ, Αργοστόλι 281 00",
+          "rating": 5.0,
+          "reviews": 2,
+          "maps_url": "https://maps.google.com/?cid=10442038891334696346&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.1611372,
+          "lng": 20.4982051
         },
         {
           "brand": "SPEEDEX",
@@ -58904,12 +58924,12 @@
         {
           "brand": "Γενική Ταχυδρομική",
           "place_name": "Γενική Ταχυδρομική",
-          "address": "ΒΙΟΜΗΧΑΝΙΚΗ ΠΕΡΙΟΧΗ ΝΑΔΑΡΟΥ ΖΑΠΑΝΤΗ, Αργοστόλι 281 00",
-          "rating": 5.0,
-          "reviews": 2,
-          "maps_url": "https://maps.google.com/?cid=10442038891334696346&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.1611372,
-          "lng": 20.4982051
+          "address": "Ευαγγέλου Μπασιά 10, Ληξούρι 282 00",
+          "rating": 4.2,
+          "reviews": 39,
+          "maps_url": "https://maps.google.com/?cid=9401260402945278708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.199894,
+          "lng": 20.437395
         },
         {
           "brand": "Γενική Ταχυδρομική",
@@ -58973,23 +58993,13 @@
         },
         {
           "brand": "Γενική Ταχυδρομική",
-          "place_name": "Γενική ταχυδρομική Κορωπί",
-          "address": "Λεωφ. Βασιλέως Κωνσταντίνου 223, Κορωπί 194 00",
-          "rating": 2.0,
-          "reviews": 40,
-          "maps_url": "https://maps.google.com/?cid=5462714724351506502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.8985098,
-          "lng": 23.87461
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Αιόλου 100-Κεντρικό Ταχυδρομείο Αθηνών",
-          "address": "Αιόλου 100, Αθήνα 102 00",
-          "rating": 2.1,
-          "reviews": 233,
-          "maps_url": "https://maps.google.com/?cid=15793902988798789614&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.983183800000006,
-          "lng": 23.729305
+          "place_name": "Γενική Ταχυδρομική Νέα Μάκρη",
+          "address": "Λεωφ. Μαραθώνος 46, Νέα Μάκρη 190 05",
+          "rating": 4.1,
+          "reviews": 53,
+          "maps_url": "https://maps.google.com/?cid=13127933428478937841&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.082002599999996,
+          "lng": 23.9795046
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59060,6 +59070,16 @@
           "maps_url": "https://maps.google.com/?cid=6379823667787037149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.01453,
           "lng": 23.7297196
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Αιόλου 100-Κεντρικό Ταχυδρομείο Αθηνών",
+          "address": "Αιόλου 100, Αθήνα 102 00",
+          "rating": 2.1,
+          "reviews": 233,
+          "maps_url": "https://maps.google.com/?cid=15793902988798789614&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.983183800000006,
+          "lng": 23.729305
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59163,26 +59183,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Θήβας",
-          "address": "Παναγιώτη Δράκου 17, Θήβα 322 00",
-          "rating": 1.9,
-          "reviews": 29,
-          "maps_url": "https://maps.google.com/?cid=10873580494799796175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.3176214,
-          "lng": 23.3175454
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA Courier",
-          "address": "Ελληνικού Στρατού 3, Άνοιξη 145 69",
-          "rating": 1.8,
-          "reviews": 36,
-          "maps_url": "https://maps.google.com/?cid=6264439878843336878&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.137252499999995,
-          "lng": 23.858613100000003
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier Θήβας",
           "address": "Λοξής Φάλαγγος 25, Θήβα 322 00",
           "rating": 3.2,
@@ -59190,6 +59190,16 @@
           "maps_url": "https://maps.google.com/?cid=4864446154528905428&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.3137991,
           "lng": 23.3181087
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Θήβας",
+          "address": "Παναγιώτη Δράκου 17, Θήβα 322 00",
+          "rating": 1.9,
+          "reviews": 29,
+          "maps_url": "https://maps.google.com/?cid=10873580494799796175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.3176214,
+          "lng": 23.3175454
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59203,6 +59213,46 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ courier",
+          "address": "Αφων, Afon Kipreou 21, Ελευσίνα 192 00",
+          "rating": 3.1,
+          "reviews": 395,
+          "maps_url": "https://maps.google.com/?cid=2361487005449942376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0570915,
+          "lng": 23.5334055
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier ΑΡΓΥΡΟΎΠΟΛΗΣ",
+          "address": "25ης Μαρτίου 20, Αργυρούπολη 164 52",
+          "rating": 3.0,
+          "reviews": 1680,
+          "maps_url": "https://maps.google.com/?cid=3135467699565791881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.90426,
+          "lng": 23.748975899999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Λεωφ. Κηφισίας 141, Μαρούσι 151 24",
+          "rating": 2.4,
+          "reviews": 1143,
+          "maps_url": "https://maps.google.com/?cid=7880390458635808065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0496105,
+          "lng": 23.8082115
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Αναπαύσεως 43, Βριλήσσια 152 35",
+          "rating": 1.6,
+          "reviews": 2034,
+          "maps_url": "https://maps.google.com/?cid=1255185758919006949&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0433053,
+          "lng": 23.8454366
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier Σχηματάριου",
           "address": "Τανάγρας 29, Σχηματάρι 320 09",
           "rating": 1.5,
@@ -59210,6 +59260,16 @@
           "maps_url": "https://maps.google.com/?cid=18065129051872438630&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.3479184,
           "lng": 23.5803162
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Εθ. Αντιστάσεως 22, Λουτράκι 203 00",
+          "rating": 4.6,
+          "reviews": 52,
+          "maps_url": "https://maps.google.com/?cid=4264577774271034408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.972932,
+          "lng": 22.976087699999997
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59223,6 +59283,26 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ELTA Courier",
+          "address": "Ελληνικού Στρατού 3, Άνοιξη 145 69",
+          "rating": 1.8,
+          "reviews": 36,
+          "maps_url": "https://maps.google.com/?cid=6264439878843336878&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.137252499999995,
+          "lng": 23.858613100000003
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ COURIER ΠΑΙΑΝΙΑ (ELTA COURIER PAIANIA)",
+          "address": "Αγ. Τριάδος 28, Παιανία 190 02",
+          "rating": 2.4,
+          "reviews": 412,
+          "maps_url": "https://maps.google.com/?cid=5335420297579951618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.9565768,
+          "lng": 23.8518869
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier Αχαρνών",
           "address": "Αριστοτέλους 254 Α, Αχαρνές 136 71",
           "rating": 2.9,
@@ -59230,46 +59310,6 @@
           "maps_url": "https://maps.google.com/?cid=7441496497752155143&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.087189599999995,
           "lng": 23.7448452
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Αριστοτέλους 26, Ψαχνά 344 00",
-          "rating": 2.3,
-          "reviews": 25,
-          "maps_url": "https://maps.google.com/?cid=18158294138333839220&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.5786637,
-          "lng": 23.6413711
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA Courier Αταλαντης",
-          "address": "Οιλεως 7, Αταλάντη 352 00",
-          "rating": 2.3,
-          "reviews": 23,
-          "maps_url": "https://maps.google.com/?cid=10024809082600193027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.6558041,
-          "lng": 22.9980819
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ courier",
-          "address": "Αφων, Afon Kipreou 21, Ελευσίνα 192 00",
-          "rating": 3.1,
-          "reviews": 395,
-          "maps_url": "https://maps.google.com/?cid=2361487005449942376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0570915,
-          "lng": 23.5334055
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA COURIER Νέας Ιωνίας",
-          "address": "Μενελάου 56, Νέα Ιωνία 141 21",
-          "rating": 2.8,
-          "reviews": 332,
-          "maps_url": "https://maps.google.com/?cid=10887144868607698446&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0492485,
-          "lng": 23.7546815
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59290,6 +59330,16 @@
           "maps_url": "https://maps.google.com/?cid=5001850787084183913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.4388955,
           "lng": 22.874676400000002
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ELTA Courier Αταλαντης",
+          "address": "Οιλεως 7, Αταλάντη 352 00",
+          "rating": 2.3,
+          "reviews": 23,
+          "maps_url": "https://maps.google.com/?cid=10024809082600193027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.6558041,
+          "lng": 22.9980819
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59323,16 +59373,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Εθ. Αντιστάσεως 22, Λουτράκι 203 00",
-          "rating": 4.6,
-          "reviews": 52,
-          "maps_url": "https://maps.google.com/?cid=4264577774271034408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.972932,
-          "lng": 22.976087699999997
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
           "address": "Λεωφ. Αθηνών 44, Αλίαρτος 320 01",
           "rating": 1.3,
@@ -59363,6 +59403,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Αριστοτέλους 26, Ψαχνά 344 00",
+          "rating": 2.3,
+          "reviews": 25,
+          "maps_url": "https://maps.google.com/?cid=18158294138333839220&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.5786637,
+          "lng": 23.6413711
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ COURIER",
           "address": "Ρήγα Φεραίου 57, Αίγιο 251 00",
           "rating": 3.3,
@@ -59383,6 +59433,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Ελ. Βενιζέλου 6, Κιάτο 202 00",
+          "rating": 4.1,
+          "reviews": 112,
+          "maps_url": "https://maps.google.com/?cid=16028726743121035720&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0144589,
+          "lng": 22.7469388
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Elta Courier Βραχατίου",
           "address": "Ελ. Βενιζέλου 73-75, Βραχάτι 200 06",
           "rating": 4.4,
@@ -59393,6 +59453,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier ΠΑΤΡΑΣ 2",
+          "address": "Ακρωτηρίου 106, Πάτρα 263 32",
+          "rating": 2.0,
+          "reviews": 1338,
+          "maps_url": "https://maps.google.com/?cid=17479041192625793598&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.2227381,
+          "lng": 21.7422359
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ COURIER ΣΤΥΛΙΔΑΣ",
           "address": "Αλαμάνας, Στυλίδα 353 00",
           "rating": 3.9,
@@ -59400,16 +59470,6 @@
           "maps_url": "https://maps.google.com/?cid=6789370469385595481&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.9135479,
           "lng": 22.6102785
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Ελ. Βενιζέλου 6, Κιάτο 202 00",
-          "rating": 4.1,
-          "reviews": 112,
-          "maps_url": "https://maps.google.com/?cid=16028726743121035720&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0144589,
-          "lng": 22.7469388
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59520,16 +59580,6 @@
           "maps_url": "https://maps.google.com/?cid=6889039156920766945&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.915298899999996,
           "lng": 21.793355899999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΠΑΤΡΑΣ 2",
-          "address": "Ακρωτηρίου 106, Πάτρα 263 32",
-          "rating": 2.0,
-          "reviews": 1338,
-          "maps_url": "https://maps.google.com/?cid=17479041192625793598&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.2227381,
-          "lng": 21.7422359
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59733,16 +59783,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Γκέρτσου Κωνσταντίνου 14, Κοζάνη 501 00",
-          "rating": 3.5,
-          "reviews": 284,
-          "maps_url": "https://maps.google.com/?cid=15619036586856712440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.2985026,
-          "lng": 21.794870799999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
           "address": "6ης Οκτωβρίου 88, Ελασσόνα 402 00",
           "rating": 3.5,
@@ -59763,83 +59803,63 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Λεωφ. Θεσσαλονίκης - Μηχανιώνας 34, Περαία 570 19",
-          "rating": 4.2,
-          "reviews": 411,
-          "maps_url": "https://maps.google.com/?cid=9765106882258454437&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5019431,
-          "lng": 22.9292323
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Ἁγ. Δημητρίου 77, Θεσσαλονίκη 546 33",
+          "place_name": "Elta Courier Trikala",
+          "address": "Αμαλίας 52, Τρίκαλα 421 00",
           "rating": 3.0,
-          "reviews": 682,
-          "maps_url": "https://maps.google.com/?cid=3934213262693532007&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.639355599999995,
-          "lng": 22.9464336
+          "reviews": 36,
+          "maps_url": "https://maps.google.com/?cid=13483566847780735242&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.556275299999996,
+          "lng": 21.7620878
         },
         {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier",
-          "address": "Ἁγ. Δημητρίου 201, Θεσσαλονίκη 546 38",
-          "rating": 2.9,
-          "reviews": 714,
-          "maps_url": "https://maps.google.com/?cid=15313477907741870940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6186346,
-          "lng": 22.9679273
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Απέναντι από τη Βιοϊατρική, Λεωφ. Ανδρέα Παπανδρέου 249, Πολίχνη Θεσσαλονίκης 565 32",
-          "rating": 2.4,
-          "reviews": 981,
-          "maps_url": "https://maps.google.com/?cid=6011582801590896612&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6548832,
-          "lng": 22.9590158
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Φιλαδελφειας 20, Πυλαία 555 35",
-          "rating": 3.8,
-          "reviews": 660,
-          "maps_url": "https://maps.google.com/?cid=2557080378118204483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5810799,
-          "lng": 22.9901596
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Μαιάνδρου 78, Εύοσμος 562 24",
-          "rating": 4.0,
-          "reviews": 823,
-          "maps_url": "https://maps.google.com/?cid=10994640922263426059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6745271,
-          "lng": 22.906219099999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Λεωφ. Βασιλίσσης Όλγας 48, Θεσσαλονίκη 546 42",
-          "rating": 4.0,
-          "reviews": 587,
-          "maps_url": "https://maps.google.com/?cid=8151615947947294564&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6116666,
-          "lng": 22.9537434
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Παυσανίου 19, Βέροια 591 30",
+          "address": "Γκέρτσου Κωνσταντίνου 14, Κοζάνη 501 00",
           "rating": 3.5,
-          "reviews": 331,
-          "maps_url": "https://maps.google.com/?cid=4643141717105510496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5348842,
-          "lng": 22.2049912
+          "reviews": 284,
+          "maps_url": "https://maps.google.com/?cid=15619036586856712440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.2985026,
+          "lng": 21.794870799999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Κωνσταντινουπόλεως 20, Κοζάνη 501 00",
+          "rating": 2.7,
+          "reviews": 63,
+          "maps_url": "https://maps.google.com/?cid=6601475094384763156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.2995443,
+          "lng": 21.7970453
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Σερβίων",
+          "address": "Σέρβια 505 00",
+          "rating": 5.0,
+          "reviews": 2,
+          "maps_url": "https://maps.google.com/?cid=16026950997819683136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.1815509,
+          "lng": 21.9991682
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Κεντρικό Κατάστημα Κοζάνης",
+          "address": "Γιάνναρη 1, Κοζάνη 501 00",
+          "rating": 2.3,
+          "reviews": 3,
+          "maps_url": "https://maps.google.com/?cid=3514430977299226884&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.299163,
+          "lng": 21.797012199999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Ειρήνης 9, Κατερίνη 601 00",
+          "rating": 2.0,
+          "reviews": 83,
+          "maps_url": "https://maps.google.com/?cid=11962174050943712692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.270871199999995,
+          "lng": 22.5102996
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59853,16 +59873,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "Elta Courier Trikala",
-          "address": "Αμαλίας 52, Τρίκαλα 421 00",
-          "rating": 3.0,
-          "reviews": 36,
-          "maps_url": "https://maps.google.com/?cid=13483566847780735242&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.556275299999996,
-          "lng": 21.7620878
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
           "address": "ΕΟ Άρτας Τρικάλων 48, Πύλη 420 32",
           "rating": 4.0,
@@ -59870,6 +59880,16 @@
           "maps_url": "https://maps.google.com/?cid=2240356447380166277&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 39.4586654,
           "lng": 21.620982400000003
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ COURIER ΓΡΕΒΕΝΩΝ",
+          "address": "Κ, Ταλιαδούρη 68, Γρεβενά 511 00",
+          "rating": 4.2,
+          "reviews": 33,
+          "maps_url": "https://maps.google.com/?cid=1957335403724349758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.0845773,
+          "lng": 21.4333659
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59884,12 +59904,32 @@
         {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier",
+          "address": "Απέναντι από τη Βιοϊατρική, Λεωφ. Ανδρέα Παπανδρέου 249, Πολίχνη Θεσσαλονίκης 565 32",
+          "rating": 2.4,
+          "reviews": 981,
+          "maps_url": "https://maps.google.com/?cid=6011582801590896612&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6548832,
+          "lng": 22.9590158
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
           "address": "ΑΓΙΩΡΙΤΩΝ ΠΑΤΕΡΩΝ 2, 57001, Θέρμη 570 01",
           "rating": 4.5,
           "reviews": 296,
           "maps_url": "https://maps.google.com/?cid=2024304991134675149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.541580499999995,
           "lng": 23.0234615
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Ἁγ. Δημητρίου 77, Θεσσαλονίκη 546 33",
+          "rating": 3.0,
+          "reviews": 682,
+          "maps_url": "https://maps.google.com/?cid=3934213262693532007&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.639355599999995,
+          "lng": 22.9464336
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59903,13 +59943,23 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Ειρήνης 9, Κατερίνη 601 00",
-          "rating": 2.0,
-          "reviews": 83,
-          "maps_url": "https://maps.google.com/?cid=11962174050943712692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.270871199999995,
-          "lng": 22.5102996
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Φιλαδελφειας 20, Πυλαία 555 35",
+          "rating": 3.8,
+          "reviews": 660,
+          "maps_url": "https://maps.google.com/?cid=2557080378118204483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5810799,
+          "lng": 22.9901596
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Λεωφ. Βασιλίσσης Όλγας 48, Θεσσαλονίκη 546 42",
+          "rating": 4.0,
+          "reviews": 587,
+          "maps_url": "https://maps.google.com/?cid=8151615947947294564&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6116666,
+          "lng": 22.9537434
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59933,6 +59983,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ταχυδρομικό Kουτί ΕΛΤΑ",
+          "address": "Θεσσαλονίκη 546 21",
+          "rating": 5.0,
+          "reviews": 1,
+          "maps_url": "https://maps.google.com/?cid=17326703648120149722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6258094,
+          "lng": 22.9530197
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier",
           "address": "Θεσσαλονίκης 81, Ωραιόκαστρο 570 13",
           "rating": 3.5,
@@ -59943,13 +60003,23 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ταχυδρομικό Kουτί ΕΛΤΑ",
-          "address": "Θεσσαλονίκη 546 21",
-          "rating": 5.0,
-          "reviews": 1,
-          "maps_url": "https://maps.google.com/?cid=17326703648120149722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6258094,
-          "lng": 22.9530197
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Λεωφ. Θεσσαλονίκης - Μηχανιώνας 34, Περαία 570 19",
+          "rating": 4.2,
+          "reviews": 411,
+          "maps_url": "https://maps.google.com/?cid=9765106882258454437&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5019431,
+          "lng": 22.9292323
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Ἁγ. Δημητρίου 201, Θεσσαλονίκη 546 38",
+          "rating": 2.9,
+          "reviews": 714,
+          "maps_url": "https://maps.google.com/?cid=15313477907741870940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6186346,
+          "lng": 22.9679273
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -59973,6 +60043,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Παυσανίου 19, Βέροια 591 30",
+          "rating": 3.5,
+          "reviews": 331,
+          "maps_url": "https://maps.google.com/?cid=4643141717105510496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5348842,
+          "lng": 22.2049912
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ",
           "address": "Σωκράτους 47, Εύοσμος 562 01",
           "rating": 3.4,
@@ -59980,16 +60060,6 @@
           "maps_url": "https://maps.google.com/?cid=10558971358142840740&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.67082310000001,
           "lng": 22.9089001
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Φράγκων 6, Θεσσαλονίκη 546 26",
-          "rating": 2.9,
-          "reviews": 149,
-          "maps_url": "https://maps.google.com/?cid=5469201312152242258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6381703,
-          "lng": 22.9358759
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60004,22 +60074,22 @@
         {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ",
+          "address": "Φράγκων 6, Θεσσαλονίκη 546 26",
+          "rating": 2.9,
+          "reviews": 149,
+          "maps_url": "https://maps.google.com/?cid=5469201312152242258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6381703,
+          "lng": 22.9358759
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
           "address": "Αμπελώνων 55, Αμπελόκηποι 561 23",
           "rating": 3.1,
           "reviews": 121,
           "maps_url": "https://maps.google.com/?cid=4411151381012549454&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.650213199999996,
           "lng": 22.9253537
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ ταχυδρομικές θυρίδες",
-          "address": "Κωνσταντινουπόλεως, Κορδελιό Εύοσμος 562 24",
-          "rating": 5.0,
-          "reviews": 1,
-          "maps_url": "https://maps.google.com/?cid=4339159019639460546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.680714699999996,
-          "lng": 22.9062889
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60030,6 +60100,16 @@
           "maps_url": "https://maps.google.com/?cid=14387103850830800064&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.6601503,
           "lng": 22.9349365
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ ταχυδρομικές θυρίδες",
+          "address": "Κωνσταντινουπόλεως, Κορδελιό Εύοσμος 562 24",
+          "rating": 5.0,
+          "reviews": 1,
+          "maps_url": "https://maps.google.com/?cid=4339159019639460546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.680714699999996,
+          "lng": 22.9062889
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60142,16 +60222,6 @@
           "lng": 22.5768235
         },
         {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Συνταγματάρχου Ματαπά, Λαγκαδάς 572 00",
-          "rating": 3.9,
-          "reviews": 31,
-          "maps_url": "https://maps.google.com/?cid=18308561061751094656&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7500761,
-          "lng": 23.068856500000003
-        },
-        {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
           "address": "Λεωφ. Βασιλέως Αλεξάνδρου 32, Λαγκαδάς 572 00",
@@ -60160,6 +60230,16 @@
           "maps_url": "https://maps.google.com/?cid=10776741753138941717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.7506833,
           "lng": 23.0688683
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Συνταγματάρχου Ματαπά, Λαγκαδάς 572 00",
+          "rating": 3.9,
+          "reviews": 31,
+          "maps_url": "https://maps.google.com/?cid=18308561061751094656&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7500761,
+          "lng": 23.068856500000003
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60242,16 +60322,6 @@
           "lng": 23.6684943
         },
         {
-          "brand": "Courier Center",
-          "place_name": "Courier Center",
-          "address": "Επαρ. Οδός, Νικήτη 630 88",
-          "rating": 4.8,
-          "reviews": 50,
-          "maps_url": "https://maps.google.com/?cid=6790629498810868441&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.222091,
-          "lng": 23.670664499999997
-        },
-        {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Πρακτορείο",
           "address": "Αγγελάκη Αγαπητού, Ορμύλια 630 71",
@@ -60313,16 +60383,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Πρακτορείο",
-          "address": "5η Παραλιακή 43, 57021, Νέα Βρασνά 570 21",
-          "rating": 4.0,
-          "reviews": 21,
-          "maps_url": "https://maps.google.com/?cid=6196594900319504872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7071879,
-          "lng": 23.6997674
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελτα courier Ελευθερούπολης",
           "address": "Δήμου, Δημάδη 15, Ελευθερούπολη 641 00",
           "rating": 4.2,
@@ -60330,6 +60390,16 @@
           "maps_url": "https://maps.google.com/?cid=17416978434370304735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.9160221,
           "lng": 24.2543008
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Πρακτορείο",
+          "address": "5η Παραλιακή 43, 57021, Νέα Βρασνά 570 21",
+          "rating": 4.0,
+          "reviews": 21,
+          "maps_url": "https://maps.google.com/?cid=6196594900319504872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7071879,
+          "lng": 23.6997674
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60373,13 +60443,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΑΜΥΝΤΑΙΟΥ",
-          "address": "Πλ. Αγοράς 13, Αμύνταιο 532 00",
-          "rating": 4.7,
-          "reviews": 15,
-          "maps_url": "https://maps.google.com/?cid=7782153493645642354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.690855899999995,
-          "lng": 21.679586699999998
+          "place_name": "ΕΛΤΑ Πρακτορείο",
+          "address": "Πατρίδα Ημαθίας, Πατρίδα 591 00",
+          "rating": 4.1,
+          "reviews": 13,
+          "maps_url": "https://maps.google.com/?cid=909199535402327810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5624316,
+          "lng": 22.184511699999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60403,6 +60473,26 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier Σιάτιστας - Κράγιας Αθανάσιος",
+          "address": "Μεγ. Αλεξάνδρου 3, Σιάτιστα 503 00",
+          "rating": 3.9,
+          "reviews": 32,
+          "maps_url": "https://maps.google.com/?cid=7118885488771677405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.257289899999996,
+          "lng": 21.5533046
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier ΑΜΥΝΤΑΙΟΥ",
+          "address": "Πλ. Αγοράς 13, Αμύνταιο 532 00",
+          "rating": 4.7,
+          "reviews": 15,
+          "maps_url": "https://maps.google.com/?cid=7782153493645642354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.690855899999995,
+          "lng": 21.679586699999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier",
           "address": "Τακαντζά 4, Πολύκαστρο 612 00",
           "rating": 4.7,
@@ -60413,13 +60503,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier Σιάτιστας - Κράγιας Αθανάσιος",
-          "address": "Μεγ. Αλεξάνδρου 3, Σιάτιστα 503 00",
-          "rating": 3.9,
-          "reviews": 32,
-          "maps_url": "https://maps.google.com/?cid=7118885488771677405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.257289899999996,
-          "lng": 21.5533046
+          "place_name": "ΕΛΤΑ Courier Φλώρινας",
+          "address": "Π. Μελά 9, Φλώρινα 531 00",
+          "rating": 4.5,
+          "reviews": 97,
+          "maps_url": "https://maps.google.com/?cid=10371771625350512751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7809946,
+          "lng": 21.4120119
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60443,23 +60533,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ COURIER ΓΡΕΒΕΝΩΝ",
-          "address": "Κ, Ταλιαδούρη 68, Γρεβενά 511 00",
-          "rating": 4.2,
-          "reviews": 33,
-          "maps_url": "https://maps.google.com/?cid=1957335403724349758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.0845773,
-          "lng": 21.4333659
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA COURIER",
-          "address": "Γράμμου 23, Καστοριά 521 00",
-          "rating": 2.5,
-          "reviews": 55,
-          "maps_url": "https://maps.google.com/?cid=4594262984101772882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.52211200000001,
-          "lng": 21.2605908
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Γρεβενών",
+          "address": "Γεωρ. Μπούσιου 28, Γρεβενά 511 00",
+          "rating": 2.1,
+          "reviews": 19,
+          "maps_url": "https://maps.google.com/?cid=2919087818985908331&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.0852271,
+          "lng": 21.424660799999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60473,63 +60553,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Κωνσταντινουπόλεως 20, Κοζάνη 501 00",
-          "rating": 2.7,
-          "reviews": 63,
-          "maps_url": "https://maps.google.com/?cid=6601475094384763156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.2995443,
-          "lng": 21.7970453
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Γρεβενών",
-          "address": "Γεωρ. Μπούσιου 28, Γρεβενά 511 00",
-          "rating": 2.1,
-          "reviews": 19,
-          "maps_url": "https://maps.google.com/?cid=2919087818985908331&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.0852271,
-          "lng": 21.424660799999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Σερβίων",
-          "address": "Σέρβια 505 00",
-          "rating": 5.0,
-          "reviews": 2,
-          "maps_url": "https://maps.google.com/?cid=16026950997819683136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.1815509,
-          "lng": 21.9991682
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) - ΚΑΣΤΟΡΙΑΣ (Κ.Κ.)",
-          "address": "Λεωφ. Κύκνων 4, Καστοριά 521 00",
-          "rating": 3.7,
-          "reviews": 18,
-          "maps_url": "https://maps.google.com/?cid=4713378266171757155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5194723,
-          "lng": 21.256692
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier Φλώρινας",
-          "address": "Π. Μελά 9, Φλώρινα 531 00",
-          "rating": 4.5,
-          "reviews": 97,
-          "maps_url": "https://maps.google.com/?cid=10371771625350512751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7809946,
-          "lng": 21.4120119
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Κεντρικό Κατάστημα Κοζάνης",
-          "address": "Γιάνναρη 1, Κοζάνη 501 00",
-          "rating": 2.3,
-          "reviews": 3,
-          "maps_url": "https://maps.google.com/?cid=3514430977299226884&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.299163,
-          "lng": 21.797012199999998
+          "place_name": "ELTA COURIER",
+          "address": "Γράμμου 23, Καστοριά 521 00",
+          "rating": 2.5,
+          "reviews": 55,
+          "maps_url": "https://maps.google.com/?cid=4594262984101772882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.52211200000001,
+          "lng": 21.2605908
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60563,6 +60593,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) - ΚΑΣΤΟΡΙΑΣ (Κ.Κ.)",
+          "address": "Λεωφ. Κύκνων 4, Καστοριά 521 00",
+          "rating": 3.7,
+          "reviews": 18,
+          "maps_url": "https://maps.google.com/?cid=4713378266171757155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5194723,
+          "lng": 21.256692
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Πρακτορείο ΕΛΤΑ Λεχόβου - Κατάστημα ηλεκτρολογικού υλικού",
           "address": "Λέχοβο 530 73",
           "rating": 5.0,
@@ -60593,16 +60633,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Ταχυδρομικό Πρακτορείο Μητρουσίου",
-          "address": "Μητρούσι 621 00",
-          "rating": 4.6,
-          "reviews": 10,
-          "maps_url": "https://maps.google.com/?cid=12752564996955726135&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.0705737,
-          "lng": 23.4604081
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Πρακτορείο",
           "address": "Μεραρχίας 46, Σέρρες 621 25",
           "rating": 4.3,
@@ -60630,6 +60660,16 @@
           "maps_url": "https://maps.google.com/?cid=11991041526963538063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.9078258,
           "lng": 23.499566599999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Ταχυδρομικό Πρακτορείο Μητρουσίου",
+          "address": "Μητρούσι 621 00",
+          "rating": 4.6,
+          "reviews": 10,
+          "maps_url": "https://maps.google.com/?cid=12752564996955726135&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.0705737,
+          "lng": 23.4604081
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60693,6 +60733,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ COURIER A.E.",
+          "address": "Βελισσαρίου 3, Ξάνθη 671 00",
+          "rating": 2.7,
+          "reviews": 312,
+          "maps_url": "https://maps.google.com/?cid=11844244139633283322&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.1369362,
+          "lng": 24.8906507
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Πρακτορείο",
           "address": "Καραμανλή 1, Αλιστράτη 620 45",
           "rating": 5.0,
@@ -60723,13 +60773,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Ελ. Βενιζέλου 58, Κάτω Νευροκόπι 660 33",
-          "rating": 4.3,
-          "reviews": 7,
-          "maps_url": "https://maps.google.com/?cid=5308129412825120049&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.3447587,
-          "lng": 23.865904
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Γιάννη Ρίτσου, Θάσου &, Κομοτηνή 691 00",
+          "rating": 1.7,
+          "reviews": 598,
+          "maps_url": "https://maps.google.com/?cid=7375571769155297615&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 41.1100615,
+          "lng": 25.4041414
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60740,16 +60790,6 @@
           "maps_url": "https://maps.google.com/?cid=361859099908545244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.9157678,
           "lng": 24.2549298
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Γιάννη Ρίτσου, Θάσου &, Κομοτηνή 691 00",
-          "rating": 1.7,
-          "reviews": 598,
-          "maps_url": "https://maps.google.com/?cid=7375571769155297615&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.1100615,
-          "lng": 25.4041414
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60863,6 +60903,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ ταχυδρομείο",
+          "address": "25ης Μαρτίου 24, Φέρες 685 00",
+          "rating": 4.0,
+          "reviews": 7,
+          "maps_url": "https://maps.google.com/?cid=11697234755950289134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.8934086,
+          "lng": 26.170331899999997
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ ΓΟΥΝΑΡΗ ΠΑΤΡΩΝ 1",
           "address": "Κανάρη 54, Πάτρα 262 22",
           "rating": 2.1,
@@ -60883,16 +60933,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Δημησιάνου 15, Λεχαινά 270 53",
-          "rating": 5.0,
-          "reviews": 7,
-          "maps_url": "https://maps.google.com/?cid=16189423444636331279&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.9378587,
-          "lng": 21.2657131
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ",
           "address": "Επαρ.Οδ. Πάτρας-Καλαβρύτων, Χαλανδρίτσα 250 08",
           "rating": 5.0,
@@ -60900,26 +60940,6 @@
           "maps_url": "https://maps.google.com/?cid=372422485548344721&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.108806699999995,
           "lng": 21.7820683
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
-          "address": "Νεοχώρι Μεσολογγίου 300 01",
-          "rating": 4.7,
-          "reviews": 6,
-          "maps_url": "https://maps.google.com/?cid=16034144698478915364&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.408935799999995,
-          "lng": 21.275799499999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ταχυδρομείο Αιγίου - ΕΛΤΑ",
-          "address": "Κλ. Οικονόμου 14,Αίγιο 251 00, Κλεομένους Οικονόμου, Αίγιο 251 00",
-          "rating": 1.8,
-          "reviews": 57,
-          "maps_url": "https://maps.google.com/?cid=11563882989184636943&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.2511407,
-          "lng": 22.088328399999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60933,6 +60953,36 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
+          "address": "Νεοχώρι Μεσολογγίου 300 01",
+          "rating": 4.7,
+          "reviews": 6,
+          "maps_url": "https://maps.google.com/?cid=16034144698478915364&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.408935799999995,
+          "lng": 21.275799499999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier",
+          "address": "Δημησιάνου 15, Λεχαινά 270 53",
+          "rating": 5.0,
+          "reviews": 7,
+          "maps_url": "https://maps.google.com/?cid=16189423444636331279&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.9378587,
+          "lng": 21.2657131
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ταχυδρομείο Αιγίου - ΕΛΤΑ",
+          "address": "Κλ. Οικονόμου 14,Αίγιο 251 00, Κλεομένους Οικονόμου, Αίγιο 251 00",
+          "rating": 1.8,
+          "reviews": 57,
+          "maps_url": "https://maps.google.com/?cid=11563882989184636943&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.2511407,
+          "lng": 22.088328399999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Κ. Αχαϊας",
           "address": "Αράξου 9, Κάτω Αχαΐα 252 00",
           "rating": 2.1,
@@ -60940,6 +60990,26 @@
           "maps_url": "https://maps.google.com/?cid=13176705311125696404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.1452074,
           "lng": 21.5513194
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Νεμέας",
+          "address": "Ευστάθιος Παπακωνσταντίνου 71, Νεμέα 205 00",
+          "rating": 4.3,
+          "reviews": 12,
+          "maps_url": "https://maps.google.com/?cid=18213224223135209742&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.820140699999996,
+          "lng": 22.6618601
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Ακράτας",
+          "address": "Πελλοπονήσου 29, Ακράτα 250 06",
+          "rating": 3.0,
+          "reviews": 23,
+          "maps_url": "https://maps.google.com/?cid=3182224456962669060&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.1535213,
+          "lng": 22.3143775
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -60993,6 +61063,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Courier ΚΑΛΑΜΑΤΑΣ",
+          "address": "Φιλελλήνων 52, Καλαμάτα 241 00",
+          "rating": 2.6,
+          "reviews": 194,
+          "maps_url": "https://maps.google.com/?cid=15873197963088330214&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.0277412,
+          "lng": 22.1112122
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικό Ταχυδρομείο (ΕΛΤΑ)",
           "address": "Πατρών Πύργου 50, Βάρδα 270 52",
           "rating": 5.0,
@@ -61003,13 +61083,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΚΑΛΑΜΑΤΑΣ",
-          "address": "Φιλελλήνων 52, Καλαμάτα 241 00",
-          "rating": 2.6,
-          "reviews": 194,
-          "maps_url": "https://maps.google.com/?cid=15873197963088330214&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.0277412,
-          "lng": 22.1112122
+          "place_name": "ΕΛΤΑ Courier ΧΩΡΑΣ-KOSMOBOOK",
+          "address": "Σπύρου Μαρινάτου 24, Χώρα 240 01",
+          "rating": 4.3,
+          "reviews": 72,
+          "maps_url": "https://maps.google.com/?cid=16012476125194346791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.051779100000005,
+          "lng": 21.718678200000003
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61040,16 +61120,6 @@
           "maps_url": "https://maps.google.com/?cid=12103076056926843327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.933240399999995,
           "lng": 23.630977899999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΑΡΓΥΡΟΎΠΟΛΗΣ",
-          "address": "25ης Μαρτίου 20, Αργυρούπολη 164 52",
-          "rating": 3.0,
-          "reviews": 1680,
-          "maps_url": "https://maps.google.com/?cid=3135467699565791881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.90426,
-          "lng": 23.748975899999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61143,26 +61213,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier ΧΩΡΑΣ-KOSMOBOOK",
-          "address": "Σπύρου Μαρινάτου 24, Χώρα 240 01",
-          "rating": 4.3,
-          "reviews": 72,
-          "maps_url": "https://maps.google.com/?cid=16012476125194346791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.051779100000005,
-          "lng": 21.718678200000003
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Λεωφ. Κηφισίας 141, Μαρούσι 151 24",
-          "rating": 2.4,
-          "reviews": 1143,
-          "maps_url": "https://maps.google.com/?cid=7880390458635808065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0496105,
-          "lng": 23.8082115
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ",
           "address": "Βασ. Όλγας 6, Καλαμάτα 241 00",
           "rating": 2.1,
@@ -61170,6 +61220,26 @@
           "maps_url": "https://maps.google.com/?cid=11686750689951732374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.0360678,
           "lng": 22.1114698
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Μολάων",
+          "address": "Μολάοι 230 52",
+          "rating": 1.4,
+          "reviews": 7,
+          "maps_url": "https://maps.google.com/?cid=15252839101400319839&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.80235,
+          "lng": 22.8520164
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Αρεόπολη",
+          "address": "Αρεόπολη 230 62",
+          "rating": 2.7,
+          "reviews": 6,
+          "maps_url": "https://maps.google.com/?cid=7490847180227073357&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.6674431,
+          "lng": 22.381283099999997
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61210,16 +61280,6 @@
           "maps_url": "https://maps.google.com/?cid=3122359129902700828&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.755476099999996,
           "lng": 20.8133774
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Ζαχάρως",
-          "address": "37°28'54.1\"N 21°38'59., 1, Sintiki 623 00",
-          "rating": 3.9,
-          "reviews": 10,
-          "maps_url": "https://maps.google.com/?cid=223288717284999674&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.481688,
-          "lng": 21.649746999999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61333,6 +61393,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Γριβαίων, Φυτείες 300 09",
+          "rating": 2.3,
+          "reviews": 3,
+          "maps_url": "https://maps.google.com/?cid=11046443444527750622&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.696321499999996,
+          "lng": 21.1859653
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ταχυδρομικό Κουτί ΕΛΤΑ",
           "address": "Λεωφ. Εθ. Αντιστάσεως 158, Ηράκλειο 713 07",
           "rating": 5.0,
@@ -61363,13 +61433,13 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Κεντρικό - Post Office",
-          "address": "Κόσμων 12, Ηράκλειο 712 01",
-          "rating": 1.7,
-          "reviews": 22,
-          "maps_url": "https://maps.google.com/?cid=1647098267822071232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.3375628,
-          "lng": 25.132921699999997
+          "place_name": "ELTA COURIER",
+          "address": "Γιαμπουδάκη 16, Ρέθυμνο 741 33",
+          "rating": 2.1,
+          "reviews": 25,
+          "maps_url": "https://maps.google.com/?cid=7064609522543850178&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.3662105,
+          "lng": 24.481130699999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61383,6 +61453,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Κεντρικό - Post Office",
+          "address": "Κόσμων 12, Ηράκλειο 712 01",
+          "rating": 1.7,
+          "reviews": 22,
+          "maps_url": "https://maps.google.com/?cid=1647098267822071232&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.3375628,
+          "lng": 25.132921699999997
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ἑλληνικά Ταχυδρομεῖα (ΕΛΤΑ) Νεαπόλεως",
           "address": "Εθ. Αντιστάσεως 18, Νεάπολη 724 00",
           "rating": 3.0,
@@ -61390,16 +61470,6 @@
           "maps_url": "https://maps.google.com/?cid=7152122576931899790&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.256254999999996,
           "lng": 25.606196699999998
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA COURIER",
-          "address": "Γιαμπουδάκη 16, Ρέθυμνο 741 33",
-          "rating": 2.1,
-          "reviews": 25,
-          "maps_url": "https://maps.google.com/?cid=7064609522543850178&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.3662105,
-          "lng": 24.481130699999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61453,6 +61523,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ Ταχυδρομικό Πρακτορείο",
+          "address": "Ἁϊνικολιώτη 7, Επάνω Αρχάνες 701 00",
+          "rating": 4.0,
+          "reviews": 4,
+          "maps_url": "https://maps.google.com/?cid=18101891569073138746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 35.2345014,
+          "lng": 25.1595592
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ταχυδρομείο Ιεράπετρας (ΕΛΤΑ)",
           "address": "Κόρακα 25, Ιεράπετρα 722 00",
           "rating": 2.0,
@@ -61474,16 +61554,6 @@
         {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
-          "address": "Ανδρέα Παπανδρέου 38, Σχίσμα Ελούντας 720 53",
-          "rating": 3.1,
-          "reviews": 15,
-          "maps_url": "https://maps.google.com/?cid=14861098769820680374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.261051,
-          "lng": 25.724848
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
           "address": "Ελευθεριου, Ethnarchou Venizelou 67, Souda 732 00",
           "rating": 3.5,
           "reviews": 43,
@@ -61500,16 +61570,6 @@
           "maps_url": "https://maps.google.com/?cid=2937939906777637563&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.3706451,
           "lng": 24.702493
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
-          "address": "6CQM+JM, Αγκουσελιανά 740 53",
-          "rating": 5.0,
-          "reviews": 1,
-          "maps_url": "https://maps.google.com/?cid=11339037064308095528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 35.23900510000001,
-          "lng": 24.4341691
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61613,16 +61673,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Περδικας",
-          "address": "Unnamed Road, Πέρδικα 461 00",
-          "rating": 1.0,
-          "reviews": 1,
-          "maps_url": "https://maps.google.com/?cid=5009261808011165017&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.3692201,
-          "lng": 20.3026447
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ταχυμεταφορές ΕΛΤΑ",
           "address": "Λαζάρου Τηλιακού 62, Ρόδος 851 00",
           "rating": 1.5,
@@ -61712,16 +61762,6 @@
           "lng": 25.4385647
         },
         {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Ευθεία Φηρών-Πύργου, Εμπορικό κέντρο \"Καμαρινός, Mesaria 847 00",
-          "rating": 2.4,
-          "reviews": 58,
-          "maps_url": "https://maps.google.com/?cid=9320079571444075059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.3974471,
-          "lng": 25.438347399999998
-        },
-        {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER ΣΑΝΤΟΡΙΝΗ",
           "address": "Μεσαριά 847 00",
@@ -61730,6 +61770,16 @@
           "maps_url": "https://maps.google.com/?cid=10354874587841763399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 36.399442799999996,
           "lng": 25.457982299999998
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Ευθεία Φηρών-Πύργου, Εμπορικό κέντρο \"Καμαρινός, Mesaria 847 00",
+          "rating": 2.4,
+          "reviews": 58,
+          "maps_url": "https://maps.google.com/?cid=9320079571444075059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.3974471,
+          "lng": 25.438347399999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61813,16 +61863,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA COURIER",
-          "address": "Μπουρνιά 1, Χίος 821 00",
-          "rating": 1.4,
-          "reviews": 79,
-          "maps_url": "https://maps.google.com/?cid=14712042558170216593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.369008199999996,
-          "lng": 26.1334184
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ)",
           "address": "Επαρ.Οδ. Άνδρου-Λιμάνι Γαυρίου 95, Άνδρος 845 00",
           "rating": 4.4,
@@ -61830,6 +61870,16 @@
           "maps_url": "https://maps.google.com/?cid=10974043058461274806&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.834996,
           "lng": 24.9319542
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "ELTA COURIER",
+          "address": "Μπουρνιά 1, Χίος 821 00",
+          "rating": 1.4,
+          "reviews": 79,
+          "maps_url": "https://maps.google.com/?cid=14712042558170216593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.369008199999996,
+          "lng": 26.1334184
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61893,16 +61943,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικό Ταχυδρομείο (ΕΛΤΑ)",
-          "address": "Σοφούλη, Νέο Καρλόβασι 832 00",
-          "rating": 3.0,
-          "reviews": 54,
-          "maps_url": "https://maps.google.com/?cid=8548536279692324135&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.797153699999996,
-          "lng": 26.7051834
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ ΜΕΣΤΑ",
           "address": "Unnamed Road, Μεστά 821 02",
           "rating": 5.0,
@@ -61910,6 +61950,16 @@
           "maps_url": "https://maps.google.com/?cid=5654673301717399881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.260305599999995,
           "lng": 25.9226809
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
+          "place_name": "Ελληνικό Ταχυδρομείο (ΕΛΤΑ)",
+          "address": "Σοφούλη, Νέο Καρλόβασι 832 00",
+          "rating": 3.0,
+          "reviews": 54,
+          "maps_url": "https://maps.google.com/?cid=8548536279692324135&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.797153699999996,
+          "lng": 26.7051834
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -61943,16 +61993,6 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ",
-          "address": "Αντιμάχεια 853 02",
-          "rating": 2.2,
-          "reviews": 25,
-          "maps_url": "https://maps.google.com/?cid=8767956620922051798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.8156542,
-          "lng": 27.099124399999997
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
           "place_name": "ELTA POST OFFICE",
           "address": "Δημοτική Κοινότητα Καρδαμαίνης, Kos 853 02",
           "rating": 5.0,
@@ -61963,6 +62003,16 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
+          "place_name": "ΕΛΤΑ",
+          "address": "Αντιμάχεια 853 02",
+          "rating": 2.2,
+          "reviews": 25,
+          "maps_url": "https://maps.google.com/?cid=8767956620922051798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.8156542,
+          "lng": 27.099124399999997
+        },
+        {
+          "brand": "ΕΛΤΑ Courier",
           "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Καλύμνου",
           "address": "852 00, Κάλυμνος 852 00",
           "rating": 2.7,
@@ -61970,26 +62020,6 @@
           "maps_url": "https://maps.google.com/?cid=9565003242471941969&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 36.9528043,
           "lng": 26.9784632
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) - Αγία Μαρίνα, Λέρος",
-          "address": "Αγ. Μαρίνα 854 00",
-          "rating": 5.0,
-          "reviews": 3,
-          "maps_url": "https://maps.google.com/?cid=6765488687484565587&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.1565428,
-          "lng": 26.8506175
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Σύμης",
-          "address": "Συμη, Σύμη 856 00",
-          "rating": 4.3,
-          "reviews": 6,
-          "maps_url": "https://maps.google.com/?cid=7811195778580352566&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.6153447,
-          "lng": 27.8348172
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -62042,14 +62072,24 @@
           "lng": 20.8529852
         },
         {
+          "brand": "EASYMAIL",
+          "place_name": "Easymail Ιωάννινα",
+          "address": "Λεωφ. Γεωρ. Παπανδρέου 44, Ιωάννινα 454 44",
+          "rating": 3.3,
+          "reviews": 57,
+          "maps_url": "https://maps.google.com/?cid=5703631644517844531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.6733537,
+          "lng": 20.8483031
+        },
+        {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Διοικητικές Υπηρεσίες",
-          "address": "Λεωφ. Ιωνίας 200 &, Ιακωβάτων 61, Αθήνα 111 44",
-          "rating": 1.5,
-          "reviews": 105,
-          "maps_url": "https://maps.google.com/?cid=1486974657792247765&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.01453,
-          "lng": 23.7297196
+          "place_name": "ΕΛΤΑ Καναλλάκι",
+          "address": "Μπουμπουλίνας 24, Καναλλάκι 480 62",
+          "rating": 3.7,
+          "reviews": 6,
+          "maps_url": "https://maps.google.com/?cid=415476529828805100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.2333801,
+          "lng": 20.601955399999998
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -62093,63 +62133,43 @@
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Courier",
-          "address": "Αναπαύσεως 43, Βριλήσσια 152 35",
-          "rating": 1.6,
-          "reviews": 2034,
-          "maps_url": "https://maps.google.com/?cid=1255185758919006949&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0433053,
-          "lng": 23.8454366
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ COURIER ΠΑΙΑΝΙΑ (ELTA COURIER PAIANIA)",
-          "address": "Αγ. Τριάδος 28, Παιανία 190 02",
-          "rating": 2.4,
-          "reviews": 412,
-          "maps_url": "https://maps.google.com/?cid=5335420297579951618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.9565768,
-          "lng": 23.8518869
+          "place_name": "ΕΛΤΑ Κούριερ Καλυβίων",
+          "address": "Χρήστου Ράπτη 38, Καλύβια Θορικού 190 10",
+          "rating": 3.5,
+          "reviews": 48,
+          "maps_url": "https://maps.google.com/?cid=5271710873439308345&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.8425438,
+          "lng": 23.9239939
         },
         {
           "brand": "ΕΛΤΑ Courier",
           "place_name": "ΕΛΤΑ Courier",
           "address": "Κων/νου Παπαδημητρίου 40, Μαρκόπουλο Μεσογαίας 190 03",
           "rating": 3.8,
-          "reviews": 203,
+          "reviews": 204,
           "maps_url": "https://maps.google.com/?cid=13069370950072615074&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.888323799999995,
           "lng": 23.9327805
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ ΑΡΓΟΥΣ ΟΡΕΣΤΙΚΟΥ",
-          "address": "Παπανικολάου 38, Άργος Ορεστικό 522 00",
-          "rating": 4.2,
-          "reviews": 10,
-          "maps_url": "https://maps.google.com/?cid=14670593112271820128&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.4530027,
-          "lng": 21.260473599999997
+          "place_name": "ELTA COURIER Νέας Ιωνίας",
+          "address": "Μενελάου 56, Νέα Ιωνία 141 21",
+          "rating": 2.8,
+          "reviews": 332,
+          "maps_url": "https://maps.google.com/?cid=10887144868607698446&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0492485,
+          "lng": 23.7546815
         },
         {
           "brand": "ΕΛΤΑ Courier",
-          "place_name": "ΕΛΤΑ Τοιχίο",
-          "address": "Τοιχιό 520 59",
-          "rating": 5.0,
-          "reviews": 1,
-          "maps_url": "https://maps.google.com/?cid=14023555384530610790&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.582989399999995,
-          "lng": 21.3034079
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Ελληνικά Ταχυδρομεία (ΕΛΤΑ) Μανιάκοι",
-          "address": "Φιλίππου 12, Μανιάκοι 521 00",
-          "rating": 3.6,
-          "reviews": 8,
-          "maps_url": "https://maps.google.com/?cid=16804155101849968759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5010009,
-          "lng": 21.2455522
+          "place_name": "ELTA Ταχυδρομικό Πρακτορείο",
+          "address": "ΕΟ Ισθμού Αρχαίας Επιδαύρου, Λουτρά Ωραίας Ελένης 201 00",
+          "rating": 4.3,
+          "reviews": 18,
+          "maps_url": "https://maps.google.com/?cid=15169136278163308133&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.8687879,
+          "lng": 22.9973189
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -62170,26 +62190,6 @@
           "maps_url": "https://maps.google.com/?cid=4178473748893744396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.361070999999995,
           "lng": 26.135624399999998
-        },
-        {
-          "brand": "EASYMAIL",
-          "place_name": "Easymail Ιωάννινα",
-          "address": "Λεωφ. Γεωρ. Παπανδρέου 44, Ιωάννινα 454 44",
-          "rating": 3.3,
-          "reviews": 57,
-          "maps_url": "https://maps.google.com/?cid=5703631644517844531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.6733537,
-          "lng": 20.8483031
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "Elta Courier Chalkida",
-          "address": "Πολιτικών, Χαλκίδα 341 00",
-          "rating": 4.3,
-          "reviews": 12,
-          "maps_url": "https://maps.google.com/?cid=802608398870694111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.4582494,
-          "lng": 23.5955387
         },
         {
           "brand": "Courier Center",
@@ -62244,12 +62244,12 @@
         {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
-          "address": "Βεργίνας 173, Δράμα 661 00",
-          "rating": 4.5,
-          "reviews": 259,
-          "maps_url": "https://maps.google.com/?cid=577502796567348294&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 41.146090900000004,
-          "lng": 24.150419199999998
+          "address": "Εθ. Αντίστασης 86, Κιάτο 202 00",
+          "rating": 4.6,
+          "reviews": 197,
+          "maps_url": "https://maps.google.com/?cid=16059525188058916967&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0090843,
+          "lng": 22.7536862
         },
         {
           "brand": "ΕΛΤΑ Courier",
@@ -62260,6 +62260,16 @@
           "maps_url": "https://maps.google.com/?cid=4853638630454207751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.078809899999996,
           "lng": 22.633640099999997
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "COURIER CENTER",
+          "address": "Ρήγα Φεραίου 24, Αμαλιάδα 272 00",
+          "rating": 4.8,
+          "reviews": 92,
+          "maps_url": "https://maps.google.com/?cid=10945969096646430894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.7973153,
+          "lng": 21.3488099
         },
         {
           "brand": "Courier Center",
@@ -62290,16 +62300,6 @@
           "maps_url": "https://maps.google.com/?cid=1957042267166558084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.363577,
           "lng": 24.4583953
-        },
-        {
-          "brand": "ΕΛΤΑ Courier",
-          "place_name": "ELTA COURIER - PORTA PORTA",
-          "address": "Γεωρ. Παπανδρέου 88, Μεταμόρφωση 144 52",
-          "rating": 2.1,
-          "reviews": 86,
-          "maps_url": "https://maps.google.com/?cid=5966259137514540924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.064094399999995,
-          "lng": 23.764305699999998
         },
         {
           "brand": "SPEEDEX",
@@ -62373,6 +62373,16 @@
         },
         {
           "brand": "SPEEDEX",
+          "place_name": "Speedex Courier Αίγινας",
+          "address": "Αφαίας 10, Αίγινα 180 10",
+          "rating": 3.8,
+          "reviews": 80,
+          "maps_url": "https://maps.google.com/?cid=18233696010182450125&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.7456702,
+          "lng": 23.444563000000002
+        },
+        {
+          "brand": "SPEEDEX",
           "place_name": "Speedex Courier Ανάβυσσος",
           "address": "Βασ. Φρειδερίκης 4, Ανάβυσσος 190 13",
           "rating": 3.3,
@@ -62393,16 +62403,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "SPEEDEX",
-          "address": "Λεωφ. Βασιλέως Κωνσταντίνου 2, Κορωπί 194 00",
-          "rating": 3.0,
-          "reviews": 6,
-          "maps_url": "https://maps.google.com/?cid=11497627354425363965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.9162397,
-          "lng": 23.8750263
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Αγ. Δημήτριος - Άλιμος",
           "address": "Παρ. Λεωφ. Βουλιαγμένης 372, Αγ. Δημήτριος Αττικής 173 42",
           "rating": 2.5,
@@ -62410,6 +62410,16 @@
           "maps_url": "https://maps.google.com/?cid=9136931546431060744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.9285335,
           "lng": 23.7440148
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "SPEEDEX",
+          "address": "Λεωφ. Βασιλέως Κωνσταντίνου 2, Κορωπί 194 00",
+          "rating": 3.0,
+          "reviews": 6,
+          "maps_url": "https://maps.google.com/?cid=11497627354425363965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.9162397,
+          "lng": 23.8750263
         },
         {
           "brand": "SPEEDEX",
@@ -62483,16 +62493,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Αμαρουσίου",
-          "address": "Αγίου Αθανασίου 29, Μαρούσι 151 25",
-          "rating": 4.0,
-          "reviews": 508,
-          "maps_url": "https://maps.google.com/?cid=5751081838118339148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0473111,
-          "lng": 23.809703499999998
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Courier Θήβας",
           "address": "Λοξής Φάλαγγος 21, Θήβα 322 00",
           "rating": 4.1,
@@ -62500,6 +62500,16 @@
           "maps_url": "https://maps.google.com/?cid=18190203562730189012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.3139829,
           "lng": 23.3181752
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "Speedex Courier Αμαρουσίου",
+          "address": "Αγίου Αθανασίου 29, Μαρούσι 151 25",
+          "rating": 4.0,
+          "reviews": 508,
+          "maps_url": "https://maps.google.com/?cid=5751081838118339148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0473111,
+          "lng": 23.809703499999998
         },
         {
           "brand": "SPEEDEX",
@@ -62643,16 +62653,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier - Γερασίμου Σκλάβου & Αντώνη Σαμαράκη",
-          "address": "Γεράσιμου Σκλάβου, Πάτρα 264 42",
-          "rating": 2.6,
-          "reviews": 8,
-          "maps_url": "https://maps.google.com/?cid=14927743651940402484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.2845136,
-          "lng": 21.770756499999997
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Courier Αλμυρού",
           "address": "Ερμού 112, Αλμυρός 371 00",
           "rating": 4.1,
@@ -62690,16 +62690,6 @@
           "maps_url": "https://maps.google.com/?cid=7609464233823799576&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 39.6393951,
           "lng": 22.419879800000004
-        },
-        {
-          "brand": "SPEEDEX",
-          "place_name": "Speedex Courier",
-          "address": "Στ.Καζαντζίδη 70, Πυλαία 555 35",
-          "rating": 2.6,
-          "reviews": 2447,
-          "maps_url": "https://maps.google.com/?cid=17572568947382276682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5742135,
-          "lng": 22.9894176
         },
         {
           "brand": "SPEEDEX",
@@ -62763,16 +62753,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "\"Speedex\"",
-          "address": "Καρδίτσης 13, Τρίκαλα 421 00",
-          "rating": 2.2,
-          "reviews": 597,
-          "maps_url": "https://maps.google.com/?cid=15684311570069632726&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.5484625,
-          "lng": 21.7721965
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Courier",
           "address": "Φλωρίνης 1, Λάρισα 413 35",
           "rating": 4.3,
@@ -62793,6 +62773,16 @@
         },
         {
           "brand": "SPEEDEX",
+          "place_name": "Speedex Courier",
+          "address": "Στ.Καζαντζίδη 70, Πυλαία 555 35",
+          "rating": 2.6,
+          "reviews": 2447,
+          "maps_url": "https://maps.google.com/?cid=17572568947382276682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5742135,
+          "lng": 22.9894176
+        },
+        {
+          "brand": "SPEEDEX",
           "place_name": "Speedex_Courier_Elassona",
           "address": "Οικονόμου 14, Ελασσόνα 402 00",
           "rating": 4.5,
@@ -62803,33 +62793,23 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Καλαμπάκας",
-          "address": "Τρικάλων 128, Καλαμπάκα 422 00",
-          "rating": 5.0,
-          "reviews": 41,
-          "maps_url": "https://maps.google.com/?cid=11199921722024872713&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.703448099999996,
-          "lng": 21.630070999999997
+          "place_name": "\"Speedex\"",
+          "address": "Καρδίτσης 13, Τρίκαλα 421 00",
+          "rating": 2.2,
+          "reviews": 597,
+          "maps_url": "https://maps.google.com/?cid=15684311570069632726&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.5484625,
+          "lng": 21.7721965
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Κοζάνης",
-          "address": "Πλ. Συντάγματος 3, Κοζάνη 501 00",
-          "rating": 3.7,
-          "reviews": 332,
-          "maps_url": "https://maps.google.com/?cid=9401238153896661321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.2971503,
-          "lng": 21.785015599999998
-        },
-        {
-          "brand": "SPEEDEX",
-          "place_name": "Speedex Courier",
-          "address": "Φιλίππου 10, Πτολεμαΐδα 502 00",
-          "rating": 4.4,
-          "reviews": 278,
-          "maps_url": "https://maps.google.com/?cid=2660569364008069407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5111645,
-          "lng": 21.6776519
+          "place_name": "Speedex Courier Τούμπας",
+          "address": "Γρ. Λαμπράκη 88, Θεσσαλονίκη 544 53",
+          "rating": 2.5,
+          "reviews": 1315,
+          "maps_url": "https://maps.google.com/?cid=7472329296907800518&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.617619499999996,
+          "lng": 22.9694069
         },
         {
           "brand": "SPEEDEX",
@@ -62843,6 +62823,26 @@
         },
         {
           "brand": "SPEEDEX",
+          "place_name": "Speedex Κοζάνης",
+          "address": "Πλ. Συντάγματος 3, Κοζάνη 501 00",
+          "rating": 3.7,
+          "reviews": 332,
+          "maps_url": "https://maps.google.com/?cid=9401238153896661321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.2971503,
+          "lng": 21.785015599999998
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "Speedex Courier Καλαμπάκας",
+          "address": "Τρικάλων 128, Καλαμπάκα 422 00",
+          "rating": 5.0,
+          "reviews": 41,
+          "maps_url": "https://maps.google.com/?cid=11199921722024872713&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.703448099999996,
+          "lng": 21.630070999999997
+        },
+        {
+          "brand": "SPEEDEX",
           "place_name": "Speedex Courier Ευοσμου",
           "address": "Αριστοτέλους 20, Εύοσμος 562 24",
           "rating": 2.6,
@@ -62853,13 +62853,13 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Τούμπας",
-          "address": "Γρ. Λαμπράκη 88, Θεσσαλονίκη 544 53",
-          "rating": 2.5,
-          "reviews": 1315,
-          "maps_url": "https://maps.google.com/?cid=7472329296907800518&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.617619499999996,
-          "lng": 22.9694069
+          "place_name": "Speedex Courier",
+          "address": "Φιλίππου 10, Πτολεμαΐδα 502 00",
+          "rating": 4.4,
+          "reviews": 278,
+          "maps_url": "https://maps.google.com/?cid=2660569364008069407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5111645,
+          "lng": 21.6776519
         },
         {
           "brand": "SPEEDEX",
@@ -62932,16 +62932,6 @@
           "lng": 22.0474747
         },
         {
-          "brand": "Courier Center",
-          "place_name": "Courier Center Naoussas",
-          "address": "Καμπίτη 18, Νάουσα 592 00",
-          "rating": 4.8,
-          "reviews": 89,
-          "maps_url": "https://maps.google.com/?cid=3320784445111115696&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6290695,
-          "lng": 22.0700164
-        },
-        {
           "brand": "SPEEDEX",
           "place_name": "SPEEDEX KILKIS",
           "address": "21ης Ιουνίου 12, Κιλκίς 611 00",
@@ -62976,7 +62966,7 @@
           "place_name": "COURIER CENTER",
           "address": "ΕΟ Θεσσαλονίκης Πολυγύρου 14 χλμ, Θέρμη 570 01",
           "rating": 3.7,
-          "reviews": 748,
+          "reviews": 749,
           "maps_url": "https://maps.google.com/?cid=886092531186009408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.5385681,
           "lng": 23.0340074
@@ -62990,16 +62980,6 @@
           "maps_url": "https://maps.google.com/?cid=3141656632836065356&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.973816299999996,
           "lng": 22.059813300000002
-        },
-        {
-          "brand": "Courier Center",
-          "place_name": "COURIER CENTER",
-          "address": "Αγίου Γεωργίου 21, Ευκαρπία 564 29",
-          "rating": 3.6,
-          "reviews": 825,
-          "maps_url": "https://maps.google.com/?cid=13853884397304755757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6881067,
-          "lng": 22.9532356
         },
         {
           "brand": "SPEEDEX",
@@ -63070,6 +63050,16 @@
           "maps_url": "https://maps.google.com/?cid=17724291247492135601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.147689199999995,
           "lng": 24.152890499999998
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "Courier Center Naoussas",
+          "address": "Καμπίτη 18, Νάουσα 592 00",
+          "rating": 4.8,
+          "reviews": 89,
+          "maps_url": "https://maps.google.com/?cid=3320784445111115696&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6290695,
+          "lng": 22.0700164
         },
         {
           "brand": "SPEEDEX",
@@ -63143,6 +63133,16 @@
         },
         {
           "brand": "SPEEDEX",
+          "place_name": "Speedex Courier - Γερασίμου Σκλάβου & Αντώνη Σαμαράκη",
+          "address": "Γεράσιμου Σκλάβου, Πάτρα 264 42",
+          "rating": 2.6,
+          "reviews": 8,
+          "maps_url": "https://maps.google.com/?cid=14927743651940402484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.2845136,
+          "lng": 21.770756499999997
+        },
+        {
+          "brand": "SPEEDEX",
           "place_name": "Speedex Αμαλιάδας",
           "address": "25ης Μαρτίου 25, Αμαλιάδα 272 00",
           "rating": 3.0,
@@ -63200,16 +63200,6 @@
           "maps_url": "https://maps.google.com/?cid=12040360470084313580&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.633450100000005,
           "lng": 22.7305496
-        },
-        {
-          "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Αίγινας",
-          "address": "Αφαίας 10, Αίγινα 180 10",
-          "rating": 3.8,
-          "reviews": 80,
-          "maps_url": "https://maps.google.com/?cid=18233696010182450125&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.7456702,
-          "lng": 23.444563000000002
         },
         {
           "brand": "SPEEDEX",
@@ -63323,16 +63313,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex courier ΡΟΔΟΣ",
-          "address": "Εμ. Τριανταφυλλίδη 305, Σγουρού 851 00",
-          "rating": 1.8,
-          "reviews": 98,
-          "maps_url": "https://maps.google.com/?cid=9131501146973236682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.3982495,
-          "lng": 28.1996017
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Χρήστος Βάρδας speedex κιθυρων",
           "address": "Άνω Λιβάδι 801 00, Ελλάδα",
           "rating": 4.3,
@@ -63340,6 +63320,16 @@
           "maps_url": "https://maps.google.com/?cid=12428740182506486658&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 36.1823189,
           "lng": 22.9842251
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "Speedex courier ΡΟΔΟΣ",
+          "address": "Εμ. Τριανταφυλλίδη 305, Σγουρού 851 00",
+          "rating": 1.8,
+          "reviews": 98,
+          "maps_url": "https://maps.google.com/?cid=9131501146973236682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 36.3982495,
+          "lng": 28.1996017
         },
         {
           "brand": "SPEEDEX",
@@ -63413,16 +63403,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "SPEEDEX",
-          "address": "Επαρ.Οδ. Κυθήρων, Άνω Λιβάδι 801 00",
-          "rating": 4.0,
-          "reviews": 3,
-          "maps_url": "https://maps.google.com/?cid=13617570604309338837&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 36.1825717,
-          "lng": 22.9843561
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Άνδρος",
           "address": "Άνδρος 845 00",
           "rating": 4.6,
@@ -63483,16 +63463,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Λήμνου",
-          "address": "Πλ. Ελ. Βενιζέλου, Μύρινα 814 00",
-          "rating": 4.7,
-          "reviews": 47,
-          "maps_url": "https://maps.google.com/?cid=12987932215947840927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.8791692,
-          "lng": 25.0623072
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Courier",
           "address": "Λεωφ. Αρχιεπισκόπου Μακαρίου 34, Ιωάννινα 452 21",
           "rating": 3.1,
@@ -63523,16 +63493,6 @@
         },
         {
           "brand": "SPEEDEX",
-          "place_name": "Speedex Courier Λαυρίου",
-          "address": "Ποσειδώνος 7, Λαύριο 195 00",
-          "rating": 5.0,
-          "reviews": 3,
-          "maps_url": "https://maps.google.com/?cid=6689832702037987797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.7124836,
-          "lng": 24.054101499999998
-        },
-        {
-          "brand": "SPEEDEX",
           "place_name": "Speedex Courier Κερατέα",
           "address": "Δημάρχου Πον. Πόγκα 81, Λαυρεωτική 190 01",
           "rating": 3.5,
@@ -63540,6 +63500,16 @@
           "maps_url": "https://maps.google.com/?cid=2331511304128903537&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 37.800967,
           "lng": 23.977000699999998
+        },
+        {
+          "brand": "SPEEDEX",
+          "place_name": "Speedex Courier Λαυρίου",
+          "address": "Ποσειδώνος 7, Λαύριο 195 00",
+          "rating": 5.0,
+          "reviews": 3,
+          "maps_url": "https://maps.google.com/?cid=6689832702037987797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.7124836,
+          "lng": 24.054101499999998
         },
         {
           "brand": "SPEEDEX",
@@ -63623,16 +63593,6 @@
         },
         {
           "brand": "Courier Center",
-          "place_name": "COURIER CENTER",
-          "address": "25ο χλμ ΝΕΟΑΚ, Ελευσίνα 192 00",
-          "rating": 4.3,
-          "reviews": 431,
-          "maps_url": "https://maps.google.com/?cid=16447963634471337943&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.0554819,
-          "lng": 23.5127129
-        },
-        {
-          "brand": "Courier Center",
           "place_name": "Courier Center Πεύκης",
           "address": "Λεωφ. Ειρήνης 1, Πεύκη 151 21",
           "rating": 4.2,
@@ -63640,6 +63600,16 @@
           "maps_url": "https://maps.google.com/?cid=15086198436859205475&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.0597391,
           "lng": 23.797395200000004
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "COURIER CENTER",
+          "address": "25ο χλμ ΝΕΟΑΚ, Ελευσίνα 192 00",
+          "rating": 4.3,
+          "reviews": 431,
+          "maps_url": "https://maps.google.com/?cid=16447963634471337943&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.0554819,
+          "lng": 23.5127129
         },
         {
           "brand": "Courier Center",
@@ -63690,6 +63660,16 @@
           "maps_url": "https://maps.google.com/?cid=11916658467558380465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.433451999999996,
           "lng": 22.425478
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "COURIER CENTER",
+          "address": "Λαμίας 45, Στυλίδα 353 00",
+          "rating": 4.8,
+          "reviews": 53,
+          "maps_url": "https://maps.google.com/?cid=14392442501956059597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.913980699999996,
+          "lng": 22.611926699999998
         },
         {
           "brand": "Courier Center",
@@ -63774,6 +63754,26 @@
         {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
+          "address": "Θωμά Λαδά 2, Γρεβενά 511 00",
+          "rating": 4.8,
+          "reviews": 95,
+          "maps_url": "https://maps.google.com/?cid=10573184461666250558&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.0836634,
+          "lng": 21.425301599999997
+        },
+        {
+          "brand": "EASYMAIL",
+          "place_name": "Easymail Κοζάνης",
+          "address": "ΚΩΣΤΗ ΠΑΛΑΜΑ, Γεωρ. Τιόλη &, Κοζάνη 501 00",
+          "rating": 2.0,
+          "reviews": 4,
+          "maps_url": "https://maps.google.com/?cid=17915761074752092800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.2972725,
+          "lng": 21.7898407
+        },
+        {
+          "brand": "Courier Center",
+          "place_name": "COURIER CENTER",
           "address": "Ιωνίας 5, Θεσσαλονίκη 570 09",
           "rating": 4.0,
           "reviews": 151,
@@ -63793,13 +63793,13 @@
         },
         {
           "brand": "Courier Center",
-          "place_name": "COURIER CENTER",
-          "address": "Κωνσταντινουπόλεως 7, Καλαμαριά 551 32",
-          "rating": 3.7,
-          "reviews": 139,
-          "maps_url": "https://maps.google.com/?cid=8870174116887373743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.5801042,
-          "lng": 22.9506032
+          "place_name": "COURIER CENTER ΤΟΥΜΠΑ",
+          "address": "Επιδαύρου 45, Θεσσαλονίκη 544 54",
+          "rating": 3.8,
+          "reviews": 614,
+          "maps_url": "https://maps.google.com/?cid=11425274741830258156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.6086373,
+          "lng": 22.9807904
         },
         {
           "brand": "Courier Center",
@@ -63814,32 +63814,12 @@
         {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
-          "address": "Θωμά Λαδά 2, Γρεβενά 511 00",
-          "rating": 4.8,
-          "reviews": 95,
-          "maps_url": "https://maps.google.com/?cid=10573184461666250558&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.0836634,
-          "lng": 21.425301599999997
-        },
-        {
-          "brand": "Courier Center",
-          "place_name": "Courier Center Εύοσμος",
-          "address": "Νικομήδειας 47, Εύοσμος 563 34",
-          "rating": 3.6,
-          "reviews": 468,
-          "maps_url": "https://maps.google.com/?cid=6066822054829423228&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6754842,
-          "lng": 22.899431699999997
-        },
-        {
-          "brand": "Courier Center",
-          "place_name": "COURIER CENTER ΤΟΥΜΠΑ",
-          "address": "Επιδαύρου 45, Θεσσαλονίκη 544 54",
-          "rating": 3.8,
-          "reviews": 614,
-          "maps_url": "https://maps.google.com/?cid=11425274741830258156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.6086373,
-          "lng": 22.9807904
+          "address": "Κωνσταντινουπόλεως 7, Καλαμαριά 551 32",
+          "rating": 3.7,
+          "reviews": 139,
+          "maps_url": "https://maps.google.com/?cid=8870174116887373743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.5801042,
+          "lng": 22.9506032
         },
         {
           "brand": "Courier Center",
@@ -63902,16 +63882,6 @@
           "lng": 22.9632933
         },
         {
-          "brand": "EASYMAIL",
-          "place_name": "Easymail Κοζάνης",
-          "address": "ΚΩΣΤΗ ΠΑΛΑΜΑ, Γεωρ. Τιόλη &, Κοζάνη 501 00",
-          "rating": 2.0,
-          "reviews": 4,
-          "maps_url": "https://maps.google.com/?cid=17915761074752092800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.2972725,
-          "lng": 21.7898407
-        },
-        {
           "brand": "Courier Center",
           "place_name": "COURIER CENTER",
           "address": "Δράμας 26, Ξάνθη 671 00",
@@ -63940,16 +63910,6 @@
           "maps_url": "https://maps.google.com/?cid=6824483658101255447&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.1950223,
           "lng": 21.7189954
-        },
-        {
-          "brand": "Courier Center",
-          "place_name": "COURIER CENTER",
-          "address": "Ρήγα Φεραίου 24, Αμαλιάδα 272 00",
-          "rating": 4.8,
-          "reviews": 92,
-          "maps_url": "https://maps.google.com/?cid=10945969096646430894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.7973153,
-          "lng": 21.3488099
         },
         {
           "brand": "Courier Center",
@@ -64032,6 +63992,16 @@
           "lng": 23.9480281
         },
         {
+          "brand": "ACS",
+          "place_name": "ACS Courier",
+          "address": "Β' ΜΕΡΑΡΧΙΑΣ &, Πραξιτέλους 192, Πειραιάς 185 35",
+          "rating": 3.2,
+          "reviews": 3597,
+          "maps_url": "https://maps.google.com/?cid=6028933909671387890&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.939250099999995,
+          "lng": 23.6460091
+        },
+        {
           "brand": "EASYMAIL",
           "place_name": "Easymail Κεντρικό Κατάστημα Ρέντης",
           "address": "Ag. I, Θεσσαλονίκης 4a, Αγ. Ιωάννης Ρέντης 182 33",
@@ -64056,7 +64026,7 @@
           "place_name": "Easymail Μεταμόρφωση",
           "address": "Δερβενίων 39, Μεταμόρφωση 144 51",
           "rating": 4.1,
-          "reviews": 4375,
+          "reviews": 4376,
           "maps_url": "https://maps.google.com/?cid=5704173052102615219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 38.059302699999996,
           "lng": 23.7485279
@@ -64113,6 +64083,16 @@
         },
         {
           "brand": "EASYMAIL",
+          "place_name": "Easymail Θεσσαλονίκης",
+          "address": "Αναπαύσεως 2, Κορδελιό Εύοσμος 562 24",
+          "rating": 4.1,
+          "reviews": 219,
+          "maps_url": "https://maps.google.com/?cid=7795641404203841247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.678396899999996,
+          "lng": 22.9036738
+        },
+        {
+          "brand": "EASYMAIL",
           "place_name": "Easymail Περαίας",
           "address": "Θεσσαλονίκης - Περαίας 42, Θεσσαλονίκη 570 19",
           "rating": 4.6,
@@ -64123,13 +64103,13 @@
         },
         {
           "brand": "EASYMAIL",
-          "place_name": "Easymail Θεσσαλονίκης",
-          "address": "Αναπαύσεως 2, Κορδελιό Εύοσμος 562 24",
-          "rating": 4.1,
-          "reviews": 219,
-          "maps_url": "https://maps.google.com/?cid=7795641404203841247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.678396899999996,
-          "lng": 22.9036738
+          "place_name": "Easymail Χίου",
+          "address": "Νεώρειον 19, Χίος 821 00",
+          "rating": 4.9,
+          "reviews": 128,
+          "maps_url": "https://maps.google.com/?cid=2359149285267029479&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 38.3727051,
+          "lng": 26.138173
         },
         {
           "brand": "EASYMAIL",
@@ -64160,16 +64140,6 @@
           "maps_url": "https://maps.google.com/?cid=12560607771512431233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 40.2407311,
           "lng": 23.2854705
-        },
-        {
-          "brand": "EASYMAIL",
-          "place_name": "Easymail Χίου",
-          "address": "Νεώρειον 19, Χίος 821 00",
-          "rating": 4.9,
-          "reviews": 128,
-          "maps_url": "https://maps.google.com/?cid=2359149285267029479&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 38.3727051,
-          "lng": 26.138173
         },
         {
           "brand": "EASYMAIL",
@@ -64223,13 +64193,13 @@
         },
         {
           "brand": "EASYMAIL",
-          "place_name": "Easymail Γιαννιτσά",
-          "address": "14ης Σεπτεμβρίου 6, Γιαννιτσά 581 00",
-          "rating": 3.3,
-          "reviews": 7,
-          "maps_url": "https://maps.google.com/?cid=10629150602065956816&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.7944185,
-          "lng": 22.4121266
+          "place_name": "Easymail Κιλκίς",
+          "address": "Ελ. Βενιζέλου 90, Κιλκίς 611 00",
+          "rating": 3.2,
+          "reviews": 18,
+          "maps_url": "https://maps.google.com/?cid=13589706091508477020&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.996479799999996,
+          "lng": 22.867112499999998
         },
         {
           "brand": "EASYMAIL",
@@ -64243,13 +64213,13 @@
         },
         {
           "brand": "EASYMAIL",
-          "place_name": "Easymail Κιλκίς",
-          "address": "Ελ. Βενιζέλου 90, Κιλκίς 611 00",
-          "rating": 3.2,
-          "reviews": 18,
-          "maps_url": "https://maps.google.com/?cid=13589706091508477020&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 40.996479799999996,
-          "lng": 22.867112499999998
+          "place_name": "Easymail Γιαννιτσά",
+          "address": "14ης Σεπτεμβρίου 6, Γιαννιτσά 581 00",
+          "rating": 3.3,
+          "reviews": 7,
+          "maps_url": "https://maps.google.com/?cid=10629150602065956816&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 40.7944185,
+          "lng": 22.4121266
         },
         {
           "brand": "EASYMAIL",
@@ -64270,6 +64240,26 @@
           "maps_url": "https://maps.google.com/?cid=17021870992087095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 41.1478599,
           "lng": 24.151128999999997
+        },
+        {
+          "brand": "EASYMAIL",
+          "place_name": "Easymail Κέρκυρα Reception",
+          "address": "Πολυχρονίου Κωνσταντά 19, Κέρκυρα 491 32",
+          "rating": 2.0,
+          "reviews": 104,
+          "maps_url": "https://maps.google.com/?cid=12973976635326553111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.6218828,
+          "lng": 19.915213599999998
+        },
+        {
+          "brand": "EASYMAIL",
+          "place_name": "Easymail Κέρκυρας",
+          "address": "ΔΙΑΣΤΑΥΡΩΣΗ, Βιρος 490 84",
+          "rating": 3.4,
+          "reviews": 97,
+          "maps_url": "https://maps.google.com/?cid=3481754796512925221&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 39.5903863,
+          "lng": 19.8934215
         },
         {
           "brand": "EASYMAIL",
@@ -64313,13 +64303,13 @@
         },
         {
           "brand": "EASYMAIL",
-          "place_name": "Easymail Κορίνθου",
-          "address": "Παλαιά Ε.Ο. Κορίνθου Πατρών 86, Κόρινθος 201 00",
-          "rating": 3.6,
-          "reviews": 25,
-          "maps_url": "https://maps.google.com/?cid=17068622698824410824&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.935592199999995,
-          "lng": 22.9166407
+          "place_name": "Easy Mail Kalamata",
+          "address": "Ασκληπιού 43, Καλαμάτα 241 00",
+          "rating": 4.1,
+          "reviews": 114,
+          "maps_url": "https://maps.google.com/?cid=12356951996496514876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.03598420000001,
+          "lng": 22.1135517
         },
         {
           "brand": "EASYMAIL",
@@ -64333,13 +64323,13 @@
         },
         {
           "brand": "EASYMAIL",
-          "place_name": "Easy Mail Kalamata",
-          "address": "Ασκληπιού 43, Καλαμάτα 241 00",
-          "rating": 4.1,
-          "reviews": 114,
-          "maps_url": "https://maps.google.com/?cid=12356951996496514876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 37.03598420000001,
-          "lng": 22.1135517
+          "place_name": "Easymail Κορίνθου",
+          "address": "Παλαιά Ε.Ο. Κορίνθου Πατρών 86, Κόρινθος 201 00",
+          "rating": 3.6,
+          "reviews": 25,
+          "maps_url": "https://maps.google.com/?cid=17068622698824410824&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "lat": 37.935592199999995,
+          "lng": 22.9166407
         },
         {
           "brand": "EASYMAIL",
@@ -64430,26 +64420,6 @@
           "maps_url": "https://maps.google.com/?cid=13579870794533954645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
           "lat": 35.2045794,
           "lng": 26.0995352
-        },
-        {
-          "brand": "EASYMAIL",
-          "place_name": "Easymail Κέρκυρα Reception",
-          "address": "Πολυχρονίου Κωνσταντά 19, Κέρκυρα 491 32",
-          "rating": 2.0,
-          "reviews": 104,
-          "maps_url": "https://maps.google.com/?cid=12973976635326553111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.6218828,
-          "lng": 19.915213599999998
-        },
-        {
-          "brand": "EASYMAIL",
-          "place_name": "Easymail Κέρκυρας",
-          "address": "ΔΙΑΣΤΑΥΡΩΣΗ, Βιρος 490 84",
-          "rating": 3.4,
-          "reviews": 97,
-          "maps_url": "https://maps.google.com/?cid=3481754796512925221&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "lat": 39.5903863,
-          "lng": 19.8934215
         },
         {
           "brand": "EASYMAIL",
