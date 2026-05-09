@@ -3,7 +3,7 @@ name: Update Courier Ratings
 on:
   schedule:
     - cron: '0 23 * * 6'   # Κυριακή 01:00 Ελλάδα (Σάββατο 23:00 UTC)
-  workflow_dispatch:        # Χειροκίνητη εκτέλεση από GitHub UI
+  workflow_dispatch:
 
 jobs:
   update:
@@ -12,6 +12,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Full history για να αποφύγουμε conflicts
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,6 +32,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add index.html history.json
           git diff --staged --quiet || git commit -m "auto: update ratings $(date +%Y-%m-%d)"
           git push
