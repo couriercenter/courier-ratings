@@ -2,7 +2,7 @@ name: Update Courier Ratings
 
 on:
   schedule:
-    - cron: '0 6 * * 1'   # Κάθε Δευτέρα 06:00 UTC (08:00 Ελλάδα)
+    - cron: '0 23 * * 6'   # Κυριακή 01:00 Ελλάδα (Σάββατο 23:00 UTC)
   workflow_dispatch:        # Χειροκίνητη εκτέλεση από GitHub UI
 
 jobs:
