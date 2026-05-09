@@ -26,7 +26,7 @@ HTTP_TIMEOUT = 25
 SEARCH_RADIUS_M = 50000
 
 COMMIT_MSG   = "auto: update ratings {date}"
-GIT_PUSH     = True   # False για dry-run χωρίς push
+GIT_PUSH     = False  # Το push γίνεται από το GitHub Actions workflow
 
 # ─────────────────────────── BRANDS & QUERIES ─────────────────────────────
 BRANDS: Dict[str, List[str]] = {
