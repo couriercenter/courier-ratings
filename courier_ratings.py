@@ -34,7 +34,7 @@ BRANDS: Dict[str, List[str]] = {
     "Γενική Ταχυδρομική":   ["Κατάστημα Γενική Ταχυδρομική"],
     "ΕΛΤΑ Courier":         ["Κατάστημα ΕΛΤΑ Courier", "Κατάστημα ELTA Courier"],
     "SPEEDEX":              ["Κατάστημα SPEEDEX"],
-    "Courier Center":       ["Κατάστημα Courier Center"],
+    "Courier Center":       ["Κατάστημα Courier Center", "Courier Center"],
     "EASYMAIL":             ["Κατάστημα easymail"],
 }
 
@@ -423,7 +423,7 @@ def build_html(history):
   <h2>Αποτελέσματα ανά Περιοχή</h2>
   <div class="tbl-wrap"><table id="region-table">
     <thead><tr>
-      <th>Περιοχή</th><th>Brand</th>
+      <th>Περιοχή</th><th>Εταιρία</th>
       <th>Weighted Avg</th><th>Κριτικές</th>
       <th>vs {(prev or {}).get('label','προηγ.')}</th>
     </tr></thead>
@@ -435,14 +435,14 @@ def build_html(history):
   <!-- All stores -->
   <h2>Όλα τα Καταστήματα</h2>
   <div class="filter-bar">
-    <select id="f-brand"><option value="">Όλα τα brands</option></select>
+    <select id="f-brand"><option value="">Όλες οι εταιρίες</option></select>
     <select id="f-region"><option value="">Όλες οι περιοχές</option></select>
     <input id="f-search" placeholder="Αναζήτηση ονόματος / διεύθυνσης…">
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
-      <th class="sortable" data-col="brand" style="cursor:pointer">Brand <span class="sort-icon">↕</span></th>
-      <th>Κατάστημα</th><th>Διεύθυνση</th>
+      <th class="sortable" data-col="brand" style="cursor:pointer">Εταιρία <span class="sort-icon">↕</span></th>
+      <th>Διεύθυνση</th>
       <th class="sortable" data-col="rating" style="cursor:pointer">Rating <span class="sort-icon">↕</span></th>
       <th class="sortable" data-col="reviews" style="cursor:pointer">Κριτικές <span class="sort-icon">↕</span></th>
       <th>Δ vs προηγ.</th><th></th>
@@ -640,7 +640,7 @@ function inferRegion(name, address, lat, lng){{
   // Primary: lat/lng bboxes (most reliable)
   if(lat&&lng){{
     if(lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
-    if(lat>=37.6&&lat<=38.5&&lng>=23.0&&lng<=24.5) return 'ΑΤΤΙΚΗ';
+    if(lat>=37.5&&lat<=38.5&&lng>=23.0&&lng<=24.5) return 'ΑΤΤΙΚΗ';
     if(lat>=40.4&&lat<=40.9&&lng>=22.7&&lng<=23.2) return 'Θεσσαλονίκη';
     if(lat>=36.2&&lat<=38.2&&lng>=21.0&&lng<=23.5) return 'Πελοπόννησος';
     if(lng<22.0||(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.8)) return 'Δυτική Ελλάδα (με Κέρκυρα)';
@@ -711,8 +711,7 @@ function renderStores(){{
     const bcc = p.brand==='Courier Center'?' brand-cc':'';
     return `<tr>
       <td class="${{bcc}}">${{p.brand}}</td>
-      <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${{p.place_name}}</td>
-      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${{p.address}}</td>
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${{p.address}}</td>
       <td>${{p.rating !== null && p.rating !== undefined ? `<span class="pill ${{ratingClass(p.rating)}}">${{p.rating.toFixed(1)}}</span>` : '—'}}</td>
       <td>${{p.reviews.toLocaleString('el-GR')}}</td>
       <td>${{dHtml}}</td>
