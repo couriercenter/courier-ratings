@@ -608,24 +608,30 @@ regionEntries.forEach(item=>{{
 
 
 
-// ── Region inference (client-side, mirrors Python logic) ─────────────
+// ── Region inference (client-side) — bbox-first, then latin keywords ──
 function inferRegion(name, address, lat, lng){{
-  const txt = (name + ' ' + address).toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-  const crete = ['κρητη','heraklion','irakleio','chania','rethymno','agios nikolaos','ierapetra','moires'];
-  if(crete.some(k=>txt.includes(k))) return 'ΚΡΗΤΗ';
-  if(lat && lng && lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
-  const westKw = ['κερκυρα','corfu','kerkira','kerkyra'];
-  if(westKw.some(k=>txt.includes(k))) return 'Δυτική Ελλάδα (με Κέρκυρα)';
-  const islandKw = ['ροδο','rhodes','παρος','paros','σαντορινη','thira','θηρα','τηνος','tinos',
-    'χιος','chios','κως','kos','μυτιληνη','lesvos','λεσβος','μυκονος','mykonos',
-    'ναξος','naxos','σαμος','samos','ικαρια','ikaria'];
-  if(islandKw.some(k=>txt.includes(k))) return 'Υπόλοιπα νησιά';
-  if(lat&&lng&&lat>=37.6&&lat<=38.4&&lng>=23.0&&lng<=24.2) return 'ΑΤΤΙΚΗ';
-  if(lat&&lng&&lat>=40.4&&lat<=40.9&&lng>=22.7&&lng<=23.2) return 'Θεσσαλονίκη';
-  if(lat&&lng&&lat>=36.2&&lat<=38.5&&lng>=21.0&&lng<=23.8) return 'Πελοπόννησος';
-  if(lat&&lng&&(lng<22.0||(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.8))) return 'Δυτική Ελλάδα (με Κέρκυρα)';
-  if(lat&&lat>=40.0) return 'Βόρεια Ελλάδα';
+  // Primary: lat/lng bboxes (most reliable)
+  if(lat&&lng){{
+    if(lat>=34.7&&lat<=35.9&&lng>=23.3&&lng<=26.7) return 'ΚΡΗΤΗ';
+    if(lat>=37.6&&lat<=38.5&&lng>=23.0&&lng<=24.5) return 'ΑΤΤΙΚΗ';
+    if(lat>=40.4&&lat<=40.9&&lng>=22.7&&lng<=23.2) return 'Θεσσαλονίκη';
+    if(lat>=36.2&&lat<=38.2&&lng>=21.0&&lng<=23.5) return 'Πελοπόννησος';
+    if(lng<22.0||(lat>=39.3&&lat<=39.9&&lng>=19.5&&lng<=20.8)) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+    // Islands by bbox
+    if(lat>=35.8&&lat<=36.6&&lng>=27.5&&lng<=28.5) return 'Υπόλοιπα νησιά'; // Ρόδος/Κως
+    if(lat>=36.3&&lat<=37.2&&lng>=25.0&&lng<=26.5) return 'Υπόλοιπα νησιά'; // Κυκλάδες
+    if(lat>=37.5&&lat<=38.6&&lng>=25.8&&lng<=27.2) return 'Υπόλοιπα νησιά'; // Χίος/Σάμος
+    if(lat>=38.9&&lat<=39.4&&lng>=25.8&&lng<=27.0) return 'Υπόλοιπα νησιά'; // Λέσβος
+    if(lat>=40.0) return 'Βόρεια Ελλάδα';
+    if(lat>=39.0&&lat<=40.0&&lng>=20.5&&lng<=23.5) return 'Κεντρική Ελλάδα';
+  }}
+  // Fallback: latin keywords in address
+  const addr = (address||'').toLowerCase();
+  if(/crete|heraklion|iraklio|chania|rethymno|ierapetra/.test(addr)) return 'ΚΡΗΤΗ';
+  if(/corfu|kerkira|kerkyra/.test(addr)) return 'Δυτική Ελλάδα (με Κέρκυρα)';
+  if(/rhodes|mykonos|santorini|thira|paros|naxos|samos|chios|lesvos|kos/.test(addr)) return 'Υπόλοιπα νησιά';
+  if(/thessaloniki|thessalonica/.test(addr)) return 'Θεσσαλονίκη';
+  if(/athens|attica|attiki/.test(addr)) return 'ΑΤΤΙΚΗ';
   return 'Κεντρική Ελλάδα';
 }}
 
@@ -641,6 +647,9 @@ const fBrand      = document.getElementById('f-brand');
 const fRegion     = document.getElementById('f-region');
 const fSearch     = document.getElementById('f-search');
 const storesTbody = document.getElementById('stores-tbody');
+// Ensure first "Όλα" options have empty value
+fBrand.options[0].value = '';
+fRegion.options[0].value = '';
 allBrands.forEach(b=>{{ fBrand.innerHTML += `<option value="${{b}}">${{b}}</option>`; }});
 REGION_ORDER.forEach(r=>{{ fRegion.innerHTML += `<option value="${{r}}">${{r}}</option>`; }});
 
@@ -649,8 +658,8 @@ function renderStores(){{
   const rFilter = fRegion.value;
   const sFilter = fSearch.value.toLowerCase();
   let rows = latestPlaces.filter(p=>{{
-    if(bFilter && p.brand !== bFilter) return false;
-    if(rFilter && p._region !== rFilter) return false;
+    if(bFilter && bFilter !== '' && p.brand !== bFilter) return false;
+    if(rFilter && rFilter !== '' && p._region !== rFilter) return false;
     if(sFilter && !p.place_name.toLowerCase().includes(sFilter) && !p.address.toLowerCase().includes(sFilter)) return false;
     return true;
   }});
@@ -664,7 +673,7 @@ function renderStores(){{
       <td class="${{bcc}}">${{p.brand}}</td>
       <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${{p.place_name}}</td>
       <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${{p.address}}</td>
-      <td><span class="pill ${{ratingClass(p.rating)}}">${{p.rating.toFixed(1)}}</span></td>
+      <td>${{p.rating !== null && p.rating !== undefined ? `<span class="pill ${{ratingClass(p.rating)}}">${{p.rating.toFixed(1)}}</span>` : '—'}}</td>
       <td>${{p.reviews.toLocaleString('el-GR')}}</td>
       <td>${{dHtml}}</td>
       <td>${{mapLink}}</td>
@@ -674,6 +683,11 @@ function renderStores(){{
 fBrand.addEventListener('change', renderStores);
 fRegion.addEventListener('change', renderStores);
 fSearch.addEventListener('input', renderStores);
+
+// Fix: ensure empty value = "Όλα" works correctly
+fBrand.addEventListener('change', () => {{ if(fBrand.value === '') fBrand.selectedIndex = 0; }});
+fRegion.addEventListener('change', () => {{ if(fRegion.value === '') fRegion.selectedIndex = 0; }});
+
 renderStores();
 
 document.getElementById('run-ts').textContent = 'Generated: ' + new Date().toLocaleString('el-GR');
