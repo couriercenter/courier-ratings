@@ -30,12 +30,12 @@ GIT_PUSH     = True   # False για dry-run χωρίς push
 
 # ─────────────────────────── BRANDS & QUERIES ─────────────────────────────
 BRANDS: Dict[str, List[str]] = {
-    "ACS":                  ["Κατάστημα ACS"],
-    "Γενική Ταχυδρομική":   ["Κατάστημα Γενική Ταχυδρομική"],
-    "ΕΛΤΑ Courier":         ["Κατάστημα ΕΛΤΑ Courier", "Κατάστημα ELTA Courier"],
-    "SPEEDEX":              ["Κατάστημα SPEEDEX"],
+    "ACS":                  ["Κατάστημα ACS", "ACS Courier"],
+    "Γενική Ταχυδρομική":   ["Κατάστημα Γενική Ταχυδρομική", "Γενική Ταχυδρομική"],
+    "ΕΛΤΑ Courier":         ["Κατάστημα ΕΛΤΑ Courier", "Κατάστημα ELTA Courier", "ΕΛΤΑ Courier"],
+    "SPEEDEX":              ["Κατάστημα SPEEDEX", "SPEEDEX Courier"],
     "Courier Center":       ["Κατάστημα Courier Center", "Courier Center"],
-    "EASYMAIL":             ["Κατάστημα easymail"],
+    "EASYMAIL":             ["Κατάστημα easymail", "Easymail"],
 }
 
 GREECE_CENTERS = [
