@@ -274,28 +274,6 @@ regionEntries.forEach(item=>{
 
 
 
-// ── Stores table ──────────────────────────────────────────────────────
-const fBrand  = document.getElementById('f-brand');
-const fRegion = document.getElementById('f-region');
-const fSearch = document.getElementById('f-search');
-const storesTbody = document.getElementById('stores-tbody');
-
-// Populate filter dropdowns
-allBrands.forEach(b=>{ fBrand.innerHTML += `<option value="${b}">${b}</option>`; });
-REGION_ORDER.forEach(r=>{ fRegion.innerHTML += `<option value="${r}">${r}</option>`; });
-
-function regionOf(p){
-  // Use inferred region from regions data
-  for(const key of Object.keys(latest.regions)){
-    const entry = latest.regions[key];
-    if(entry.brand===p.brand){
-      // rough match by address
-      if(p.address && p.address.includes(entry.region.split(' ')[0])) return entry.region;
-    }
-  }
-  return '';
-}
-
 // ── Region inference (client-side, mirrors Python logic) ─────────────
 function inferRegion(name, address, lat, lng){
   const txt = (name + ' ' + address).toLowerCase()
@@ -317,8 +295,20 @@ function inferRegion(name, address, lat, lng){
   return 'Κεντρική Ελλάδα';
 }
 
-// Pre-compute region for each place
+// ── Stores setup ─────────────────────────────────────────────────────
+const latestPlaces = latest.places || [];
+const prevPlaces   = (prev && prev.places) || [];
+function keyOf(p){ return p.maps_url || `${p.brand}|${p.place_name}|${p.address}`; }
+const prevMap = {};
+prevPlaces.forEach(p=>{ prevMap[keyOf(p)] = p; });
 latestPlaces.forEach(p=>{ p._region = inferRegion(p.place_name, p.address, p.lat, p.lng); });
+
+const fBrand      = document.getElementById('f-brand');
+const fRegion     = document.getElementById('f-region');
+const fSearch     = document.getElementById('f-search');
+const storesTbody = document.getElementById('stores-tbody');
+allBrands.forEach(b=>{ fBrand.innerHTML += `<option value="${b}">${b}</option>`; });
+REGION_ORDER.forEach(r=>{ fRegion.innerHTML += `<option value="${r}">${r}</option>`; });
 
 function renderStores(){
   const bFilter = fBrand.value;
