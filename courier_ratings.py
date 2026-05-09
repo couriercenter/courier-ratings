@@ -444,12 +444,20 @@ def build_html(history):
 const HISTORY = {history_json};
 const REGION_ORDER = {json.dumps(REGION_ORDER)};
 const BRAND_COLORS = {{
-  "Courier Center":     "#3b82f6",
-  "ACS":                "#f59e0b",
-  "EASYMAIL":           "#10b981",
-  "ΕΛΤΑ Courier":       "#8b5cf6",
-  "SPEEDEX":            "#ef4444",
-  "Γενική Ταχυδρομική": "#6b7280",
+  "Courier Center":     "#F47920",
+  "ACS":                "#CC0000",
+  "EASYMAIL":           "#7B2D8B",
+  "ΕΛΤΑ Courier":       "#C8102E",
+  "SPEEDEX":            "#00A650",
+  "Γενική Ταχυδρομική": "#003DA5",
+}};
+const BRAND_LOGOS = {{
+  "Courier Center":     "logos/courier_center.png",
+  "ACS":                "logos/acs.png",
+  "EASYMAIL":           "logos/easymail.png",
+  "ΕΛΤΑ Courier":       "logos/elta_courier.png",
+  "SPEEDEX":            "logos/speedex.png",
+  "Γενική Ταχυδρομική": "logos/geniki.png",
 }};
 
 const snaps   = HISTORY.snapshots;
@@ -483,9 +491,10 @@ allBrands.forEach(b=>{{
   const dCls = d===null?'nc':d>0.005?'up':d<-0.005?'dn':'nc';
   const dTxt = d===null?'—':(d>0.005?'+':'')+d.toFixed(2);
   const cc = b==='Courier Center' ? ' cc' : '';
+  const logoHtml = BRAND_LOGOS[b] ? `<img src="${{BRAND_LOGOS[b]}}" style="height:32px;object-fit:contain;margin-bottom:6px;display:block">` : `<div class="brand">${{b}}</div>`;
   cardsEl.innerHTML += `
     <div class="card${{cc}}">
-      <div class="brand">${{b}}</div>
+      ${{logoHtml}}
       <div class="score" style="color:${{BRAND_COLORS[b]}}">${{cur.weighted_avg !== null ? cur.weighted_avg.toFixed(2) : '—'}}</div>
       <div class="meta">${{cur.total_reviews ? cur.total_reviews.toLocaleString('el-GR') : '—'}} κριτικές · ${{cur.store_count||'—'}} καταστήματα</div>
       <span class="delta ${{dCls}}">${{dTxt}}</span>
