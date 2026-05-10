@@ -404,9 +404,9 @@ def build_html(history):
   .chart-wrap{{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:8px}}
   .chart-wrap canvas{{max-height:280px}}
   /* Regions table */
-  .tbl-wrap{{background:#fff;border-radius:10px;overflow:auto;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:8px}}
+  .tbl-wrap{{background:#fff;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:8px}}
   table{{width:100%;border-collapse:collapse;font-size:13px}}
-  thead th{{background:#1a1a2e;color:#fff;padding:9px 12px;text-align:left;font-weight:500;white-space:nowrap;position:sticky;top:0;z-index:10}}
+  thead th{{background:#1a1a2e;color:#fff;padding:9px 12px;text-align:left;font-weight:500;white-space:nowrap;position:sticky;top:0;z-index:10;box-shadow:0 1px 0 rgba(255,255,255,.1)}}
   tbody tr:hover{{background:#f8fafc}}
   tbody td{{padding:8px 12px;border-bottom:.5px solid #e8ecf0}}
   .region-hdr{{background:#f1f5f9!important;font-weight:600;color:#334155}}
