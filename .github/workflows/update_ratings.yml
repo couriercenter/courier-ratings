@@ -2,7 +2,7 @@ name: Update Courier Ratings
 
 on:
   schedule:
-    - cron: '0 23 * * 6'
+    - cron: '0 1 * * 0'   # Κυριακή 01:00 UTC = 04:00 Ελλάδα (σωστή ημερομηνία)
   workflow_dispatch:
 
 jobs:
