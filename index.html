@@ -250,8 +250,7 @@ const brandBtns = {};
 allBrands.forEach(b => {
   const btn = document.createElement('button');
   const logoUrl = BRAND_LOGOS[b];
-  if(logoUrl) { btn.innerHTML = `<img src="${logoUrl}" style="height:18px;max-width:72px;object-fit:contain;vertical-align:middle;filter:brightness(0) invert(1)" alt="${b}">`;} else { btn.textContent = b; }
-  btn.title = b;
+  btn.textContent = b;
   btn.title = b;
   btn.style.cssText = `padding:4px 12px;border-radius:20px;border:1.5px solid ${BRAND_COLORS[b]};background:${BRAND_COLORS[b]};color:#fff;font-size:12px;cursor:pointer;font-weight:500`;
   btn.dataset.brand = b;
@@ -278,7 +277,6 @@ function updateButtons(){
     const active = activeBrands.includes(b);
     btn.style.background = active ? BRAND_COLORS[b] : '#fff';
     btn.style.color = active ? '#fff' : BRAND_COLORS[b];
-    const img = btn.querySelector('img'); if(img) img.style.filter = active ? 'brightness(0) invert(1)' : 'none';
   });
 }
 
@@ -577,6 +575,7 @@ function renderStores(){
 
 function goPage(p) {
   currentPage = p;
+fBrand.value = 'Courier Center'; // default brand filter
   renderStores();
   document.getElementById('h-stores').scrollIntoView({behavior:'smooth', block:'start'});
 }
@@ -623,7 +622,7 @@ function smartMatch(query, text) {
 }
 
 // ── Sorting ───────────────────────────────────────────────────────────
-let sortCol = 'reviews';
+let sortCol = 'rating'; let sortDir = -1; // default: Courier Center, rating desc
 let sortDir = -1; // -1=desc, 1=asc
 
 document.querySelectorAll('th.sortable').forEach(th => {
