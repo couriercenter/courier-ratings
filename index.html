@@ -310,7 +310,7 @@ function renderRegions() {
     const bcc = item.brand==='Courier Center'?' brand-cc':'';
     tbody.innerHTML += `<tr>
       <td></td>
-      <td class="${bcc}"><img src="${BRAND_LOGOS[item.brand]||''}" style="height:20px;max-width:80px;object-fit:contain;vertical-align:middle" alt="${item.brand}"></td>
+      <td class="${bcc}"><img src="${BRAND_LOGOS[item.brand]||''}" style="height:${item.brand==='Courier Center'?'26px':'20px'};max-width:90px;object-fit:contain;vertical-align:middle" alt="${item.brand}"></td>
       <td><span class="pill ${ratingClass(item.weighted_avg)}">${item.weighted_avg !== null ? item.weighted_avg.toFixed(2) : '—'}</span></td>
       <td>${item.total_reviews ? item.total_reviews.toLocaleString('el-GR') : '—'}</td>
       <td>${item.store_count || '—'}</td>
@@ -511,6 +511,7 @@ let currentPage   = 1;
 fBrand.options[0].value = '';
 fRegion.options[0].value = '';
 allBrands.forEach(b=>{ fBrand.innerHTML += `<option value="${b}">${b}</option>`; });
+setTimeout(() => { fBrand.value = 'Courier Center'; renderStores(); }, 0);
 REGION_ORDER.forEach(r=>{ fRegion.innerHTML += `<option value="${r}">${r}</option>`; });
 
 function renderStores(){
@@ -562,7 +563,7 @@ function renderStores(){
     const mapLink = p.maps_url ? `<a href="${p.maps_url}" target="_blank" style="color:#3b82f6;font-size:11px">Maps ↗</a>` : '';
     const bcc = p.brand==='Courier Center'?' brand-cc':'';
     return `<tr>
-      <td class="${bcc}"><img src="${BRAND_LOGOS[p.brand]||''}" style="height:20px;max-width:80px;object-fit:contain;vertical-align:middle" alt="${p.brand}"></td>
+      <td class="${bcc}"><img src="${BRAND_LOGOS[p.brand]||''}" style="height:${p.brand==='Courier Center'?'26px':'20px'};max-width:90px;object-fit:contain;vertical-align:middle" alt="${p.brand}"></td>
       <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64748b">${p.address}</td>
       <td>${p.rating !== null && p.rating !== undefined ? `<span class="pill ${ratingClass(p.rating)}">${p.rating.toFixed(1)}</span>` : '—'}</td>
       <td>${p.reviews.toLocaleString('el-GR')}</td>
@@ -634,8 +635,8 @@ document.querySelectorAll('th.sortable').forEach(th => {
     }
     document.querySelectorAll('th.sortable .sort-icon').forEach(el => el.textContent = '↕');
     th.querySelector('.sort-icon').textContent = sortDir === 1 ? '↑' : '↓';
-fBrand.value = 'Courier Center';
-renderStores();
+    currentPage = 1;
+    renderStores();
   });
 });
 
@@ -643,7 +644,6 @@ renderStores();
 fBrand.addEventListener('change', () => { if(fBrand.value === '') fBrand.selectedIndex = 0; });
 fRegion.addEventListener('change', () => { if(fRegion.value === '') fRegion.selectedIndex = 0; });
 
-renderStores();
 
 document.getElementById('run-ts').textContent = 'Generated: ' + new Date().toLocaleString('el-GR');
 
