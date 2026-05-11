@@ -575,8 +575,6 @@ function renderStores(){
 
 function goPage(p) {
   currentPage = p;
-fBrand.value = 'Courier Center'; // default brand filter
-  renderStores();
   document.getElementById('h-stores').scrollIntoView({behavior:'smooth', block:'start'});
 }
 fBrand.addEventListener('change', () => { currentPage=1; renderStores(); });
@@ -622,8 +620,8 @@ function smartMatch(query, text) {
 }
 
 // ── Sorting ───────────────────────────────────────────────────────────
-let sortCol = 'rating'; let sortDir = -1; // default: Courier Center, rating desc
-let sortDir = -1; // -1=desc, 1=asc
+let sortCol = 'rating';
+let sortDir = -1; // default: rating desc
 
 document.querySelectorAll('th.sortable').forEach(th => {
   th.addEventListener('click', () => {
@@ -636,7 +634,8 @@ document.querySelectorAll('th.sortable').forEach(th => {
     }
     document.querySelectorAll('th.sortable .sort-icon').forEach(el => el.textContent = '↕');
     th.querySelector('.sort-icon').textContent = sortDir === 1 ? '↑' : '↓';
-    renderStores();
+fBrand.value = 'Courier Center';
+renderStores();
   });
 });
 
