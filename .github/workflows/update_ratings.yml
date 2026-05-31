@@ -2,16 +2,24 @@ name: Update Courier Ratings
 
 on:
   schedule:
-    - cron: '0 1 * * 0'   # Κυριακή 01:00 UTC = 04:00 Ελλάδα (σωστή ημερομηνία)
+    - cron: '0 1 * * 0'   # Κυριακή 01:00 UTC = 04:00 Ελλάδα με θερινή ώρα
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-courier-ratings
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 60
+
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout source repository
+        uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
 
@@ -23,17 +31,59 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas openpyxl
 
+      - name: Check required secrets
+        env:
+          PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
+          TARGET_REPO_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
+        run: |
+          if [ -z "$PLACES_API_KEY" ]; then
+            echo "Missing PLACES_API_KEY"
+            exit 1
+          fi
+
+          if [ -z "$TARGET_REPO_TOKEN" ]; then
+            echo "Missing TARGET_REPO_TOKEN"
+            exit 1
+          fi
+
       - name: Run ratings script
         env:
           PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
         run: python courier_ratings.py
 
-      - name: Commit and push
+      - name: Commit and push source repository
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html history.json
-          git diff --staged --quiet && echo "No changes" && exit 0
-          git commit -m "auto: update ratings $(date +%Y-%m-%d)"
-          git pull --rebase origin main
-          git push
+
+          git add history.json
+
+          if git diff --staged --quiet; then
+            echo "No source changes"
+          else
+            git commit -m "auto: update ratings $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Sync history.json to public couriermarket repository
+        env:
+          TARGET_REPO_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
+        run: |
+          git clone https://x-access-token:${TARGET_REPO_TOKEN}@github.com/free-software-house/couriermarket.git public-repo
+
+          cp history.json public-repo/history.json
+
+          cd public-repo
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add history.json
+
+          if git diff --staged --quiet; then
+            echo "No public repo changes"
+          else
+            git commit -m "auto: sync ratings history $(date +%Y-%m-%d)"
+            git push origin main
+          fi
