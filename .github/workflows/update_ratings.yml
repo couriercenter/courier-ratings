@@ -73,6 +73,17 @@ jobs:
           PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
         run: python courier_ratings.py
 
+      - name: Save generated files as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: courier-ratings-output-${{ github.run_number }}
+          path: |
+            history.json
+            index.html
+          if-no-files-found: warn
+          retention-days: 7
+
       - name: Commit and push source repository
         if: steps.gate.outputs.should_run == 'true'
         run: |
