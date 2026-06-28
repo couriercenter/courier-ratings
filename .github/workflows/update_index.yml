@@ -1,0 +1,119 @@
+name: Update index.html only
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-index-only
+  cancel-in-progress: false
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update embedded HISTORY in index.html
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+
+          print("▶ Reading history.json...")
+          history_path = Path("history.json")
+          index_path = Path("index.html")
+
+          if not history_path.exists():
+              raise SystemExit("❌ history.json not found")
+
+          if not index_path.exists():
+              raise SystemExit("❌ index.html not found")
+
+          history = json.loads(history_path.read_text(encoding="utf-8"))
+
+          snapshots = history.get("snapshots", [])
+          if not snapshots:
+              raise SystemExit("❌ history.json has no snapshots")
+
+          latest_label = snapshots[-1].get("label", "")
+          prev_label = snapshots[-2].get("label", "") if len(snapshots) >= 2 else ""
+          first_label = snapshots[0].get("label", "")
+
+          print(f"✔ Latest snapshot: {latest_label}")
+          print(f"✔ Previous snapshot: {prev_label}")
+          print(f"✔ First snapshot: {first_label}")
+
+          print("▶ Loading index.html...")
+          html = index_path.read_text(encoding="utf-8")
+
+          print("▶ Replacing embedded HISTORY...")
+          history_js = json.dumps(history, ensure_ascii=False, separators=(",", ":"))
+
+          new_html, count = re.subn(
+              r"const HISTORY\s*=\s*.*?;\s*\nconst REGION_ORDER",
+              "const HISTORY = " + history_js + ";\nconst REGION_ORDER",
+              html,
+              count=1,
+              flags=re.S
+          )
+
+          if count != 1:
+              raise SystemExit("❌ Could not find exactly one embedded HISTORY block")
+
+          print("▶ Updating visible date labels...")
+          if latest_label:
+              new_html = re.sub(
+                  r"Τελευταία ενημέρωση:\s*\d{2}/\d{2}/\d{4}",
+                  f"Τελευταία ενημέρωση: {latest_label}",
+                  new_html
+              )
+
+          if prev_label:
+              new_html = re.sub(
+                  r"vs \d{2}/\d{2}/\d{4}",
+                  f"vs {prev_label}",
+                  new_html
+              )
+              new_html = re.sub(
+                  r"Δ vs \d{2}/\d{2}/\d{4}",
+                  f"Δ vs {prev_label}",
+                  new_html
+              )
+
+          if first_label:
+              new_html = re.sub(
+                  r"vs 01/01/2026",
+                  f"vs {first_label}",
+                  new_html
+              )
+              new_html = re.sub(
+                  r"Δ vs 01/01/2026",
+                  f"Δ vs {first_label}",
+                  new_html
+              )
+
+          index_path.write_text(new_html, encoding="utf-8")
+          print("✔ index.html updated from existing history.json only")
+          PY
+
+      - name: Commit and push index.html
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add index.html
+
+          if git diff --staged --quiet; then
+            echo "✔ index.html already up to date. Nothing to commit."
+          else
+            git commit -m "auto: update index from history"
+            git push origin main
+            echo "✔ index.html committed and pushed."
+          fi
