@@ -85,7 +85,6 @@ jobs:
             echo "No source changes"
           else
             git commit -m "auto: update ratings $(date +%Y-%m-%d)"
-            git pull --rebase origin main
             git push origin main
           fi
 
